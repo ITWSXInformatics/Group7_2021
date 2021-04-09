@@ -1,0 +1,1553 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "b7pe-5nws",
+      "name" : "COVID-19 Vaccine Distribution Allocations by Jurisdiction - Moderna",
+      "assetType" : "dataset",
+      "attribution" : "HHS ASPA",
+      "averageRating" : 0,
+      "category" : "Vaccinations",
+      "createdAt" : 1608390141,
+      "description" : "New weekly allocations of doses are posted every Tuesday.  Beginning the following Thursday, states can begin ordering doses from that week’s new allocation of 1st doses.  Beginning two weeks (Pfizer) or three weeks (Moderna) from the following Sunday, states can begin ordering doses from that week’s new allocation of 2nd doses. After doses are ordered by states, shipments begin the following Monday. The entire order may not arrive in one shipment or on one day, but over the course of the week.\n\nSecond doses are opened up for orders on Sundays, at the appropriate interval two or three weeks later according to the manufacturer’s label, with shipments occurring after jurisdictions place orders. \n\nShipments of an FDA-authorized safe and effective COVID-19 vaccine continue to arrive at sites across America. Vaccinations began on December 14, 2020. \n\nhttps://www.hhs.gov/coronavirus/covid-19-vaccines/index.html\n\nPfizer Vaccine Data - https://data.cdc.gov/Vaccinations/COVID-19-Vaccine-Initial-Allocations-Pfizer/saz5-9hgg\n\nJanssen Vaccine Data - https://data.cdc.gov/Vaccinations/COVID-19-Vaccine-Distribution-Allocations-by-Juris/w9zu-fywh",
+      "displayType" : "table",
+      "downloadCount" : 32933,
+      "hideFromCatalog" : false,
+      "hideFromDataJson" : false,
+      "licenseId" : "USGOV_WORKS",
+      "newBackend" : true,
+      "numberOfComments" : 0,
+      "oid" : 36530247,
+      "provenance" : "official",
+      "publicationAppendEnabled" : false,
+      "publicationDate" : 1614127221,
+      "publicationGroup" : 17874067,
+      "publicationStage" : "published",
+      "rowsUpdatedAt" : 1617797148,
+      "rowsUpdatedBy" : "tjyw-xtku",
+      "tableId" : 18069347,
+      "totalTimesRated" : 0,
+      "viewCount" : 196886,
+      "viewLastModified" : 1617797147,
+      "viewType" : "tabular",
+      "approvals" : [ {
+        "reviewedAt" : 1608415564,
+        "reviewedAutomatically" : true,
+        "state" : "approved",
+        "submissionId" : 3278943,
+        "submissionObject" : "public_audience_request",
+        "submissionOutcome" : "change_audience",
+        "submittedAt" : 1608415564,
+        "workflowId" : 2100,
+        "submissionDetails" : {
+          "permissionType" : "READ"
+        },
+        "submissionOutcomeApplication" : {
+          "endedAt" : 1608415564,
+          "failureCount" : 0,
+          "startedAt" : 1608415564,
+          "status" : "success"
+        },
+        "submitter" : {
+          "id" : "tjyw-xtku",
+          "displayName" : "HHS ASPA"
+        }
+      } ],
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : 526283751,
+        "name" : "Jurisdiction",
+        "dataTypeName" : "text",
+        "description" : "City, State, Territory",
+        "fieldName" : "jurisdiction",
+        "position" : 1,
+        "renderTypeName" : "text",
+        "tableColumnId" : 125694743,
+        "cachedContents" : {
+          "non_null" : "1071",
+          "largest" : "Wyoming",
+          "null" : "0",
+          "top" : [ {
+            "item" : "Nevada",
+            "count" : "17"
+          }, {
+            "item" : "New York",
+            "count" : "17"
+          }, {
+            "item" : "West Virginia",
+            "count" : "17"
+          }, {
+            "item" : "South Carolina",
+            "count" : "17"
+          }, {
+            "item" : "Hawaii",
+            "count" : "17"
+          }, {
+            "item" : "New Mexico",
+            "count" : "17"
+          }, {
+            "item" : "Arkansas",
+            "count" : "17"
+          }, {
+            "item" : "Missouri",
+            "count" : "17"
+          }, {
+            "item" : "South Dakota",
+            "count" : "17"
+          }, {
+            "item" : "District of Columbia",
+            "count" : "17"
+          }, {
+            "item" : "Palau",
+            "count" : "17"
+          }, {
+            "item" : "Chicago",
+            "count" : "17"
+          }, {
+            "item" : "Ohio",
+            "count" : "17"
+          }, {
+            "item" : "American Samoa",
+            "count" : "17"
+          }, {
+            "item" : "Mariana Islands",
+            "count" : "17"
+          }, {
+            "item" : "Minnesota",
+            "count" : "17"
+          }, {
+            "item" : "Washington",
+            "count" : "17"
+          }, {
+            "item" : "Marshall Islands",
+            "count" : "17"
+          }, {
+            "item" : "Kentucky",
+            "count" : "17"
+          }, {
+            "item" : "Vermont",
+            "count" : "17"
+          } ],
+          "smallest" : "Alabama",
+          "cardinality" : "63"
+        },
+        "format" : { }
+      }, {
+        "id" : 526283876,
+        "name" : "Week of Allocations",
+        "dataTypeName" : "calendar_date",
+        "description" : "",
+        "fieldName" : "week_of_allocations",
+        "position" : 2,
+        "renderTypeName" : "calendar_date",
+        "tableColumnId" : 131304596,
+        "cachedContents" : {
+          "non_null" : "1071",
+          "largest" : "2021-04-12T00:00:00.000",
+          "null" : "0",
+          "top" : [ {
+            "item" : "2021-03-29T00:00:00.000",
+            "count" : "63"
+          }, {
+            "item" : "2021-02-08T00:00:00.000",
+            "count" : "63"
+          }, {
+            "item" : "2021-03-22T00:00:00.000",
+            "count" : "63"
+          }, {
+            "item" : "2021-04-12T00:00:00.000",
+            "count" : "63"
+          }, {
+            "item" : "2021-01-25T00:00:00.000",
+            "count" : "63"
+          }, {
+            "item" : "2020-12-28T00:00:00.000",
+            "count" : "63"
+          }, {
+            "item" : "2021-01-04T00:00:00.000",
+            "count" : "63"
+          }, {
+            "item" : "2021-01-18T00:00:00.000",
+            "count" : "63"
+          }, {
+            "item" : "2021-02-22T00:00:00.000",
+            "count" : "63"
+          }, {
+            "item" : "2021-03-08T00:00:00.000",
+            "count" : "63"
+          }, {
+            "item" : "2021-03-01T00:00:00.000",
+            "count" : "63"
+          }, {
+            "item" : "2020-12-21T00:00:00.000",
+            "count" : "63"
+          }, {
+            "item" : "2021-01-11T00:00:00.000",
+            "count" : "63"
+          }, {
+            "item" : "2021-04-05T00:00:00.000",
+            "count" : "63"
+          }, {
+            "item" : "2021-02-01T00:00:00.000",
+            "count" : "63"
+          }, {
+            "item" : "2021-02-15T00:00:00.000",
+            "count" : "63"
+          }, {
+            "item" : "2021-03-15T00:00:00.000",
+            "count" : "63"
+          } ],
+          "smallest" : "2020-12-21T00:00:00.000",
+          "cardinality" : "17"
+        },
+        "format" : {
+          "view" : "date"
+        }
+      }, {
+        "id" : 526283875,
+        "name" : "1st Dose Allocations",
+        "dataTypeName" : "number",
+        "description" : "Number of 1st dose allocations that a jurisdiction can order from",
+        "fieldName" : "_1st_dose_allocations",
+        "position" : 3,
+        "renderTypeName" : "number",
+        "tableColumnId" : 131304595,
+        "cachedContents" : {
+          "non_null" : "1071",
+          "largest" : "672600",
+          "null" : "0",
+          "top" : [ {
+            "item" : "0",
+            "count" : "84"
+          }, {
+            "item" : "13700",
+            "count" : "14"
+          }, {
+            "item" : "28900",
+            "count" : "10"
+          }, {
+            "item" : "9500",
+            "count" : "10"
+          }, {
+            "item" : "18500",
+            "count" : "10"
+          }, {
+            "item" : "43400",
+            "count" : "9"
+          }, {
+            "item" : "1100",
+            "count" : "9"
+          }, {
+            "item" : "7200",
+            "count" : "9"
+          }, {
+            "item" : "26500",
+            "count" : "9"
+          }, {
+            "item" : "7500",
+            "count" : "9"
+          }, {
+            "item" : "10800",
+            "count" : "9"
+          }, {
+            "item" : "14200",
+            "count" : "8"
+          }, {
+            "item" : "8300",
+            "count" : "8"
+          }, {
+            "item" : "53800",
+            "count" : "8"
+          }, {
+            "item" : "15600",
+            "count" : "8"
+          }, {
+            "item" : "20500",
+            "count" : "7"
+          }, {
+            "item" : "35800",
+            "count" : "7"
+          }, {
+            "item" : "54100",
+            "count" : "7"
+          }, {
+            "item" : "45000",
+            "count" : "7"
+          }, {
+            "item" : "15800",
+            "count" : "7"
+          } ],
+          "smallest" : "0",
+          "cardinality" : "384"
+        },
+        "format" : { }
+      }, {
+        "id" : 526283874,
+        "name" : "2nd Dose Allocations",
+        "dataTypeName" : "number",
+        "description" : "Number of 2nd dose allocations that a jurisdiction can order from",
+        "fieldName" : "_2nd_dose_allocations",
+        "position" : 4,
+        "renderTypeName" : "number",
+        "tableColumnId" : 131304594,
+        "cachedContents" : {
+          "non_null" : "1071",
+          "largest" : "672600",
+          "null" : "0",
+          "top" : [ {
+            "item" : "0",
+            "count" : "114"
+          }, {
+            "item" : "13700",
+            "count" : "14"
+          }, {
+            "item" : "9500",
+            "count" : "10"
+          }, {
+            "item" : "28900",
+            "count" : "10"
+          }, {
+            "item" : "18500",
+            "count" : "10"
+          }, {
+            "item" : "26500",
+            "count" : "9"
+          }, {
+            "item" : "10800",
+            "count" : "9"
+          }, {
+            "item" : "43400",
+            "count" : "9"
+          }, {
+            "item" : "7500",
+            "count" : "9"
+          }, {
+            "item" : "1100",
+            "count" : "9"
+          }, {
+            "item" : "53800",
+            "count" : "8"
+          }, {
+            "item" : "15600",
+            "count" : "8"
+          }, {
+            "item" : "8300",
+            "count" : "8"
+          }, {
+            "item" : "45000",
+            "count" : "7"
+          }, {
+            "item" : "28500",
+            "count" : "7"
+          }, {
+            "item" : "65200",
+            "count" : "7"
+          }, {
+            "item" : "30400",
+            "count" : "7"
+          }, {
+            "item" : "112400",
+            "count" : "7"
+          }, {
+            "item" : "59000",
+            "count" : "7"
+          }, {
+            "item" : "59500",
+            "count" : "7"
+          } ],
+          "smallest" : "0",
+          "cardinality" : "368"
+        },
+        "format" : { }
+      } ],
+      "grants" : [ {
+        "inherited" : false,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "license" : {
+        "name" : "Public Domain U.S. Government",
+        "termsLink" : "https://www.usa.gov/government-works"
+      },
+      "metadata" : {
+        "custom_fields" : {
+          "Data Quality" : {
+            "Geospatial Resolution" : "Jurisdiction",
+            "Update Frequency" : "Weekly (Tuesday)",
+            "Geographic Coverage" : "United States"
+          },
+          "Common Core" : {
+            "Contact Email" : "media@hhs.gov",
+            "Footnotes" : "* Marshall Islands, Micronesia, Palau will not receive Pfizer vaccines due to logistical considerations with ultra-cold requirements. ** Jurisdiction will receive first and second doses simultaneously to optimize transportation logistics. A sub-set of these jurisdictions are also receiving expected allocations for the remainder of the month pulled forward. ***Jurisdiction will receive a \"Sovereign Nation Supplement\" for American Indian/Alaskan Native populations that elected to receive vaccines through the state instead of Indian Health Service. **** Federal Entities includes; Bureau of Prisons, Dept. of Defense, Dept. of State, Indian Health Service, & Veterans Affairs + Dept. of Homeland Security. ~San Antonio and Houston jurisdiction allocations consolidated with Texas.",
+            "Contact Name" : "ASPA Media",
+            "Program Code" : "009:020",
+            "Publisher" : "HHS ASPA",
+            "Bureau Code" : "009:00"
+          }
+        },
+        "rowLabel" : "Moderna Vaccine Allocation by State and Week",
+        "availableDisplayTypes" : [ "table", "fatrow", "page" ]
+      },
+      "owner" : {
+        "id" : "tjyw-xtku",
+        "displayName" : "HHS ASPA",
+        "screenName" : "HHS ASPA",
+        "type" : "interactive",
+        "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+      },
+      "query" : { },
+      "rights" : [ "read" ],
+      "tableAuthor" : {
+        "id" : "tjyw-xtku",
+        "displayName" : "HHS ASPA",
+        "screenName" : "HHS ASPA",
+        "type" : "interactive",
+        "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+      },
+      "tags" : [ "covid-19", "vaccination", "coronavirus" ],
+      "flags" : [ "default", "ownerMayBeContacted", "restorable", "restorePossibleForType" ]
+    }
+  },
+  "data" : [ [ "row-puse.5qd9-uiq5", "00000000-0000-0000-7C91-69F5ECB8EBF5", 0, 1617797148, null, 1617797148, null, "{ }", "Connecticut", "2021-04-12T00:00:00", "37400", "37400" ]
+, [ "row-w8ja~z77s.q825", "00000000-0000-0000-C9D8-F17AA61C2E29", 0, 1617797148, null, 1617797148, null, "{ }", "Maine", "2021-04-12T00:00:00", "14300", "14300" ]
+, [ "row-4sty~5dbf-dart", "00000000-0000-0000-FCA3-F087F2C8D4DB", 0, 1617797148, null, 1617797148, null, "{ }", "Massachusetts", "2021-04-12T00:00:00", "72100", "72100" ]
+, [ "row-trep-ky4w_6npg", "00000000-0000-0000-5978-5628140875AD", 0, 1617797148, null, 1617797148, null, "{ }", "New Hampshire", "2021-04-12T00:00:00", "14300", "14300" ]
+, [ "row-mzss.nszc_e9f5", "00000000-0000-0000-6557-930067C8B9FD", 0, 1617797148, null, 1617797148, null, "{ }", "Rhode Island", "2021-04-12T00:00:00", "11300", "11300" ]
+, [ "row-2gid.jdzi~7wdv", "00000000-0000-0000-8248-80C66E550222", 0, 1617797148, null, 1617797148, null, "{ }", "Vermont", "2021-04-12T00:00:00", "6700", "6700" ]
+, [ "row-cp9h-8new-ww5u", "00000000-0000-0000-8E33-273E02AD6096", 0, 1617797148, null, 1617797148, null, "{ }", "New Jersey", "2021-04-12T00:00:00", "91300", "91300" ]
+, [ "row-qpv4-fc3s~qxzp", "00000000-0000-0000-7E26-680886EC3885", 0, 1617797148, null, 1617797148, null, "{ }", "New York", "2021-04-12T00:00:00", "116300", "116300" ]
+, [ "row-24r6_iez9.tg2a", "00000000-0000-0000-B5DB-EED1CB5C1E2B", 0, 1617797148, null, 1617797148, null, "{ }", "New York City", "2021-04-12T00:00:00", "88300", "88300" ]
+, [ "row-y3e6-bqcu-kxpj", "00000000-0000-0000-8676-DC5E91BCB5A1", 0, 1617797148, null, 1617797148, null, "{ }", "Puerto Rico", "2021-04-12T00:00:00", "35700", "35700" ]
+, [ "row-c5er-vppn-2yat", "00000000-0000-0000-071D-3C91662653D3", 0, 1617797148, null, 1617797148, null, "{ }", "U.S. Virgin Islands", "2021-04-12T00:00:00", "1100", "1100" ]
+, [ "row-pbxk-crbe~w8xa", "00000000-0000-0000-75C9-CECF686F0866", 0, 1617797148, null, 1617797148, null, "{ }", "Delaware", "2021-04-12T00:00:00", "9900", "9900" ]
+, [ "row-e35q.bndr-mgjc", "00000000-0000-0000-72BC-D48FFAC93B47", 0, 1617797148, null, 1617797148, null, "{ }", "District of Columbia", "2021-04-12T00:00:00", "7500", "7500" ]
+, [ "row-mkk2-aps7.gyk9", "00000000-0000-0000-313B-41353FB5C3F9", 0, 1617797148, null, 1617797148, null, "{ }", "Maryland", "2021-04-12T00:00:00", "61600", "61600" ]
+, [ "row-su9e~drkk-2fss", "00000000-0000-0000-323B-DD1CE7AF93CD", 0, 1617797148, null, 1617797148, null, "{ }", "Pennsylvania", "2021-04-12T00:00:00", "117500", "117500" ]
+, [ "row-7rej_iccs-8wrq", "00000000-0000-0000-A30B-766DD8C91D34", 0, 1617797148, null, 1617797148, null, "{ }", "Philadelphia", "2021-04-12T00:00:00", "16300", "16300" ]
+, [ "row-vt2q_6ccm~txuc", "00000000-0000-0000-B725-2FFA954728E2", 0, 1617797148, null, 1617797148, null, "{ }", "Virginia", "2021-04-12T00:00:00", "86500", "86500" ]
+, [ "row-mgd8-5d5m.95k6", "00000000-0000-0000-518A-440CF277E94A", 0, 1617797148, null, 1617797148, null, "{ }", "West Virginia", "2021-04-12T00:00:00", "19300", "19300" ]
+, [ "row-ez6m-urg3.9agw", "00000000-0000-0000-EF24-764AD61E653A", 0, 1617797148, null, 1617797148, null, "{ }", "Alabama", "2021-04-12T00:00:00", "49800", "49800" ]
+, [ "row-bmc6.3ewq~64sh", "00000000-0000-0000-C9B9-2F1623E068AC", 0, 1617797148, null, 1617797148, null, "{ }", "Florida", "2021-04-12T00:00:00", "217400", "217400" ]
+, [ "row-vawz-qgwc.kfca", "00000000-0000-0000-5E19-A41C2882CB36", 0, 1617797148, null, 1617797148, null, "{ }", "Georgia", "2021-04-12T00:00:00", "103000", "103000" ]
+, [ "row-xq5m~i5ig~6pei", "00000000-0000-0000-160A-9744CC3494FE", 0, 1617797148, null, 1617797148, null, "{ }", "Kentucky", "2021-04-12T00:00:00", "45300", "45300" ]
+, [ "row-fab2_m7mq~8yhe", "00000000-0000-0000-D6B3-8B7F89BC0988", 0, 1617797148, null, 1617797148, null, "{ }", "Mississippi", "2021-04-12T00:00:00", "30000", "30000" ]
+, [ "row-b4rv.9m3d~qfft", "00000000-0000-0000-5355-9FA9DAC9FFB8", 0, 1617797148, null, 1617797148, null, "{ }", "North Carolina", "2021-04-12T00:00:00", "103900", "103900" ]
+, [ "row-jq7c_8nzr-ianv", "00000000-0000-0000-1476-C468BDC7C58F", 0, 1617797148, null, 1617797148, null, "{ }", "South Carolina", "2021-04-12T00:00:00", "51000", "51000" ]
+, [ "row-23ad~hhn5-wbnb", "00000000-0000-0000-1F24-136036149502", 0, 1617797148, null, 1617797148, null, "{ }", "Tennessee", "2021-04-12T00:00:00", "68100", "68100" ]
+, [ "row-398d_t6pt.euvk", "00000000-0000-0000-886C-E7E6EC589564", 0, 1617797148, null, 1617797148, null, "{ }", "Chicago", "2021-04-12T00:00:00", "27700", "27700" ]
+, [ "row-h7u5.f2is-sdmt", "00000000-0000-0000-C18D-BBC988EFC108", 0, 1617797148, null, 1617797148, null, "{ }", "Illinois", "2021-04-12T00:00:00", "103100", "103100" ]
+, [ "row-f8eg.3bxy~6bmg", "00000000-0000-0000-F82C-FB9DE4636A54", 0, 1617797148, null, 1617797148, null, "{ }", "Indiana", "2021-04-12T00:00:00", "66900", "66900" ]
+, [ "row-sksn_4hnv-9hvy", "00000000-0000-0000-49A9-DB30C70303B0", 0, 1617797148, null, 1617797148, null, "{ }", "Michigan", "2021-04-12T00:00:00", "102600", "102600" ]
+, [ "row-mf7y_pbxz_5wz2", "00000000-0000-0000-2389-99FF87281B4E", 0, 1617797148, null, 1617797148, null, "{ }", "Minnesota", "2021-04-12T00:00:00", "56200", "56200" ]
+, [ "row-swzs.t2bq.9t4e", "00000000-0000-0000-F1A6-5BE8B095ADEF", 0, 1617797148, null, 1617797148, null, "{ }", "Ohio", "2021-04-12T00:00:00", "119300", "119300" ]
+, [ "row-8iy5_2z2v_88gs", "00000000-0000-0000-3487-0FBC94003B36", 0, 1617797148, null, 1617797148, null, "{ }", "Wisconsin", "2021-04-12T00:00:00", "59700", "59700" ]
+, [ "row-ncus.a5j8~h6qj", "00000000-0000-0000-C84B-E92FFA2BCFC8", 0, 1617797148, null, 1617797148, null, "{ }", "Arkansas", "2021-04-12T00:00:00", "30200", "30200" ]
+, [ "row-6hmg~g2xw.ef3u", "00000000-0000-0000-636C-23DE9F46F76C", 0, 1617797148, null, 1617797148, null, "{ }", "Louisiana", "2021-04-12T00:00:00", "47000", "47000" ]
+, [ "row-5tjr_ke84-st2u", "00000000-0000-0000-66EB-156C4B2E9BA9", 0, 1617797148, null, 1617797148, null, "{ }", "New Mexico", "2021-04-12T00:00:00", "21400", "21400" ]
+, [ "row-8x6g-za5h~p4zq", "00000000-0000-0000-C763-BBE7F5D5F31D", 0, 1617797148, null, 1617797148, null, "{ }", "Oklahoma", "2021-04-12T00:00:00", "39200", "39200" ]
+, [ "row-f9c3_wza5.urhw", "00000000-0000-0000-428F-F5D79D605D12", 0, 1617797148, null, 1617797148, null, "{ }", "Texas", "2021-04-12T00:00:00", "272100", "272100" ]
+, [ "row-avya_knva-wyf9", "00000000-0000-0000-CE71-C9D29E400A8A", 0, 1617797148, null, 1617797148, null, "{ }", "Iowa", "2021-04-12T00:00:00", "31800", "31800" ]
+, [ "row-3c5g~8bmp.s583", "00000000-0000-0000-48BE-438D16E8D9A1", 0, 1617797148, null, 1617797148, null, "{ }", "Kansas", "2021-04-12T00:00:00", "29000", "29000" ]
+, [ "row-mkmw~puqb.swyp", "00000000-0000-0000-A650-E987840A787B", 0, 1617797148, null, 1617797148, null, "{ }", "Missouri", "2021-04-12T00:00:00", "62200", "62200" ]
+, [ "row-4xmh.7gvf-2hw9", "00000000-0000-0000-AD91-90F9F3C02D24", 0, 1617797148, null, 1617797148, null, "{ }", "Nebraska", "2021-04-12T00:00:00", "19200", "19200" ]
+, [ "row-gmzn-xde3.bkbb", "00000000-0000-0000-64FD-47451A44CF89", 0, 1617797148, null, 1617797148, null, "{ }", "Colorado", "2021-04-12T00:00:00", "56500", "56500" ]
+, [ "row-932x_5kkm.73xj", "00000000-0000-0000-30B6-8022709EC11C", 0, 1617797148, null, 1617797148, null, "{ }", "Montana", "2021-04-12T00:00:00", "10800", "10800" ]
+, [ "row-api3-s73p_wtgw", "00000000-0000-0000-E386-80BE66E94F64", 0, 1617797148, null, 1617797148, null, "{ }", "North Dakota", "2021-04-12T00:00:00", "7800", "7800" ]
+, [ "row-cnyb.fsia-u8zw", "00000000-0000-0000-2C7E-8CFEC1AF8B4F", 0, 1617797148, null, 1617797148, null, "{ }", "South Dakota", "2021-04-12T00:00:00", "8700", "8700" ]
+, [ "row-8mez-uhc3-ep37", "00000000-0000-0000-788C-4C175ED05A2E", 0, 1617797148, null, 1617797148, null, "{ }", "Utah", "2021-04-12T00:00:00", "28300", "28300" ]
+, [ "row-jmqx.diuu.9g8d", "00000000-0000-0000-2855-73117A1B286D", 0, 1617797148, null, 1617797148, null, "{ }", "Wyoming", "2021-04-12T00:00:00", "5900", "5900" ]
+, [ "row-pfsc_7zvq~9nfw", "00000000-0000-0000-6DD3-5CE408025D40", 0, 1617797148, null, 1617797148, null, "{ }", "Arizona", "2021-04-12T00:00:00", "70600", "70600" ]
+, [ "row-iu3d-tytp-qieb", "00000000-0000-0000-3EF8-DCBB7B447978", 0, 1617797148, null, 1617797148, null, "{ }", "California", "2021-04-12T00:00:00", "397400", "397400" ]
+, [ "row-h8gt.348e.ab5m", "00000000-0000-0000-E55D-893B27A21B7B", 0, 1617797148, null, 1617797148, null, "{ }", "Hawaii", "2021-04-12T00:00:00", "14800", "14800" ]
+, [ "row-y8se_w4f9-vmpy", "00000000-0000-0000-FB91-1BBC7D56A496", 0, 1617797148, null, 1617797148, null, "{ }", "Nevada", "2021-04-12T00:00:00", "29800", "29800" ]
+, [ "row-4a98-ni8u.6q44", "00000000-0000-0000-6A53-47986430D832", 0, 1617797148, null, 1617797148, null, "{ }", "American Samoa", "2021-04-12T00:00:00", "0", "0" ]
+, [ "row-6iws.p87y~6pqc", "00000000-0000-0000-3D22-77BD46E893AD", 0, 1617797148, null, 1617797148, null, "{ }", "Guam", "2021-04-12T00:00:00", "0", "0" ]
+, [ "row-bv8y.wnj2_yc3p", "00000000-0000-0000-55C8-B430CE12E7E7", 0, 1617797148, null, 1617797148, null, "{ }", "Marshall Islands", "2021-04-12T00:00:00", "0", "0" ]
+, [ "row-kyv3-jakh.vstz", "00000000-0000-0000-B9FF-BAFC5F517AE3", 0, 1617797148, null, 1617797148, null, "{ }", "Micronesia", "2021-04-12T00:00:00", "0", "0" ]
+, [ "row-pkga_w9jm.rp3s", "00000000-0000-0000-06F0-E56BE0C599F3", 0, 1617797148, null, 1617797148, null, "{ }", "Mariana Islands", "2021-04-12T00:00:00", "0", "0" ]
+, [ "row-9csq~zy2r.hr33", "00000000-0000-0000-1D77-EE5374FE1E27", 0, 1617797148, null, 1617797148, null, "{ }", "Palau", "2021-04-12T00:00:00", "0", "0" ]
+, [ "row-h5mr.ezfr-abb9", "00000000-0000-0000-7B91-1E97F870AE54", 0, 1617797148, null, 1617797148, null, "{ }", "Alaska", "2021-04-12T00:00:00", "0", "0" ]
+, [ "row-kuvw~fz5d.36ne", "00000000-0000-0000-B9F1-FDC09F480FD3", 0, 1617797148, null, 1617797148, null, "{ }", "Idaho", "2021-04-12T00:00:00", "16600", "16600" ]
+, [ "row-rm4v~fur7_ey58", "00000000-0000-0000-2768-655906D79987", 0, 1617797148, null, 1617797148, null, "{ }", "Oregon", "2021-04-12T00:00:00", "42700", "42700" ]
+, [ "row-rvy5~qw8j_pijq", "00000000-0000-0000-9E77-6D8FDB48ED6F", 0, 1617797148, null, 1617797148, null, "{ }", "Washington", "2021-04-12T00:00:00", "75700", "75700" ]
+, [ "row-rx99-92xa~rxk8", "00000000-0000-0000-BEAF-788275CDE894", 0, 1617797148, null, 1617797148, null, "{ }", "Federal Entities", "2021-04-12T00:00:00", "149400", "149400" ]
+, [ "row-7pxx~hdgh.vdep", "00000000-0000-0000-E59F-1A7E83227AFD", 0, 1617797148, null, 1617797148, null, "{ }", "Connecticut", "2021-04-05T00:00:00", "37400", "37400" ]
+, [ "row-im7z-kgpg~8ss7", "00000000-0000-0000-31B5-1120451CF1E9", 0, 1617797148, null, 1617797148, null, "{ }", "Maine", "2021-04-05T00:00:00", "14300", "14300" ]
+, [ "row-k5sx~2ths~ek77", "00000000-0000-0000-2481-07055E850AC8", 0, 1617797148, null, 1617797148, null, "{ }", "Massachusetts", "2021-04-05T00:00:00", "72100", "72100" ]
+, [ "row-wqp2~umdi.g2ut", "00000000-0000-0000-7E14-01BC693DC83E", 0, 1617797148, null, 1617797148, null, "{ }", "New Hampshire", "2021-04-05T00:00:00", "14300", "14300" ]
+, [ "row-mcj8.52jb_rdn8", "00000000-0000-0000-7311-278A7187CD8A", 0, 1617797148, null, 1617797148, null, "{ }", "Rhode Island", "2021-04-05T00:00:00", "11300", "11300" ]
+, [ "row-x9hr-byx2-xp4k", "00000000-0000-0000-0C5E-727662F91A96", 0, 1617797148, null, 1617797148, null, "{ }", "Vermont", "2021-04-05T00:00:00", "6700", "6700" ]
+, [ "row-tziy-ba7h_szqk", "00000000-0000-0000-440A-7BAB7D59B088", 0, 1617797148, null, 1617797148, null, "{ }", "New Jersey", "2021-04-05T00:00:00", "91300", "91300" ]
+, [ "row-n9sd-hn76.wnfm", "00000000-0000-0000-A032-64297F013DFD", 0, 1617797148, null, 1617797148, null, "{ }", "New York", "2021-04-05T00:00:00", "116300", "116300" ]
+, [ "row-x4q7_n5z2-sefc", "00000000-0000-0000-8199-592F8EE5EFA9", 0, 1617797148, null, 1617797148, null, "{ }", "New York City", "2021-04-05T00:00:00", "88300", "88300" ]
+, [ "row-3jcz.ejd7_rvy9", "00000000-0000-0000-2441-9987B5563379", 0, 1617797148, null, 1617797148, null, "{ }", "Puerto Rico", "2021-04-05T00:00:00", "35700", "35700" ]
+, [ "row-3hyi-k77q-itkv", "00000000-0000-0000-CFBB-03B10A37FAF7", 0, 1617797148, null, 1617797148, null, "{ }", "U.S. Virgin Islands", "2021-04-05T00:00:00", "1100", "1100" ]
+, [ "row-iq9x-pg72~4vjm", "00000000-0000-0000-3CD2-0B266EC7254F", 0, 1617797148, null, 1617797148, null, "{ }", "Delaware", "2021-04-05T00:00:00", "9900", "9900" ]
+, [ "row-9im7_bjez~guvv", "00000000-0000-0000-D59B-A75F092789F0", 0, 1617797148, null, 1617797148, null, "{ }", "District of Columbia", "2021-04-05T00:00:00", "7500", "7500" ]
+, [ "row-ez4n~49yf.keta", "00000000-0000-0000-2971-F8E7D6DF9AEE", 0, 1617797148, null, 1617797148, null, "{ }", "Maryland", "2021-04-05T00:00:00", "61600", "61600" ]
+, [ "row-tau8~6b6m_5rk7", "00000000-0000-0000-C155-7F2225514D95", 0, 1617797148, null, 1617797148, null, "{ }", "Pennsylvania", "2021-04-05T00:00:00", "117500", "117500" ]
+, [ "row-67e9_6sac_u6wc", "00000000-0000-0000-B487-FD2307020F4F", 0, 1617797148, null, 1617797148, null, "{ }", "Philadelphia", "2021-04-05T00:00:00", "16300", "16300" ]
+, [ "row-cfq5_r2di.cyss", "00000000-0000-0000-AA8B-36232E0B2BA0", 0, 1617797148, null, 1617797148, null, "{ }", "Virginia", "2021-04-05T00:00:00", "86500", "86500" ]
+, [ "row-wkzy.67gf_7kmb", "00000000-0000-0000-28EC-5814AFB8ED45", 0, 1617797148, null, 1617797148, null, "{ }", "West Virginia", "2021-04-05T00:00:00", "19300", "19300" ]
+, [ "row-rfg8-c93z.tzeb", "00000000-0000-0000-04C7-668BE0EDF89D", 0, 1617797148, null, 1617797148, null, "{ }", "Alabama", "2021-04-05T00:00:00", "49800", "49800" ]
+, [ "row-gnee.bwas_4tcm", "00000000-0000-0000-0766-2CB9C98720CD", 0, 1617797148, null, 1617797148, null, "{ }", "Florida", "2021-04-05T00:00:00", "217400", "217400" ]
+, [ "row-p999-b2d3~43jw", "00000000-0000-0000-A8BD-6E077EF67A74", 0, 1617797148, null, 1617797148, null, "{ }", "Georgia", "2021-04-05T00:00:00", "103000", "103000" ]
+, [ "row-5mzb.4btm.439c", "00000000-0000-0000-E524-42363C5AC8F6", 0, 1617797148, null, 1617797148, null, "{ }", "Kentucky", "2021-04-05T00:00:00", "45300", "45300" ]
+, [ "row-t6ch_i4su_czx4", "00000000-0000-0000-DC46-66FC50DD3C87", 0, 1617797148, null, 1617797148, null, "{ }", "Mississippi", "2021-04-05T00:00:00", "30000", "30000" ]
+, [ "row-hiew~kb4q-p73a", "00000000-0000-0000-4158-AC4B714C72FF", 0, 1617797148, null, 1617797148, null, "{ }", "North Carolina", "2021-04-05T00:00:00", "103900", "103900" ]
+, [ "row-5y6w~34ra.gn33", "00000000-0000-0000-C434-43A2B125970A", 0, 1617797148, null, 1617797148, null, "{ }", "South Carolina", "2021-04-05T00:00:00", "51000", "51000" ]
+, [ "row-2535-jsjq.dzyh", "00000000-0000-0000-8096-32E24277CD4E", 0, 1617797148, null, 1617797148, null, "{ }", "Tennessee", "2021-04-05T00:00:00", "68100", "68100" ]
+, [ "row-v2z5~fa3j~ttyx", "00000000-0000-0000-62CF-0B4744A790A1", 0, 1617797148, null, 1617797148, null, "{ }", "Chicago", "2021-04-05T00:00:00", "27700", "27700" ]
+, [ "row-gfnr_yckx_b4qx", "00000000-0000-0000-1970-80030E243679", 0, 1617797148, null, 1617797148, null, "{ }", "Illinois", "2021-04-05T00:00:00", "103100", "103100" ]
+, [ "row-pkxv~7wis.vtcg", "00000000-0000-0000-BEB0-5922002E278C", 0, 1617797148, null, 1617797148, null, "{ }", "Indiana", "2021-04-05T00:00:00", "66900", "66900" ]
+, [ "row-ifqr.75pb.k9ip", "00000000-0000-0000-25C1-A38702380549", 0, 1617797148, null, 1617797148, null, "{ }", "Michigan", "2021-04-05T00:00:00", "102600", "102600" ]
+, [ "row-jdd4_59hs.a62v", "00000000-0000-0000-AC0D-733F6382598F", 0, 1617797148, null, 1617797148, null, "{ }", "Minnesota", "2021-04-05T00:00:00", "56200", "56200" ]
+, [ "row-vk6i.z8ze.gay2", "00000000-0000-0000-94EB-64A7E3328899", 0, 1617797148, null, 1617797148, null, "{ }", "Ohio", "2021-04-05T00:00:00", "119300", "119300" ]
+, [ "row-7rr5_djix_6h4d", "00000000-0000-0000-EE9D-3743D98B70CC", 0, 1617797148, null, 1617797148, null, "{ }", "Wisconsin", "2021-04-05T00:00:00", "59700", "59700" ]
+, [ "row-6jrg_hivd_ypmu", "00000000-0000-0000-4E8C-53F28212F762", 0, 1617797148, null, 1617797148, null, "{ }", "Arkansas", "2021-04-05T00:00:00", "30200", "30200" ]
+, [ "row-tjbu.qn6h~4kie", "00000000-0000-0000-AF15-9A73DD90362B", 0, 1617797148, null, 1617797148, null, "{ }", "Louisiana", "2021-04-05T00:00:00", "47000", "47000" ]
+, [ "row-4qr7.g287.5gyg", "00000000-0000-0000-8640-D9E771B0A55C", 0, 1617797148, null, 1617797148, null, "{ }", "New Mexico", "2021-04-05T00:00:00", "21400", "21400" ]
+, [ "row-pb85-srqh-vjvs", "00000000-0000-0000-35ED-FF48046D5FFD", 0, 1617797148, null, 1617797148, null, "{ }", "Oklahoma", "2021-04-05T00:00:00", "39200", "39200" ]
+, [ "row-5u7n_5q2i.8g6y", "00000000-0000-0000-1121-343D065F2878", 0, 1617797148, null, 1617797148, null, "{ }", "Texas", "2021-04-05T00:00:00", "272100", "272100" ]
+, [ "row-d5w4.a9wu-gkv9", "00000000-0000-0000-E762-BB6A42AF34A8", 0, 1617797148, null, 1617797148, null, "{ }", "Iowa", "2021-04-05T00:00:00", "31800", "31800" ]
+, [ "row-u4uv-peve.z8bb", "00000000-0000-0000-8D6D-56A0460C54D2", 0, 1617797148, null, 1617797148, null, "{ }", "Kansas", "2021-04-05T00:00:00", "29000", "29000" ]
+, [ "row-rydv~bqib.kb8u", "00000000-0000-0000-BB75-6A4A20CE4891", 0, 1617797148, null, 1617797148, null, "{ }", "Missouri", "2021-04-05T00:00:00", "62200", "62200" ]
+, [ "row-e35d-r7vz~ffzu", "00000000-0000-0000-1D75-7334F0443D50", 0, 1617797148, null, 1617797148, null, "{ }", "Nebraska", "2021-04-05T00:00:00", "19200", "19200" ]
+, [ "row-q3s6_antb-tmsb", "00000000-0000-0000-A0CC-FBE930E82228", 0, 1617797148, null, 1617797148, null, "{ }", "Colorado", "2021-04-05T00:00:00", "56500", "56500" ]
+, [ "row-9py2_ztip~ex6p", "00000000-0000-0000-8AD8-9D5D4A07B976", 0, 1617797148, null, 1617797148, null, "{ }", "Montana", "2021-04-05T00:00:00", "10800", "10800" ]
+, [ "row-uq5w~wq2a-h4ft", "00000000-0000-0000-7FC3-6E3F8C7918CC", 0, 1617797148, null, 1617797148, null, "{ }", "North Dakota", "2021-04-05T00:00:00", "7800", "7800" ]
+, [ "row-ggzx~x8su.ckj7", "00000000-0000-0000-6507-F7E7DC69F5CB", 0, 1617797148, null, 1617797148, null, "{ }", "South Dakota", "2021-04-05T00:00:00", "8700", "8700" ]
+, [ "row-a5x7_rhp2~m54p", "00000000-0000-0000-4A1E-D66C98E0931E", 0, 1617797148, null, 1617797148, null, "{ }", "Utah", "2021-04-05T00:00:00", "28300", "28300" ]
+, [ "row-xiub_s7y9_rzdu", "00000000-0000-0000-882F-ACAB5F205C79", 0, 1617797148, null, 1617797148, null, "{ }", "Wyoming", "2021-04-05T00:00:00", "5900", "5900" ]
+, [ "row-nrud_zfn7~hpp3", "00000000-0000-0000-8F88-E797854B5826", 0, 1617797148, null, 1617797148, null, "{ }", "Arizona", "2021-04-05T00:00:00", "70600", "70600" ]
+, [ "row-ew4r_xyia_6hs2", "00000000-0000-0000-577F-71F6EA9FC8D9", 0, 1617797148, null, 1617797148, null, "{ }", "California", "2021-04-05T00:00:00", "397400", "397400" ]
+, [ "row-2y8b.2xaa_f98a", "00000000-0000-0000-FE03-39F882BA1C5F", 0, 1617797148, null, 1617797148, null, "{ }", "Hawaii", "2021-04-05T00:00:00", "14800", "14800" ]
+, [ "row-5din-qckh.x4nn", "00000000-0000-0000-299A-CE0FDE2308BE", 0, 1617797148, null, 1617797148, null, "{ }", "Nevada", "2021-04-05T00:00:00", "29800", "29800" ]
+, [ "row-33fs_yxxc-pw9j", "00000000-0000-0000-044E-C204B9BE600E", 0, 1617797148, null, 1617797148, null, "{ }", "American Samoa", "2021-04-05T00:00:00", "0", "0" ]
+, [ "row-mjnm-t4e5~pyr4", "00000000-0000-0000-D1EC-374CAACB777F", 0, 1617797148, null, 1617797148, null, "{ }", "Guam", "2021-04-05T00:00:00", "0", "0" ]
+, [ "row-qsn8.wyeu.vp59", "00000000-0000-0000-5E51-812FE7416E23", 0, 1617797148, null, 1617797148, null, "{ }", "Marshall Islands", "2021-04-05T00:00:00", "0", "0" ]
+, [ "row-zxy2_uf5c.uckc", "00000000-0000-0000-7D58-D7A95A79C3E1", 0, 1617797148, null, 1617797148, null, "{ }", "Micronesia", "2021-04-05T00:00:00", "0", "0" ]
+, [ "row-2exz-asfx-mdj7", "00000000-0000-0000-EC72-789247C9C333", 0, 1617797148, null, 1617797148, null, "{ }", "Mariana Islands", "2021-04-05T00:00:00", "0", "0" ]
+, [ "row-k2gx.dhbd~q6i6", "00000000-0000-0000-23BE-A67060FDE9E1", 0, 1617797148, null, 1617797148, null, "{ }", "Palau", "2021-04-05T00:00:00", "0", "0" ]
+, [ "row-ndpt.96w6-827d", "00000000-0000-0000-E553-E8F964791CF4", 0, 1617797148, null, 1617797148, null, "{ }", "Alaska", "2021-04-05T00:00:00", "0", "0" ]
+, [ "row-g9h4.2a5b.j6dm", "00000000-0000-0000-4E3A-E57AB4192054", 0, 1617797148, null, 1617797148, null, "{ }", "Idaho", "2021-04-05T00:00:00", "16600", "16600" ]
+, [ "row-b7qi~jf9v~i3xy", "00000000-0000-0000-A0BF-01C5EF9FF464", 0, 1617797148, null, 1617797148, null, "{ }", "Oregon", "2021-04-05T00:00:00", "42700", "42700" ]
+, [ "row-r4sa_y3cy~thvn", "00000000-0000-0000-5860-6402C73FB35E", 0, 1617797148, null, 1617797148, null, "{ }", "Washington", "2021-04-05T00:00:00", "75700", "75700" ]
+, [ "row-7a2x~jb3r~8ajp", "00000000-0000-0000-39AE-153E53464607", 0, 1617797148, null, 1617797148, null, "{ }", "Federal Entities", "2021-04-05T00:00:00", "143000", "143000" ]
+, [ "row-crmt.vqvh-efgc", "00000000-0000-0000-8738-D3E862F2E335", 0, 1617797148, null, 1617797148, null, "{ }", "Connecticut", "2021-03-29T00:00:00", "35800", "35800" ]
+, [ "row-pq29-b6pv~gsyn", "00000000-0000-0000-97C5-FDA14743D894", 0, 1617797148, null, 1617797148, null, "{ }", "Maine", "2021-03-29T00:00:00", "13700", "13700" ]
+, [ "row-pm2q-mddz.9ihe", "00000000-0000-0000-734E-D0E9BFC437BF", 0, 1617797148, null, 1617797148, null, "{ }", "Massachusetts", "2021-03-29T00:00:00", "69000", "69000" ]
+, [ "row-i5r3_iyym-7tpc", "00000000-0000-0000-B2DF-93D0CDA9608B", 0, 1617797148, null, 1617797148, null, "{ }", "New Hampshire", "2021-03-29T00:00:00", "13700", "13700" ]
+, [ "row-msnj~iici.qphs", "00000000-0000-0000-D44D-8DB247C635B1", 0, 1617797148, null, 1617797148, null, "{ }", "Rhode Island", "2021-03-29T00:00:00", "10800", "10800" ]
+, [ "row-8pq8_93vn_jhbg", "00000000-0000-0000-B37B-00033DA75433", 0, 1617797148, null, 1617797148, null, "{ }", "Vermont", "2021-03-29T00:00:00", "6500", "6500" ]
+, [ "row-maeh~tt2q.27j5", "00000000-0000-0000-7DAF-C54A56E7F068", 0, 1617797148, null, 1617797148, null, "{ }", "New Jersey", "2021-03-29T00:00:00", "87400", "87400" ]
+, [ "row-8npk.uvti-a2m6", "00000000-0000-0000-9CD5-0F518681E995", 0, 1617797148, null, 1617797148, null, "{ }", "New York", "2021-03-29T00:00:00", "111300", "111300" ]
+, [ "row-tbkp.a3ke-r8nr", "00000000-0000-0000-ADA4-EB6EA7808E9C", 0, 1617797148, null, 1617797148, null, "{ }", "New York City", "2021-03-29T00:00:00", "84500", "84500" ]
+, [ "row-yeuu.id3n.hw7s", "00000000-0000-0000-BE8D-816E006C0145", 0, 1617797148, null, 1617797148, null, "{ }", "Puerto Rico", "2021-03-29T00:00:00", "34200", "34200" ]
+, [ "row-2px9_tu76~c44g", "00000000-0000-0000-9C43-7B0AE5E6CAF8", 0, 1617797148, null, 1617797148, null, "{ }", "U.S. Virgin Islands", "2021-03-29T00:00:00", "1100", "1100" ]
+, [ "row-vp73~e9np~584y", "00000000-0000-0000-F055-2464C5612728", 0, 1617797148, null, 1617797148, null, "{ }", "Delaware", "2021-03-29T00:00:00", "9500", "9500" ]
+, [ "row-g7mg.6spt~bmgu", "00000000-0000-0000-E050-C384E6AC3A28", 0, 1617797148, null, 1617797148, null, "{ }", "District of Columbia", "2021-03-29T00:00:00", "7200", "7200" ]
+, [ "row-zphs~n53f-6qr7", "00000000-0000-0000-3A37-C132A824AC4A", 0, 1617797148, null, 1617797148, null, "{ }", "Maryland", "2021-03-29T00:00:00", "59000", "59000" ]
+, [ "row-crex.tqk4.z477", "00000000-0000-0000-8AEA-ABE1238FA7A7", 0, 1617797148, null, 1617797148, null, "{ }", "Pennsylvania", "2021-03-29T00:00:00", "112400", "112400" ]
+, [ "row-vwtf~nsnm~8iny", "00000000-0000-0000-179E-653B6FF9A23B", 0, 1617797148, null, 1617797148, null, "{ }", "Philadelphia", "2021-03-29T00:00:00", "15600", "15600" ]
+, [ "row-r3vh-vx6f~jdzw", "00000000-0000-0000-D25A-775A5A98844F", 0, 1617797148, null, 1617797148, null, "{ }", "Virginia", "2021-03-29T00:00:00", "82800", "82800" ]
+, [ "row-zi43-cn9c.swvr", "00000000-0000-0000-FA0A-B0BFBDBC221B", 0, 1617797148, null, 1617797148, null, "{ }", "West Virginia", "2021-03-29T00:00:00", "18500", "18500" ]
+, [ "row-ph3v-dzd3.d3sn", "00000000-0000-0000-DB92-149410020E65", 0, 1617797148, null, 1617797148, null, "{ }", "Alabama", "2021-03-29T00:00:00", "47700", "47700" ]
+, [ "row-5eqi_itgk_jg3c", "00000000-0000-0000-50F9-E6EC053E2A9E", 0, 1617797148, null, 1617797148, null, "{ }", "Florida", "2021-03-29T00:00:00", "208000", "208000" ]
+, [ "row-z6zb-x9be-srup", "00000000-0000-0000-FC74-E89B08088F0C", 0, 1617797148, null, 1617797148, null, "{ }", "Georgia", "2021-03-29T00:00:00", "98600", "98600" ]
+, [ "row-9chs.p74t_a8vv", "00000000-0000-0000-B073-F87452D37ED4", 0, 1617797148, null, 1617797148, null, "{ }", "Kentucky", "2021-03-29T00:00:00", "43400", "43400" ]
+, [ "row-sghe.ci8u_zagx", "00000000-0000-0000-7D02-BD583027205B", 0, 1617797148, null, 1617797148, null, "{ }", "Mississippi", "2021-03-29T00:00:00", "28700", "28700" ]
+, [ "row-cx5g-s7zn.z2ag", "00000000-0000-0000-2FE5-F1E9D9F80AB8", 0, 1617797148, null, 1617797148, null, "{ }", "North Carolina", "2021-03-29T00:00:00", "99500", "99500" ]
+, [ "row-s4cj~i3bn~z7cr", "00000000-0000-0000-C8F6-1DA59F79A8E9", 0, 1617797148, null, 1617797148, null, "{ }", "South Carolina", "2021-03-29T00:00:00", "48800", "48800" ]
+, [ "row-kuv9-seke-ttzk", "00000000-0000-0000-391B-C0309E7EC2D0", 0, 1617797148, null, 1617797148, null, "{ }", "Tennessee", "2021-03-29T00:00:00", "65200", "65200" ]
+, [ "row-jizy.xq3v_gm62", "00000000-0000-0000-597E-5639B3C5E8DE", 0, 1617797148, null, 1617797148, null, "{ }", "Chicago", "2021-03-29T00:00:00", "26500", "26500" ]
+, [ "row-r4pk-ty6r-ygkk", "00000000-0000-0000-4B2D-3460FBA57174", 0, 1617797148, null, 1617797148, null, "{ }", "Illinois", "2021-03-29T00:00:00", "98700", "98700" ]
+, [ "row-agz5-y65f~8d72", "00000000-0000-0000-E8A6-34378CEA3F0D", 0, 1617797148, null, 1617797148, null, "{ }", "Indiana", "2021-03-29T00:00:00", "64100", "64100" ]
+, [ "row-mhew.jq83-xek6", "00000000-0000-0000-5758-293A2CE9457B", 0, 1617797148, null, 1617797148, null, "{ }", "Michigan", "2021-03-29T00:00:00", "98200", "98200" ]
+, [ "row-prpg~xsui-5n4z", "00000000-0000-0000-E060-FF37B74BF1DB", 0, 1617797148, null, 1617797148, null, "{ }", "Minnesota", "2021-03-29T00:00:00", "53800", "53800" ]
+, [ "row-hw97_hbrs~jk93", "00000000-0000-0000-3298-495691C9F7CD", 0, 1617797148, null, 1617797148, null, "{ }", "Ohio", "2021-03-29T00:00:00", "114100", "114100" ]
+, [ "row-dnij.dcnf_b674", "00000000-0000-0000-6C1D-B82F4BEE3DED", 0, 1617797148, null, 1617797148, null, "{ }", "Wisconsin", "2021-03-29T00:00:00", "57100", "57100" ]
+, [ "row-iabd_mj7a_sk4r", "00000000-0000-0000-A6C5-CEA085F6B2DB", 0, 1617797148, null, 1617797148, null, "{ }", "Arkansas", "2021-03-29T00:00:00", "28900", "28900" ]
+, [ "row-8wdr-pb4g_yggj", "00000000-0000-0000-51FC-E0D683DEADF6", 0, 1617797148, null, 1617797148, null, "{ }", "Louisiana", "2021-03-29T00:00:00", "45000", "45000" ]
+, [ "row-4cp6.qmtx-p53p", "00000000-0000-0000-D501-D9BA84090C32", 0, 1617797148, null, 1617797148, null, "{ }", "New Mexico", "2021-03-29T00:00:00", "20500", "20500" ]
+, [ "row-wich-g76b~ucfw", "00000000-0000-0000-97AA-75DD529EC967", 0, 1617797148, null, 1617797148, null, "{ }", "Oklahoma", "2021-03-29T00:00:00", "37500", "37500" ]
+, [ "row-c7j4_8v7r.q69z", "00000000-0000-0000-BCB2-E1D0F9734D02", 0, 1617797148, null, 1617797148, null, "{ }", "Texas", "2021-03-29T00:00:00", "260400", "260400" ]
+, [ "row-wmz9-zepp_zbmr", "00000000-0000-0000-BB87-69596CFFB3AA", 0, 1617797148, null, 1617797148, null, "{ }", "Iowa", "2021-03-29T00:00:00", "30400", "30400" ]
+, [ "row-eyf2~ru6b_6nwb", "00000000-0000-0000-1819-04B3376F8746", 0, 1617797148, null, 1617797148, null, "{ }", "Kansas", "2021-03-29T00:00:00", "27800", "27800" ]
+, [ "row-e2h9.tgm9_dvjf", "00000000-0000-0000-D553-A614EB9BB06E", 0, 1617797148, null, 1617797148, null, "{ }", "Missouri", "2021-03-29T00:00:00", "59500", "59500" ]
+, [ "row-fpfa.q5uv.e9ad", "00000000-0000-0000-2372-DE6C34CB822C", 0, 1617797148, null, 1617797148, null, "{ }", "Nebraska", "2021-03-29T00:00:00", "18400", "18400" ]
+, [ "row-7zmj-enjj-yi2n", "00000000-0000-0000-AF39-59AF1D183C95", 0, 1617797148, null, 1617797148, null, "{ }", "Colorado", "2021-03-29T00:00:00", "54100", "54100" ]
+, [ "row-p2ks-5eyc_pdas", "00000000-0000-0000-0ACE-552B53C655A7", 0, 1617797148, null, 1617797148, null, "{ }", "Montana", "2021-03-29T00:00:00", "10400", "10400" ]
+, [ "row-jwwz.fkuv.rmsq", "00000000-0000-0000-0479-1096B093932E", 0, 1617797148, null, 1617797148, null, "{ }", "North Dakota", "2021-03-29T00:00:00", "7500", "7500" ]
+, [ "row-3mgs.i4dc~rif7", "00000000-0000-0000-1D4F-C4341A7E7D40", 0, 1617797148, null, 1617797148, null, "{ }", "South Dakota", "2021-03-29T00:00:00", "8300", "8300" ]
+, [ "row-u3fx_zv8j_tdk5", "00000000-0000-0000-2AC1-B01D57926E1B", 0, 1617797148, null, 1617797148, null, "{ }", "Utah", "2021-03-29T00:00:00", "27100", "27100" ]
+, [ "row-q3rj-4x5v.hvhe", "00000000-0000-0000-0CE3-3138D6083159", 0, 1617797148, null, 1617797148, null, "{ }", "Wyoming", "2021-03-29T00:00:00", "5700", "5700" ]
+, [ "row-ng96~rv34~harp", "00000000-0000-0000-A370-5FE7E5E9D2ED", 0, 1617797148, null, 1617797148, null, "{ }", "Arizona", "2021-03-29T00:00:00", "67600", "67600" ]
+, [ "row-nsg2-7fx4~2jz8", "00000000-0000-0000-8AD7-5609D310FF6C", 0, 1617797148, null, 1617797148, null, "{ }", "California", "2021-03-29T00:00:00", "380300", "380300" ]
+, [ "row-vq6i_sezu_q4ss", "00000000-0000-0000-907D-2DF2B81252FF", 0, 1617797148, null, 1617797148, null, "{ }", "Hawaii", "2021-03-29T00:00:00", "14200", "14200" ]
+, [ "row-x3bf_3mht_hng5", "00000000-0000-0000-BF5F-09C58E1B9F18", 0, 1617797148, null, 1617797148, null, "{ }", "Nevada", "2021-03-29T00:00:00", "28500", "28500" ]
+, [ "row-fqi7.q3n2.vz2k", "00000000-0000-0000-EC3D-30C47039E28A", 0, 1617797148, null, 1617797148, null, "{ }", "American Samoa", "2021-03-29T00:00:00", "5000", "0" ]
+, [ "row-inpb~jtpj.cvdq", "00000000-0000-0000-3AFD-CB5ADE004A66", 0, 1617797148, null, 1617797148, null, "{ }", "Guam", "2021-03-29T00:00:00", "15000", "0" ]
+, [ "row-6pfu.nsng~sh9w", "00000000-0000-0000-AEBD-BC6046A7C3FF", 0, 1617797148, null, 1617797148, null, "{ }", "Marshall Islands", "2021-03-29T00:00:00", "16800", "0" ]
+, [ "row-uj63_tz2x_xvzz", "00000000-0000-0000-B448-C72D7B4DA783", 0, 1617797148, null, 1617797148, null, "{ }", "Micronesia", "2021-03-29T00:00:00", "22600", "0" ]
+, [ "row-m97g~w6qv.rbbp", "00000000-0000-0000-B436-DD45BE20B2E2", 0, 1617797148, null, 1617797148, null, "{ }", "Mariana Islands", "2021-03-29T00:00:00", "5000", "0" ]
+, [ "row-fpag_8hfi_bmab", "00000000-0000-0000-5763-A80D763323A4", 0, 1617797148, null, 1617797148, null, "{ }", "Palau", "2021-03-29T00:00:00", "6200", "0" ]
+, [ "row-dwmk~n98f-8ibk", "00000000-0000-0000-247F-5ED2A895E22F", 0, 1617797148, null, 1617797148, null, "{ }", "Alaska", "2021-03-29T00:00:00", "52500", "52500" ]
+, [ "row-5dzj-iwbr.yrh5", "00000000-0000-0000-F358-E3177275FD9B", 0, 1617797148, null, 1617797148, null, "{ }", "Idaho", "2021-03-29T00:00:00", "15800", "15800" ]
+, [ "row-ia3x-yump~y56c", "00000000-0000-0000-156B-3B9696329A1C", 0, 1617797148, null, 1617797148, null, "{ }", "Oregon", "2021-03-29T00:00:00", "40800", "40800" ]
+, [ "row-td7y_s76p_mfqs", "00000000-0000-0000-18EB-2DFC1FA66AB8", 0, 1617797148, null, 1617797148, null, "{ }", "Washington", "2021-03-29T00:00:00", "72400", "72400" ]
+, [ "row-fvdc-25gf-hmbh", "00000000-0000-0000-D6A8-98A5DF2E5AA5", 0, 1617797148, null, 1617797148, null, "{ }", "Federal Entities", "2021-03-29T00:00:00", "143000", "143000" ]
+, [ "row-a45u~herd_icns", "00000000-0000-0000-1BDF-76253383A19D", 0, 1617797148, null, 1617797148, null, "{ }", "Connecticut", "2021-03-22T00:00:00", "35800", "35800" ]
+, [ "row-j2y7_gd5q~q659", "00000000-0000-0000-4D21-39C483AD2CC7", 0, 1617797148, null, 1617797148, null, "{ }", "Maine", "2021-03-22T00:00:00", "13700", "13700" ]
+, [ "row-cjyy~xec6.hfkb", "00000000-0000-0000-E8EB-2B730B88094E", 0, 1617797148, null, 1617797148, null, "{ }", "Massachusetts", "2021-03-22T00:00:00", "69000", "69000" ]
+, [ "row-vnbw_zagj-rdmq", "00000000-0000-0000-3912-F86D84725406", 0, 1617797148, null, 1617797148, null, "{ }", "New Hampshire", "2021-03-22T00:00:00", "13700", "13700" ]
+, [ "row-fb8v-f5e2.zbwj", "00000000-0000-0000-C4A2-70275877E051", 0, 1617797148, null, 1617797148, null, "{ }", "Rhode Island", "2021-03-22T00:00:00", "10800", "10800" ]
+, [ "row-kpaz.b3zq-rvtm", "00000000-0000-0000-EA26-0882977174F7", 0, 1617797148, null, 1617797148, null, "{ }", "Vermont", "2021-03-22T00:00:00", "6500", "6500" ]
+, [ "row-6xnk.6aze_drs8", "00000000-0000-0000-71EB-233DABA4FF91", 0, 1617797148, null, 1617797148, null, "{ }", "New Jersey", "2021-03-22T00:00:00", "87400", "87400" ]
+, [ "row-kf96.ijiy.tqck", "00000000-0000-0000-D036-8F6B8A0DD96D", 0, 1617797148, null, 1617797148, null, "{ }", "New York", "2021-03-22T00:00:00", "111300", "111300" ]
+, [ "row-9xd4_pwxn-3u6i", "00000000-0000-0000-98B6-3ED6338CCDDB", 0, 1617797148, null, 1617797148, null, "{ }", "New York City", "2021-03-22T00:00:00", "84500", "84500" ]
+, [ "row-ebzz-r4tf~jvwk", "00000000-0000-0000-47F0-43F7D33302CF", 0, 1617797148, null, 1617797148, null, "{ }", "Puerto Rico", "2021-03-22T00:00:00", "34200", "34200" ]
+, [ "row-hgsh.fewx~xi47", "00000000-0000-0000-3A0E-27A5CABE695E", 0, 1617797148, null, 1617797148, null, "{ }", "U.S. Virgin Islands", "2021-03-22T00:00:00", "1100", "1100" ]
+, [ "row-yze8.vpc2.c9h4", "00000000-0000-0000-50C1-2487CB3D53E7", 0, 1617797148, null, 1617797148, null, "{ }", "Delaware", "2021-03-22T00:00:00", "9500", "9500" ]
+, [ "row-hyh3-kkpx~njfi", "00000000-0000-0000-8275-32C5A9C64A4C", 0, 1617797148, null, 1617797148, null, "{ }", "District of Columbia", "2021-03-22T00:00:00", "7200", "7200" ]
+, [ "row-xw4m.4qih~pkek", "00000000-0000-0000-8D55-AAA8DE9908A8", 0, 1617797148, null, 1617797148, null, "{ }", "Maryland", "2021-03-22T00:00:00", "59000", "59000" ]
+, [ "row-pqth~wshn~unnh", "00000000-0000-0000-5828-D4F22C834488", 0, 1617797148, null, 1617797148, null, "{ }", "Pennsylvania", "2021-03-22T00:00:00", "112400", "112400" ]
+, [ "row-ri2b.rek4-ik75", "00000000-0000-0000-37F9-5B4C5113314F", 0, 1617797148, null, 1617797148, null, "{ }", "Philadelphia", "2021-03-22T00:00:00", "15600", "15600" ]
+, [ "row-5yen.wn5w_nri8", "00000000-0000-0000-2B4F-84ED56EECA03", 0, 1617797148, null, 1617797148, null, "{ }", "Virginia", "2021-03-22T00:00:00", "82800", "82800" ]
+, [ "row-phgd_gy78_byfq", "00000000-0000-0000-CD32-3E03F820C551", 0, 1617797148, null, 1617797148, null, "{ }", "West Virginia", "2021-03-22T00:00:00", "18500", "18500" ]
+, [ "row-fuj6~xp98_bgtp", "00000000-0000-0000-98BC-6A664C990F1E", 0, 1617797148, null, 1617797148, null, "{ }", "Alabama", "2021-03-22T00:00:00", "47700", "47700" ]
+, [ "row-nui9~6v2t_nwcs", "00000000-0000-0000-FF7C-4B49E107897D", 0, 1617797148, null, 1617797148, null, "{ }", "Florida", "2021-03-22T00:00:00", "208000", "208000" ]
+, [ "row-ybsq.hue2.bhbn", "00000000-0000-0000-5340-9241951862A7", 0, 1617797148, null, 1617797148, null, "{ }", "Georgia", "2021-03-22T00:00:00", "98600", "98600" ]
+, [ "row-amaa_xdvy_k5n7", "00000000-0000-0000-D62E-442A608A8389", 0, 1617797148, null, 1617797148, null, "{ }", "Kentucky", "2021-03-22T00:00:00", "43400", "43400" ]
+, [ "row-e4au~jraj_m65b", "00000000-0000-0000-FF19-9C2C953BD703", 0, 1617797148, null, 1617797148, null, "{ }", "Mississippi", "2021-03-22T00:00:00", "28700", "28700" ]
+, [ "row-xj66_5r2v_6f8t", "00000000-0000-0000-FAC9-6A3636595F02", 0, 1617797148, null, 1617797148, null, "{ }", "North Carolina", "2021-03-22T00:00:00", "99500", "99500" ]
+, [ "row-qv3m.5wpf-wgjp", "00000000-0000-0000-28D5-493C496E0190", 0, 1617797148, null, 1617797148, null, "{ }", "South Carolina", "2021-03-22T00:00:00", "48800", "48800" ]
+, [ "row-4vtu_sgdd-2a42", "00000000-0000-0000-D4B4-C5515B735073", 0, 1617797148, null, 1617797148, null, "{ }", "Tennessee", "2021-03-22T00:00:00", "65200", "65200" ]
+, [ "row-4fhg.y9a3.msta", "00000000-0000-0000-8100-87AEB25ED199", 0, 1617797148, null, 1617797148, null, "{ }", "Chicago", "2021-03-22T00:00:00", "26500", "26500" ]
+, [ "row-urej-3pti~e6eh", "00000000-0000-0000-7037-DED6A26B3480", 0, 1617797148, null, 1617797148, null, "{ }", "Illinois", "2021-03-22T00:00:00", "98700", "98700" ]
+, [ "row-bz98-jrfd_54kc", "00000000-0000-0000-2A3E-D5B8B6684DB0", 0, 1617797148, null, 1617797148, null, "{ }", "Indiana", "2021-03-22T00:00:00", "64100", "64100" ]
+, [ "row-vj43.ksvw_6na8", "00000000-0000-0000-5B45-CA3D7478DEEF", 0, 1617797148, null, 1617797148, null, "{ }", "Michigan", "2021-03-22T00:00:00", "98200", "98200" ]
+, [ "row-yvtp~thji~7wgx", "00000000-0000-0000-DC41-F2983D52356E", 0, 1617797148, null, 1617797148, null, "{ }", "Minnesota", "2021-03-22T00:00:00", "53800", "53800" ]
+, [ "row-4k3n.kdjx-4a6n", "00000000-0000-0000-EB04-7472A200A53B", 0, 1617797148, null, 1617797148, null, "{ }", "Ohio", "2021-03-22T00:00:00", "114100", "114100" ]
+, [ "row-c4mu~5gsd.cuvk", "00000000-0000-0000-7E4B-3E206863AB15", 0, 1617797148, null, 1617797148, null, "{ }", "Wisconsin", "2021-03-22T00:00:00", "57100", "57100" ]
+, [ "row-vmq4.9tvx-8su9", "00000000-0000-0000-D93B-7CC00650C489", 0, 1617797148, null, 1617797148, null, "{ }", "Arkansas", "2021-03-22T00:00:00", "28900", "28900" ]
+, [ "row-st2k_tcxs_h8cb", "00000000-0000-0000-6D8F-C449EA5F6C75", 0, 1617797148, null, 1617797148, null, "{ }", "Louisiana", "2021-03-22T00:00:00", "45000", "45000" ]
+, [ "row-pskq_6a92.mv7w", "00000000-0000-0000-369D-759C49BAC885", 0, 1617797148, null, 1617797148, null, "{ }", "New Mexico", "2021-03-22T00:00:00", "20500", "20500" ]
+, [ "row-fksc~5k2e.n6rx", "00000000-0000-0000-0297-AF2E63F6DBB4", 0, 1617797148, null, 1617797148, null, "{ }", "Oklahoma", "2021-03-22T00:00:00", "37500", "37500" ]
+, [ "row-tvcv-je9p_8wja", "00000000-0000-0000-A27A-AD6565725351", 0, 1617797148, null, 1617797148, null, "{ }", "Texas", "2021-03-22T00:00:00", "260400", "260400" ]
+, [ "row-28f7_jg3u~h8pe", "00000000-0000-0000-259F-426E33ABBABD", 0, 1617797148, null, 1617797148, null, "{ }", "Iowa", "2021-03-22T00:00:00", "30400", "30400" ]
+, [ "row-7mvz.8dv5-pt2k", "00000000-0000-0000-DFF6-C2E11D70AA1A", 0, 1617797148, null, 1617797148, null, "{ }", "Kansas", "2021-03-22T00:00:00", "27800", "27800" ]
+, [ "row-ik5m~rb97~bj5g", "00000000-0000-0000-1FA7-131FE78E036B", 0, 1617797148, null, 1617797148, null, "{ }", "Missouri", "2021-03-22T00:00:00", "59500", "59500" ]
+, [ "row-fhpw-buw6.aip2", "00000000-0000-0000-CB7E-655CBE66C4A8", 0, 1617797148, null, 1617797148, null, "{ }", "Nebraska", "2021-03-22T00:00:00", "18400", "18400" ]
+, [ "row-i669~ztdw-v62g", "00000000-0000-0000-78CB-6A05F94C5F4E", 0, 1617797148, null, 1617797148, null, "{ }", "Colorado", "2021-03-22T00:00:00", "54100", "54100" ]
+, [ "row-ircd~k5wz~45vn", "00000000-0000-0000-4544-770D7BD90010", 0, 1617797148, null, 1617797148, null, "{ }", "Montana", "2021-03-22T00:00:00", "10400", "10400" ]
+, [ "row-hy6m-7y3r.t248", "00000000-0000-0000-4F1A-D54511F8897B", 0, 1617797148, null, 1617797148, null, "{ }", "North Dakota", "2021-03-22T00:00:00", "7500", "7500" ]
+, [ "row-ewai-8jaq~4zxw", "00000000-0000-0000-A1BF-322FA686A2CF", 0, 1617797148, null, 1617797148, null, "{ }", "South Dakota", "2021-03-22T00:00:00", "8300", "8300" ]
+, [ "row-wb44-tm8n.pfjr", "00000000-0000-0000-F32B-D20D71990B13", 0, 1617797148, null, 1617797148, null, "{ }", "Utah", "2021-03-22T00:00:00", "27100", "27100" ]
+, [ "row-fvke.pu83_jxke", "00000000-0000-0000-C519-69FEE7A68CB8", 0, 1617797148, null, 1617797148, null, "{ }", "Wyoming", "2021-03-22T00:00:00", "5700", "5700" ]
+, [ "row-5ex2-5u8s~mjht", "00000000-0000-0000-364E-DE783C7017B3", 0, 1617797148, null, 1617797148, null, "{ }", "Arizona", "2021-03-22T00:00:00", "67600", "67600" ]
+, [ "row-3r8g-d5m2-r78m", "00000000-0000-0000-A057-B97318B5AE5B", 0, 1617797148, null, 1617797148, null, "{ }", "California", "2021-03-22T00:00:00", "380300", "380300" ]
+, [ "row-j8j9~hn9h_whbd", "00000000-0000-0000-F381-4B970F58DF15", 0, 1617797148, null, 1617797148, null, "{ }", "Hawaii", "2021-03-22T00:00:00", "14200", "14200" ]
+, [ "row-er5v-ue5v.kkm6", "00000000-0000-0000-3EFD-54D5CAB01A47", 0, 1617797148, null, 1617797148, null, "{ }", "Nevada", "2021-03-22T00:00:00", "28500", "28500" ]
+, [ "row-vkiy~n8fv~en7e", "00000000-0000-0000-EFFB-91CFAD21FEB2", 0, 1617797148, null, 1617797148, null, "{ }", "American Samoa", "2021-03-22T00:00:00", "0", "0" ]
+, [ "row-ifvc.gznv_6mfx", "00000000-0000-0000-E596-29450336117C", 0, 1617797148, null, 1617797148, null, "{ }", "Guam", "2021-03-22T00:00:00", "0", "0" ]
+, [ "row-c84n.htem~ww9n", "00000000-0000-0000-0360-BFBC04778F2B", 0, 1617797148, null, 1617797148, null, "{ }", "Marshall Islands", "2021-03-22T00:00:00", "0", "0" ]
+, [ "row-kxxc~saj2_id3r", "00000000-0000-0000-F0D0-62F4920D9B6B", 0, 1617797148, null, 1617797148, null, "{ }", "Micronesia", "2021-03-22T00:00:00", "0", "0" ]
+, [ "row-yi4e~6ryx_z6yg", "00000000-0000-0000-442B-48BFC7EE4DC3", 0, 1617797148, null, 1617797148, null, "{ }", "Mariana Islands", "2021-03-22T00:00:00", "0", "0" ]
+, [ "row-26hc~sktb_8en2", "00000000-0000-0000-A2AA-984510432E52", 0, 1617797148, null, 1617797148, null, "{ }", "Palau", "2021-03-22T00:00:00", "0", "0" ]
+, [ "row-4cxa~uv4g~f57v", "00000000-0000-0000-37A1-FE745B50AFD0", 0, 1617797148, null, 1617797148, null, "{ }", "Alaska", "2021-03-22T00:00:00", "0", "0" ]
+, [ "row-57n9-ezs8_gwii", "00000000-0000-0000-C483-A5CA4ECB77F4", 0, 1617797148, null, 1617797148, null, "{ }", "Idaho", "2021-03-22T00:00:00", "15800", "15800" ]
+, [ "row-9f3f_dpdq-etet", "00000000-0000-0000-0BEC-51876A784327", 0, 1617797148, null, 1617797148, null, "{ }", "Oregon", "2021-03-22T00:00:00", "40800", "40800" ]
+, [ "row-4cv5~ia8t-73v4", "00000000-0000-0000-7077-05C637D49E51", 0, 1617797148, null, 1617797148, null, "{ }", "Washington", "2021-03-22T00:00:00", "72400", "72400" ]
+, [ "row-gzcs.9ykd-yxet", "00000000-0000-0000-2A55-97FAB3996A89", 0, 1617797148, null, 1617797148, null, "{ }", "Federal Entities", "2021-03-22T00:00:00", "143000", "143000" ]
+, [ "row-s8u3_sunh~bux6", "00000000-0000-0000-E40E-4D9DA1F1A0A1", 0, 1617797148, null, 1617797148, null, "{ }", "Connecticut", "2021-03-15T00:00:00", "35800", "35800" ]
+, [ "row-y4yg-32mv.3jxi", "00000000-0000-0000-245B-F293F7211287", 0, 1617797148, null, 1617797148, null, "{ }", "Maine", "2021-03-15T00:00:00", "13700", "13700" ]
+, [ "row-kkw5~w7qf-figp", "00000000-0000-0000-81B0-20B6A64E26DC", 0, 1617797148, null, 1617797148, null, "{ }", "Massachusetts", "2021-03-15T00:00:00", "69000", "69000" ]
+, [ "row-v77d_3yjn~7xv6", "00000000-0000-0000-CB0B-938D9265A2D7", 0, 1617797148, null, 1617797148, null, "{ }", "New Hampshire", "2021-03-15T00:00:00", "13700", "13700" ]
+, [ "row-yusj.47mk_6qgw", "00000000-0000-0000-4635-2AB573D8E824", 0, 1617797148, null, 1617797148, null, "{ }", "Rhode Island", "2021-03-15T00:00:00", "10800", "10800" ]
+, [ "row-gmcg.i7w6_wb73", "00000000-0000-0000-73EF-5447FE4217EA", 0, 1617797148, null, 1617797148, null, "{ }", "Vermont", "2021-03-15T00:00:00", "6500", "6500" ]
+, [ "row-mmds-ex92-dmng", "00000000-0000-0000-DAA6-FA849B975BC5", 0, 1617797148, null, 1617797148, null, "{ }", "New Jersey", "2021-03-15T00:00:00", "87400", "87400" ]
+, [ "row-7f2c.4bnn_n9mb", "00000000-0000-0000-0EAD-6F54F0086134", 0, 1617797148, null, 1617797148, null, "{ }", "New York", "2021-03-15T00:00:00", "111300", "111300" ]
+, [ "row-j7ei.izns~29jq", "00000000-0000-0000-2783-AE0BE72DC482", 0, 1617797148, null, 1617797148, null, "{ }", "New York City", "2021-03-15T00:00:00", "84500", "84500" ]
+, [ "row-npvp_me4i~cndy", "00000000-0000-0000-C155-B97FA124C87B", 0, 1617797148, null, 1617797148, null, "{ }", "Puerto Rico", "2021-03-15T00:00:00", "34200", "34200" ]
+, [ "row-jhwa.gc9s-ufwb", "00000000-0000-0000-C0A1-3909A3653E8F", 0, 1617797148, null, 1617797148, null, "{ }", "U.S. Virgin Islands", "2021-03-15T00:00:00", "1100", "1100" ]
+, [ "row-aqn2-f3xi~eb76", "00000000-0000-0000-EDC4-4BE04E9C0108", 0, 1617797148, null, 1617797148, null, "{ }", "Delaware", "2021-03-15T00:00:00", "9500", "9500" ]
+, [ "row-eet9.tgdv.hxtu", "00000000-0000-0000-9485-B01EFEE4CE39", 0, 1617797148, null, 1617797148, null, "{ }", "District of Columbia", "2021-03-15T00:00:00", "7200", "7200" ]
+, [ "row-seiw.es2r.r5hy", "00000000-0000-0000-D114-A92D5923602E", 0, 1617797148, null, 1617797148, null, "{ }", "Maryland", "2021-03-15T00:00:00", "59000", "59000" ]
+, [ "row-ktqi~t3p3~3sqr", "00000000-0000-0000-EEC0-D0545BC8AA14", 0, 1617797148, null, 1617797148, null, "{ }", "Pennsylvania", "2021-03-15T00:00:00", "112400", "112400" ]
+, [ "row-7qad.qr4c_3ehs", "00000000-0000-0000-8FC0-DBAB97198958", 0, 1617797148, null, 1617797148, null, "{ }", "Philadelphia", "2021-03-15T00:00:00", "15600", "15600" ]
+, [ "row-c9qj_yhxy-m8q3", "00000000-0000-0000-B50D-72F1547967EE", 0, 1617797148, null, 1617797148, null, "{ }", "Virginia", "2021-03-15T00:00:00", "82800", "82800" ]
+, [ "row-3eah-kqhg.crnn", "00000000-0000-0000-9B87-79AA8FBE7F55", 0, 1617797148, null, 1617797148, null, "{ }", "West Virginia", "2021-03-15T00:00:00", "18500", "18500" ]
+, [ "row-pskv~cj6e_qm3f", "00000000-0000-0000-5893-6166EE2EBC9E", 0, 1617797148, null, 1617797148, null, "{ }", "Alabama", "2021-03-15T00:00:00", "47700", "47700" ]
+, [ "row-9a8b_izf3_td6k", "00000000-0000-0000-3958-BAA23C59DD04", 0, 1617797148, null, 1617797148, null, "{ }", "Florida", "2021-03-15T00:00:00", "208000", "208000" ]
+, [ "row-x5wc-mh4n-3pbx", "00000000-0000-0000-254D-E6B87D2261AC", 0, 1617797148, null, 1617797148, null, "{ }", "Georgia", "2021-03-15T00:00:00", "98600", "98600" ]
+, [ "row-45g2_udcm-fe7s", "00000000-0000-0000-263A-51C30E8CE959", 0, 1617797148, null, 1617797148, null, "{ }", "Kentucky", "2021-03-15T00:00:00", "43400", "43400" ]
+, [ "row-c8eq~hhrj_5f7c", "00000000-0000-0000-D691-A28CB1356BD4", 0, 1617797148, null, 1617797148, null, "{ }", "Mississippi", "2021-03-15T00:00:00", "28700", "28700" ]
+, [ "row-qf4g.bh9b_9bhe", "00000000-0000-0000-1A59-C7664CE280F0", 0, 1617797148, null, 1617797148, null, "{ }", "North Carolina", "2021-03-15T00:00:00", "99500", "99500" ]
+, [ "row-bw7v-agpn~xu3a", "00000000-0000-0000-D6FF-0D45AF5BA730", 0, 1617797148, null, 1617797148, null, "{ }", "South Carolina", "2021-03-15T00:00:00", "48800", "48800" ]
+, [ "row-48si.cp9w~7ca2", "00000000-0000-0000-434C-1E4403393C9C", 0, 1617797148, null, 1617797148, null, "{ }", "Tennessee", "2021-03-15T00:00:00", "65200", "65200" ]
+, [ "row-9k7j~bjfs~e9ju", "00000000-0000-0000-F04F-7BF7012C786A", 0, 1617797148, null, 1617797148, null, "{ }", "Chicago", "2021-03-15T00:00:00", "26500", "26500" ]
+, [ "row-f74k.4dpw~2cnd", "00000000-0000-0000-71F1-1824C3DF8BF1", 0, 1617797148, null, 1617797148, null, "{ }", "Illinois", "2021-03-15T00:00:00", "98700", "98700" ]
+, [ "row-xtm5.yrwp-52nq", "00000000-0000-0000-FCCB-6DB78BAE597B", 0, 1617797148, null, 1617797148, null, "{ }", "Indiana", "2021-03-15T00:00:00", "64100", "64100" ]
+, [ "row-srcm-tyvw-f2d9", "00000000-0000-0000-21C9-912DE16009D8", 0, 1617797148, null, 1617797148, null, "{ }", "Michigan", "2021-03-15T00:00:00", "98200", "98200" ]
+, [ "row-dafp_tpqn-vhjq", "00000000-0000-0000-9A19-30C3B9ED76C3", 0, 1617797148, null, 1617797148, null, "{ }", "Minnesota", "2021-03-15T00:00:00", "53800", "53800" ]
+, [ "row-z8cp.jz4a~didq", "00000000-0000-0000-B874-874EE0920493", 0, 1617797148, null, 1617797148, null, "{ }", "Ohio", "2021-03-15T00:00:00", "114100", "114100" ]
+, [ "row-6tpc~qeay_hmhz", "00000000-0000-0000-CE2C-40F916F0D571", 0, 1617797148, null, 1617797148, null, "{ }", "Wisconsin", "2021-03-15T00:00:00", "57100", "57100" ]
+, [ "row-t5r4~ufbv.juw6", "00000000-0000-0000-5C50-9A4B3BF55290", 0, 1617797148, null, 1617797148, null, "{ }", "Arkansas", "2021-03-15T00:00:00", "28900", "28900" ]
+, [ "row-23ga-r75e-zfs3", "00000000-0000-0000-04D0-05E8E014A313", 0, 1617797148, null, 1617797148, null, "{ }", "Louisiana", "2021-03-15T00:00:00", "45000", "45000" ]
+, [ "row-hc97_nrc6-x7fu", "00000000-0000-0000-8E5E-110C9E5C0462", 0, 1617797148, null, 1617797148, null, "{ }", "New Mexico", "2021-03-15T00:00:00", "20500", "20500" ]
+, [ "row-vixr.miqh.rcq9", "00000000-0000-0000-3461-49C2E9EFC69E", 0, 1617797148, null, 1617797148, null, "{ }", "Oklahoma", "2021-03-15T00:00:00", "37500", "37500" ]
+, [ "row-d428~kvv5_hymh", "00000000-0000-0000-FD75-1F7D08E12970", 0, 1617797148, null, 1617797148, null, "{ }", "Texas", "2021-03-15T00:00:00", "260400", "260400" ]
+, [ "row-4dwq~9wxr.c28r", "00000000-0000-0000-7951-B9839B143060", 0, 1617797148, null, 1617797148, null, "{ }", "Iowa", "2021-03-15T00:00:00", "30400", "30400" ]
+, [ "row-2e6s-auxv_d76v", "00000000-0000-0000-AA7D-22EB5F626C72", 0, 1617797148, null, 1617797148, null, "{ }", "Kansas", "2021-03-15T00:00:00", "27800", "27800" ]
+, [ "row-tzu8_499h.xztq", "00000000-0000-0000-EFDC-2752C7C341E3", 0, 1617797148, null, 1617797148, null, "{ }", "Missouri", "2021-03-15T00:00:00", "59500", "59500" ]
+, [ "row-iehb-cnrj_6gzn", "00000000-0000-0000-C612-ADAB120F853D", 0, 1617797148, null, 1617797148, null, "{ }", "Nebraska", "2021-03-15T00:00:00", "18400", "18400" ]
+, [ "row-pck8~a7hq.ysbj", "00000000-0000-0000-84D3-A863714857B3", 0, 1617797148, null, 1617797148, null, "{ }", "Colorado", "2021-03-15T00:00:00", "54100", "54100" ]
+, [ "row-9nbc_sfqb~q9c8", "00000000-0000-0000-BA0E-087D18F3C532", 0, 1617797148, null, 1617797148, null, "{ }", "Montana", "2021-03-15T00:00:00", "10400", "10400" ]
+, [ "row-9mc8-ycmk-kpm7", "00000000-0000-0000-4811-72E0333B26DF", 0, 1617797148, null, 1617797148, null, "{ }", "North Dakota", "2021-03-15T00:00:00", "7500", "7500" ]
+, [ "row-d6xz-bhya~2wfv", "00000000-0000-0000-A30A-F3FF5E6944E3", 0, 1617797148, null, 1617797148, null, "{ }", "South Dakota", "2021-03-15T00:00:00", "8300", "8300" ]
+, [ "row-ynui-59ig.6a9n", "00000000-0000-0000-BCD7-7A977F16938A", 0, 1617797148, null, 1617797148, null, "{ }", "Utah", "2021-03-15T00:00:00", "27100", "27100" ]
+, [ "row-4ay9.zcfu-pu77", "00000000-0000-0000-7BB0-947DD8B0EB60", 0, 1617797148, null, 1617797148, null, "{ }", "Wyoming", "2021-03-15T00:00:00", "5700", "5700" ]
+, [ "row-9m5b-9vha.hmd7", "00000000-0000-0000-7571-47455A01D1AC", 0, 1617797148, null, 1617797148, null, "{ }", "Arizona", "2021-03-15T00:00:00", "67600", "67600" ]
+, [ "row-ura4~upqi~5hxw", "00000000-0000-0000-52B3-1C0C3E254F57", 0, 1617797148, null, 1617797148, null, "{ }", "California", "2021-03-15T00:00:00", "380300", "380300" ]
+, [ "row-2u89_kmr3~6bty", "00000000-0000-0000-B382-94BE8EBFAA2A", 0, 1617797148, null, 1617797148, null, "{ }", "Hawaii", "2021-03-15T00:00:00", "14200", "14200" ]
+, [ "row-34f4-twdi-iund", "00000000-0000-0000-E799-6B9EB5DC38BB", 0, 1617797148, null, 1617797148, null, "{ }", "Nevada", "2021-03-15T00:00:00", "28500", "28500" ]
+, [ "row-75h4~sz2t~j7na", "00000000-0000-0000-F1B1-2C7D97F7BC26", 0, 1617797148, null, 1617797148, null, "{ }", "American Samoa", "2021-03-15T00:00:00", "0", "0" ]
+, [ "row-835s~zyex~wcnf", "00000000-0000-0000-A708-7071595A329C", 0, 1617797148, null, 1617797148, null, "{ }", "Guam", "2021-03-15T00:00:00", "0", "0" ]
+, [ "row-e4dk~3n7v-56bu", "00000000-0000-0000-C287-D227BD402643", 0, 1617797148, null, 1617797148, null, "{ }", "Marshall Islands", "2021-03-15T00:00:00", "0", "0" ]
+, [ "row-957w-xe4q-xudu", "00000000-0000-0000-3D8F-2A325AD9BE55", 0, 1617797148, null, 1617797148, null, "{ }", "Micronesia", "2021-03-15T00:00:00", "0", "0" ]
+, [ "row-5xf4-akex-7cu7", "00000000-0000-0000-97F6-A03887901980", 0, 1617797148, null, 1617797148, null, "{ }", "Mariana Islands", "2021-03-15T00:00:00", "0", "0" ]
+, [ "row-bjjz_hpji.43g2", "00000000-0000-0000-73A6-B52C657AAB74", 0, 1617797148, null, 1617797148, null, "{ }", "Palau", "2021-03-15T00:00:00", "0", "0" ]
+, [ "row-x52a.b6kn-c5k5", "00000000-0000-0000-F337-85D194E04F19", 0, 1617797148, null, 1617797148, null, "{ }", "Alaska", "2021-03-15T00:00:00", "0", "0" ]
+, [ "row-9i5h.tb6z.hh3g", "00000000-0000-0000-F9DD-2B66CD1A7B8B", 0, 1617797148, null, 1617797148, null, "{ }", "Idaho", "2021-03-15T00:00:00", "15800", "15800" ]
+, [ "row-8atw-8fb4-9uwv", "00000000-0000-0000-EB02-10DBCC4CF7DF", 0, 1617797148, null, 1617797148, null, "{ }", "Oregon", "2021-03-15T00:00:00", "40800", "40800" ]
+, [ "row-q2pq_8pwj.26kx", "00000000-0000-0000-BE12-2A137A00DA4B", 0, 1617797148, null, 1617797148, null, "{ }", "Washington", "2021-03-15T00:00:00", "72400", "72400" ]
+, [ "row-5h9i_h4y9-6tpk", "00000000-0000-0000-4887-4A5FDEA1D307", 0, 1617797148, null, 1617797148, null, "{ }", "Federal Entities", "2021-03-15T00:00:00", "143000", "143000" ]
+, [ "row-a6sn~kg6u-e2bb", "00000000-0000-0000-9CD5-38740910412E", 0, 1617797148, null, 1617797148, null, "{ }", "Connecticut", "2021-03-08T00:00:00", "35800", "35800" ]
+, [ "row-autr_6wi3-2xpa", "00000000-0000-0000-FDBA-307184003158", 0, 1617797148, null, 1617797148, null, "{ }", "Maine", "2021-03-08T00:00:00", "13700", "13700" ]
+, [ "row-338n.gzh2.ce2g", "00000000-0000-0000-2BB7-EC443B2A7967", 0, 1617797148, null, 1617797148, null, "{ }", "Massachusetts", "2021-03-08T00:00:00", "69000", "69000" ]
+, [ "row-p9ut_fv48_xk8p", "00000000-0000-0000-F035-A0FA62C1901E", 0, 1617797148, null, 1617797148, null, "{ }", "New Hampshire", "2021-03-08T00:00:00", "13700", "13700" ]
+, [ "row-67ez-xya3~c42p", "00000000-0000-0000-687B-83A2D91AA561", 0, 1617797148, null, 1617797148, null, "{ }", "Rhode Island", "2021-03-08T00:00:00", "10800", "10800" ]
+, [ "row-add8_yvv8_x7ad", "00000000-0000-0000-62D5-99206B8E4F00", 0, 1617797148, null, 1617797148, null, "{ }", "Vermont", "2021-03-08T00:00:00", "6500", "6500" ]
+, [ "row-9zp2~3j2b_yusb", "00000000-0000-0000-5C70-8174D8653172", 0, 1617797148, null, 1617797148, null, "{ }", "New Jersey", "2021-03-08T00:00:00", "87400", "87400" ]
+, [ "row-njgi_rf2c.njwu", "00000000-0000-0000-C1F3-5F099D8F651E", 0, 1617797148, null, 1617797148, null, "{ }", "New York", "2021-03-08T00:00:00", "111300", "111300" ]
+, [ "row-k8nv_d5ju_b2pz", "00000000-0000-0000-469C-BD619F8A8321", 0, 1617797148, null, 1617797148, null, "{ }", "New York City", "2021-03-08T00:00:00", "84500", "84500" ]
+, [ "row-r2ed_jw8j-igxg", "00000000-0000-0000-09D4-E42A86644332", 0, 1617797148, null, 1617797148, null, "{ }", "Puerto Rico", "2021-03-08T00:00:00", "34200", "34200" ]
+, [ "row-rg8q.45fp_22t9", "00000000-0000-0000-659B-2C2EB72AF3D6", 0, 1617797148, null, 1617797148, null, "{ }", "U.S. Virgin Islands", "2021-03-08T00:00:00", "1100", "1100" ]
+, [ "row-999t.zezb.ma3y", "00000000-0000-0000-4A20-59997A956B1A", 0, 1617797148, null, 1617797148, null, "{ }", "Delaware", "2021-03-08T00:00:00", "9500", "9500" ]
+, [ "row-ii2c~9nn3_e82d", "00000000-0000-0000-BACC-FF9844BF7E06", 0, 1617797148, null, 1617797148, null, "{ }", "District of Columbia", "2021-03-08T00:00:00", "7200", "7200" ]
+, [ "row-fjcu~9mpd_uyy4", "00000000-0000-0000-6614-70A7CF553BB7", 0, 1617797148, null, 1617797148, null, "{ }", "Maryland", "2021-03-08T00:00:00", "59000", "59000" ]
+, [ "row-6xip_i467.xjbg", "00000000-0000-0000-2E9C-F030587375DA", 0, 1617797148, null, 1617797148, null, "{ }", "Pennsylvania", "2021-03-08T00:00:00", "112400", "112400" ]
+, [ "row-6i9v.4yva_ftdu", "00000000-0000-0000-947C-874FDB2A4CEB", 0, 1617797148, null, 1617797148, null, "{ }", "Philadelphia", "2021-03-08T00:00:00", "15600", "15600" ]
+, [ "row-hqzk~92h5_2hki", "00000000-0000-0000-1178-DAF519946906", 0, 1617797148, null, 1617797148, null, "{ }", "Virginia", "2021-03-08T00:00:00", "82800", "82800" ]
+, [ "row-gxfs_yyvt-nv2p", "00000000-0000-0000-EDE8-C80D7C48A371", 0, 1617797148, null, 1617797148, null, "{ }", "West Virginia", "2021-03-08T00:00:00", "18500", "18500" ]
+, [ "row-mhp2~t7vc~qrrc", "00000000-0000-0000-3431-2DD482E3A66F", 0, 1617797148, null, 1617797148, null, "{ }", "Alabama", "2021-03-08T00:00:00", "47700", "47700" ]
+, [ "row-m4td~5npp.9kex", "00000000-0000-0000-2443-9A932D2001A4", 0, 1617797148, null, 1617797148, null, "{ }", "Florida", "2021-03-08T00:00:00", "208000", "208000" ]
+, [ "row-7q2q-4sa3-iwhs", "00000000-0000-0000-5FA2-BD86CB8F17F1", 0, 1617797148, null, 1617797148, null, "{ }", "Georgia", "2021-03-08T00:00:00", "98600", "98600" ]
+, [ "row-g994-zayz-xzzg", "00000000-0000-0000-1886-4D20334D2844", 0, 1617797148, null, 1617797148, null, "{ }", "Kentucky", "2021-03-08T00:00:00", "43400", "43400" ]
+, [ "row-iz27~ffpp-29gz", "00000000-0000-0000-5812-039347DC0534", 0, 1617797148, null, 1617797148, null, "{ }", "Mississippi", "2021-03-08T00:00:00", "28700", "28700" ]
+, [ "row-9upy_545i_4y69", "00000000-0000-0000-29FC-4AEC71110616", 0, 1617797148, null, 1617797148, null, "{ }", "North Carolina", "2021-03-08T00:00:00", "99500", "99500" ]
+, [ "row-6fdh~bzg7~43im", "00000000-0000-0000-2A71-29C61BE9994A", 0, 1617797148, null, 1617797148, null, "{ }", "South Carolina", "2021-03-08T00:00:00", "48800", "48800" ]
+, [ "row-uegm~pj42_ewhn", "00000000-0000-0000-0A18-AF0FACD7D6EF", 0, 1617797148, null, 1617797148, null, "{ }", "Tennessee", "2021-03-08T00:00:00", "65200", "65200" ]
+, [ "row-gpek~irre.3unn", "00000000-0000-0000-BB7D-63C9B449A829", 0, 1617797148, null, 1617797148, null, "{ }", "Chicago", "2021-03-08T00:00:00", "26500", "26500" ]
+, [ "row-fpmi-q9jr-gyj5", "00000000-0000-0000-79F7-791CE02E31D1", 0, 1617797148, null, 1617797148, null, "{ }", "Illinois", "2021-03-08T00:00:00", "98700", "98700" ]
+, [ "row-ftax.zknd_6kz4", "00000000-0000-0000-4C49-D27889D55765", 0, 1617797148, null, 1617797148, null, "{ }", "Indiana", "2021-03-08T00:00:00", "64100", "64100" ]
+, [ "row-8yii.e8kq_ugak", "00000000-0000-0000-34DE-D787B967EA6C", 0, 1617797148, null, 1617797148, null, "{ }", "Michigan", "2021-03-08T00:00:00", "98200", "98200" ]
+, [ "row-a358~ibek.r6df", "00000000-0000-0000-5044-17898278668D", 0, 1617797148, null, 1617797148, null, "{ }", "Minnesota", "2021-03-08T00:00:00", "53800", "53800" ]
+, [ "row-pim5_8hpx_bfyn", "00000000-0000-0000-C80E-20907964B6B7", 0, 1617797148, null, 1617797148, null, "{ }", "Ohio", "2021-03-08T00:00:00", "114100", "114100" ]
+, [ "row-phws~a4uz_8tak", "00000000-0000-0000-A480-AE0EEC81D3A5", 0, 1617797148, null, 1617797148, null, "{ }", "Wisconsin", "2021-03-08T00:00:00", "57100", "57100" ]
+, [ "row-2a69_66r7.s2zi", "00000000-0000-0000-098F-3B2366A6EF19", 0, 1617797148, null, 1617797148, null, "{ }", "Arkansas", "2021-03-08T00:00:00", "28900", "28900" ]
+, [ "row-gzxm.xqn5_nt28", "00000000-0000-0000-B644-6D4724E50849", 0, 1617797148, null, 1617797148, null, "{ }", "Louisiana", "2021-03-08T00:00:00", "45000", "45000" ]
+, [ "row-7u72-rugx-cq5a", "00000000-0000-0000-94A1-665470FFC4CA", 0, 1617797148, null, 1617797148, null, "{ }", "New Mexico", "2021-03-08T00:00:00", "20500", "20500" ]
+, [ "row-sc9f~9dvq-8i77", "00000000-0000-0000-DCCE-2FDE373448D4", 0, 1617797148, null, 1617797148, null, "{ }", "Oklahoma", "2021-03-08T00:00:00", "37500", "37500" ]
+, [ "row-zpzz~gwf8.eqri", "00000000-0000-0000-FFBE-18BDECBC1793", 0, 1617797148, null, 1617797148, null, "{ }", "Texas", "2021-03-08T00:00:00", "260400", "260400" ]
+, [ "row-e9vv.q7iw~uce3", "00000000-0000-0000-B6CA-6DD7BBE4003D", 0, 1617797148, null, 1617797148, null, "{ }", "Iowa", "2021-03-08T00:00:00", "30400", "30400" ]
+, [ "row-mqtx~49wg-n2xc", "00000000-0000-0000-8BCA-79E42FC2EBBA", 0, 1617797148, null, 1617797148, null, "{ }", "Kansas", "2021-03-08T00:00:00", "27800", "27800" ]
+, [ "row-xci9~tmmm_s8xr", "00000000-0000-0000-3B79-EE42453D302C", 0, 1617797148, null, 1617797148, null, "{ }", "Missouri", "2021-03-08T00:00:00", "59500", "59500" ]
+, [ "row-iub6_hqba-6pj6", "00000000-0000-0000-041A-7C27C269D680", 0, 1617797148, null, 1617797148, null, "{ }", "Nebraska", "2021-03-08T00:00:00", "18400", "18400" ]
+, [ "row-qa7n-k7bf.c8ij", "00000000-0000-0000-92D3-EDCCF301F878", 0, 1617797148, null, 1617797148, null, "{ }", "Colorado", "2021-03-08T00:00:00", "54100", "54100" ]
+, [ "row-4egf_cwdj.76x8", "00000000-0000-0000-59B4-13E6BE229650", 0, 1617797148, null, 1617797148, null, "{ }", "Montana", "2021-03-08T00:00:00", "10400", "10400" ]
+, [ "row-spbh~3fys~mywf", "00000000-0000-0000-015A-CD0CC0901B13", 0, 1617797148, null, 1617797148, null, "{ }", "North Dakota", "2021-03-08T00:00:00", "7500", "7500" ]
+, [ "row-bqm7-tkvu_wwcm", "00000000-0000-0000-D2B2-DB1A4686E31B", 0, 1617797148, null, 1617797148, null, "{ }", "South Dakota", "2021-03-08T00:00:00", "8300", "8300" ]
+, [ "row-4qj2.paqj_njdf", "00000000-0000-0000-281E-0EA214EE903E", 0, 1617797148, null, 1617797148, null, "{ }", "Utah", "2021-03-08T00:00:00", "27100", "27100" ]
+, [ "row-7hw6.uymi-fca3", "00000000-0000-0000-F26A-269A3C69168D", 0, 1617797148, null, 1617797148, null, "{ }", "Wyoming", "2021-03-08T00:00:00", "5700", "5700" ]
+, [ "row-5pzj~6euq~tnuc", "00000000-0000-0000-40A9-938EF44047E9", 0, 1617797148, null, 1617797148, null, "{ }", "Arizona", "2021-03-08T00:00:00", "67600", "67600" ]
+, [ "row-z39z~e5ic-buix", "00000000-0000-0000-956A-3A8EA0000AE0", 0, 1617797148, null, 1617797148, null, "{ }", "California", "2021-03-08T00:00:00", "380300", "380300" ]
+, [ "row-ywh4.v9kf.rqcz", "00000000-0000-0000-D9E2-D66A99ADFF3D", 0, 1617797148, null, 1617797148, null, "{ }", "Hawaii", "2021-03-08T00:00:00", "14200", "14200" ]
+, [ "row-7gks~uxt5~t7au", "00000000-0000-0000-1379-C1982259A5C1", 0, 1617797148, null, 1617797148, null, "{ }", "Nevada", "2021-03-08T00:00:00", "28500", "28500" ]
+, [ "row-asj3.uga6_jsbf", "00000000-0000-0000-F524-B91CDE8E9A70", 0, 1617797148, null, 1617797148, null, "{ }", "American Samoa", "2021-03-08T00:00:00", "0", "0" ]
+, [ "row-ea5n~jsna.bgma", "00000000-0000-0000-EE89-6A38025AE857", 0, 1617797148, null, 1617797148, null, "{ }", "Guam", "2021-03-08T00:00:00", "0", "0" ]
+, [ "row-dm7h.3fue.ikfi", "00000000-0000-0000-BACE-F00AE5174FB2", 0, 1617797148, null, 1617797148, null, "{ }", "Marshall Islands", "2021-03-08T00:00:00", "0", "0" ]
+, [ "row-2ttq_zwqv-bkab", "00000000-0000-0000-DE9A-95F955EBC6FB", 0, 1617797148, null, 1617797148, null, "{ }", "Micronesia", "2021-03-08T00:00:00", "0", "0" ]
+, [ "row-zjrm-4h3e_3q7h", "00000000-0000-0000-CE4A-936C84B5202B", 0, 1617797148, null, 1617797148, null, "{ }", "Mariana Islands", "2021-03-08T00:00:00", "0", "0" ]
+, [ "row-vrns_c338~tpnn", "00000000-0000-0000-DB35-9E04755F2691", 0, 1617797148, null, 1617797148, null, "{ }", "Palau", "2021-03-08T00:00:00", "0", "0" ]
+, [ "row-d2yt.89bt-bsnp", "00000000-0000-0000-2250-BC242604BA3C", 0, 1617797148, null, 1617797148, null, "{ }", "Alaska", "2021-03-08T00:00:00", "0", "0" ]
+, [ "row-hu3f_i4rz-rxw3", "00000000-0000-0000-0BF7-0B61132B8688", 0, 1617797148, null, 1617797148, null, "{ }", "Idaho", "2021-03-08T00:00:00", "15800", "15800" ]
+, [ "row-kxry_9sz3_cpk8", "00000000-0000-0000-8840-B98AFC31F2A6", 0, 1617797148, null, 1617797148, null, "{ }", "Oregon", "2021-03-08T00:00:00", "40800", "40800" ]
+, [ "row-fjbj_7f7b.qk2b", "00000000-0000-0000-D1B8-71345BB20DA9", 0, 1617797148, null, 1617797148, null, "{ }", "Washington", "2021-03-08T00:00:00", "72400", "72400" ]
+, [ "row-j4pn.2qik.q7cn", "00000000-0000-0000-7CF2-F49150BA80D5", 0, 1617797148, null, 1617797148, null, "{ }", "Federal Entities", "2021-03-08T00:00:00", "197900", "193500" ]
+, [ "row-9sak_qgee.28d6", "00000000-0000-0000-B8DA-D0FB9513BE0E", 0, 1617797148, null, 1617797148, null, "{ }", "Alabama", "2021-03-01T00:00:00", "47700", "47700" ]
+, [ "row-h8mm-m8rr-q49q", "00000000-0000-0000-F951-987FD2E6A088", 0, 1617797148, null, 1617797148, null, "{ }", "Alaska", "2021-03-01T00:00:00", "49300", "49300" ]
+, [ "row-f64y-7ugb_qy7s", "00000000-0000-0000-6EBA-B2AB41E4C6D8", 0, 1617797148, null, 1617797148, null, "{ }", "American Samoa", "2021-03-01T00:00:00", "4400", "0" ]
+, [ "row-b56p_qyvp_er4b", "00000000-0000-0000-16D0-0D3B4582B259", 0, 1617797148, null, 1617797148, null, "{ }", "Arizona", "2021-03-01T00:00:00", "67600", "67600" ]
+, [ "row-tbp4~65tr~28yz", "00000000-0000-0000-47DB-27327DF22EEA", 0, 1617797148, null, 1617797148, null, "{ }", "Arkansas", "2021-03-01T00:00:00", "28900", "28900" ]
+, [ "row-6qsc_3vbp-vyz6", "00000000-0000-0000-C697-0854AF1A9876", 0, 1617797148, null, 1617797148, null, "{ }", "California", "2021-03-01T00:00:00", "380300", "380300" ]
+, [ "row-ub6b-k7sr_vx8v", "00000000-0000-0000-AAEC-1B41436138AE", 0, 1617797148, null, 1617797148, null, "{ }", "Chicago", "2021-03-01T00:00:00", "26500", "26500" ]
+, [ "row-qs6y.9za5~ciuk", "00000000-0000-0000-52FE-CB1CF5DA5751", 0, 1617797148, null, 1617797148, null, "{ }", "Colorado", "2021-03-01T00:00:00", "54100", "54100" ]
+, [ "row-rpkg.eh2g.i922", "00000000-0000-0000-22E5-B980DEDDED63", 0, 1617797148, null, 1617797148, null, "{ }", "Connecticut", "2021-03-01T00:00:00", "35800", "35800" ]
+, [ "row-vj8x_hds9.9qm9", "00000000-0000-0000-94AA-EE80A65A3480", 0, 1617797148, null, 1617797148, null, "{ }", "Delaware", "2021-03-01T00:00:00", "9500", "9500" ]
+, [ "row-sjp8-hqma~x88u", "00000000-0000-0000-5AE6-326384D3EB00", 0, 1617797148, null, 1617797148, null, "{ }", "District of Columbia", "2021-03-01T00:00:00", "7200", "7200" ]
+, [ "row-9q4p_n2f9~62pk", "00000000-0000-0000-06F2-F5ABF3E8AFA1", 0, 1617797148, null, 1617797148, null, "{ }", "Federal Entities", "2021-03-01T00:00:00", "180500", "163500" ]
+, [ "row-2mn6.c2d6_vtrv", "00000000-0000-0000-AD2C-A96A3E214C2F", 0, 1617797148, null, 1617797148, null, "{ }", "Florida", "2021-03-01T00:00:00", "208000", "208000" ]
+, [ "row-dkm2_3fsn-c3rm", "00000000-0000-0000-A44A-9CFD9BD487F8", 0, 1617797148, null, 1617797148, null, "{ }", "Georgia", "2021-03-01T00:00:00", "98600", "98600" ]
+, [ "row-dubv~gv2y-4egx", "00000000-0000-0000-AA49-1B645755C9C7", 0, 1617797148, null, 1617797148, null, "{ }", "Guam", "2021-03-01T00:00:00", "14200", "0" ]
+, [ "row-bffn~27bn_jred", "00000000-0000-0000-C621-9D525D7ACD8D", 0, 1617797148, null, 1617797148, null, "{ }", "Hawaii", "2021-03-01T00:00:00", "14200", "14200" ]
+, [ "row-ct5e~2r96~phex", "00000000-0000-0000-E626-5E2E29F8A746", 0, 1617797148, null, 1617797148, null, "{ }", "Idaho", "2021-03-01T00:00:00", "15800", "15800" ]
+, [ "row-eh8u.6skn~gtib", "00000000-0000-0000-2CA2-ED676D0C2409", 0, 1617797148, null, 1617797148, null, "{ }", "Illinois", "2021-03-01T00:00:00", "98700", "98700" ]
+, [ "row-k6u2_662r-tiez", "00000000-0000-0000-4B67-3C8D4DE63242", 0, 1617797148, null, 1617797148, null, "{ }", "Indiana", "2021-03-01T00:00:00", "64100", "64100" ]
+, [ "row-686x.nyia~68qr", "00000000-0000-0000-A68C-AB609090C8A4", 0, 1617797148, null, 1617797148, null, "{ }", "Iowa", "2021-03-01T00:00:00", "30400", "30400" ]
+, [ "row-fyrr~hzqk~8zkn", "00000000-0000-0000-82FB-2DF9F91D5881", 0, 1617797148, null, 1617797148, null, "{ }", "Kansas", "2021-03-01T00:00:00", "27800", "27800" ]
+, [ "row-5qg7.yr9c_7vf2", "00000000-0000-0000-BDB9-3FC143B3FA44", 0, 1617797148, null, 1617797148, null, "{ }", "Kentucky", "2021-03-01T00:00:00", "43400", "43400" ]
+, [ "row-j3qz.4mjr~wgaz", "00000000-0000-0000-2421-5BA813458EBE", 0, 1617797148, null, 1617797148, null, "{ }", "Louisiana", "2021-03-01T00:00:00", "45000", "45000" ]
+, [ "row-mu84-7y77_qkkn", "00000000-0000-0000-9CCB-F47F6402F5E8", 0, 1617797148, null, 1617797148, null, "{ }", "Maine", "2021-03-01T00:00:00", "13700", "13700" ]
+, [ "row-gziw-syuw~tae8", "00000000-0000-0000-A3B4-02D0CDE8CACD", 0, 1617797148, null, 1617797148, null, "{ }", "Mariana Islands", "2021-03-01T00:00:00", "4600", "0" ]
+, [ "row-72mg.3npy.mmic", "00000000-0000-0000-1B9E-65DF9897DDF5", 0, 1617797148, null, 1617797148, null, "{ }", "Marshall Islands", "2021-03-01T00:00:00", "14000", "0" ]
+, [ "row-b8w9_hy5z~vr5y", "00000000-0000-0000-EDBC-9C2E15754325", 0, 1617797148, null, 1617797148, null, "{ }", "Maryland", "2021-03-01T00:00:00", "59000", "59000" ]
+, [ "row-qebe~q8ex~6aa5", "00000000-0000-0000-BE69-4ABF85B8B001", 0, 1617797148, null, 1617797148, null, "{ }", "Massachusetts", "2021-03-01T00:00:00", "69000", "69000" ]
+, [ "row-iyuw_ur7u~hqdk", "00000000-0000-0000-3664-491722E6E823", 0, 1617797148, null, 1617797148, null, "{ }", "Michigan", "2021-03-01T00:00:00", "98200", "98200" ]
+, [ "row-ixk3_m97r_zgjc", "00000000-0000-0000-946D-5256D28CD8CE", 0, 1617797148, null, 1617797148, null, "{ }", "Micronesia", "2021-03-01T00:00:00", "16600", "0" ]
+, [ "row-ybnj-xe8a.wcs4", "00000000-0000-0000-1C08-55B9BEAB1AF5", 0, 1617797148, null, 1617797148, null, "{ }", "Minnesota", "2021-03-01T00:00:00", "53800", "53800" ]
+, [ "row-kv5y_kw5c-k9k9", "00000000-0000-0000-ABBD-82AF4736145D", 0, 1617797148, null, 1617797148, null, "{ }", "Mississippi", "2021-03-01T00:00:00", "28700", "28700" ]
+, [ "row-ugq9-f6xx~b5jw", "00000000-0000-0000-CC94-2C5BC2CC46D6", 0, 1617797148, null, 1617797148, null, "{ }", "Missouri", "2021-03-01T00:00:00", "59500", "59500" ]
+, [ "row-cdsu_gbca~fg65", "00000000-0000-0000-EA5A-CEF8B8FDF122", 0, 1617797148, null, 1617797148, null, "{ }", "Montana", "2021-03-01T00:00:00", "10400", "10400" ]
+, [ "row-6rkg.e5d2-e874", "00000000-0000-0000-273D-1AAC0961C64D", 0, 1617797148, null, 1617797148, null, "{ }", "Nebraska", "2021-03-01T00:00:00", "18400", "18400" ]
+, [ "row-pm9v-yq4h_66me", "00000000-0000-0000-3937-4FF7F843B242", 0, 1617797148, null, 1617797148, null, "{ }", "Nevada", "2021-03-01T00:00:00", "28500", "28500" ]
+, [ "row-avq5.pkym_zd52", "00000000-0000-0000-9CEF-AE39C78D1AAE", 0, 1617797148, null, 1617797148, null, "{ }", "New Hampshire", "2021-03-01T00:00:00", "13700", "13700" ]
+, [ "row-9htr~dvjy-uyv4", "00000000-0000-0000-1C88-537625301472", 0, 1617797148, null, 1617797148, null, "{ }", "New Jersey", "2021-03-01T00:00:00", "87400", "87400" ]
+, [ "row-gjz5.cvmy~mpuw", "00000000-0000-0000-6C0D-D36210937329", 0, 1617797148, null, 1617797148, null, "{ }", "New Mexico", "2021-03-01T00:00:00", "20500", "20500" ]
+, [ "row-e6qg-c3ia_gykf", "00000000-0000-0000-E06A-C021154CE4AB", 0, 1617797148, null, 1617797148, null, "{ }", "New York", "2021-03-01T00:00:00", "111300", "111300" ]
+, [ "row-rbva-5iae~fwpq", "00000000-0000-0000-B0CA-2F3904725136", 0, 1617797148, null, 1617797148, null, "{ }", "New York City", "2021-03-01T00:00:00", "84500", "84500" ]
+, [ "row-ntzv~u59b_h8k6", "00000000-0000-0000-8E0F-4E689E31AF33", 0, 1617797148, null, 1617797148, null, "{ }", "North Carolina", "2021-03-01T00:00:00", "99500", "99500" ]
+, [ "row-hm8n.c6wt.knx3", "00000000-0000-0000-8457-2147E757AEA1", 0, 1617797148, null, 1617797148, null, "{ }", "North Dakota", "2021-03-01T00:00:00", "7500", "7500" ]
+, [ "row-xq28-eqmc.ruuk", "00000000-0000-0000-09D6-9C38D70ED9E4", 0, 1617797148, null, 1617797148, null, "{ }", "Ohio", "2021-03-01T00:00:00", "114100", "114100" ]
+, [ "row-f9an.upqr-5myv", "00000000-0000-0000-EF31-293C4729BAE0", 0, 1617797148, null, 1617797148, null, "{ }", "Oklahoma", "2021-03-01T00:00:00", "37500", "37500" ]
+, [ "row-hxit-yfns.mqus", "00000000-0000-0000-09A8-EC25284994CB", 0, 1617797148, null, 1617797148, null, "{ }", "Oregon", "2021-03-01T00:00:00", "40800", "40800" ]
+, [ "row-azed.wzt9~w684", "00000000-0000-0000-2BE4-D3119E3071DE", 0, 1617797148, null, 1617797148, null, "{ }", "Palau", "2021-03-01T00:00:00", "5400", "0" ]
+, [ "row-zwqj_me65_8qak", "00000000-0000-0000-5AE1-81B9CC37EE40", 0, 1617797148, null, 1617797148, null, "{ }", "Pennsylvania", "2021-03-01T00:00:00", "112400", "112400" ]
+, [ "row-zz44~nrmc-7u24", "00000000-0000-0000-7EED-708D33BAD097", 0, 1617797148, null, 1617797148, null, "{ }", "Philadelphia", "2021-03-01T00:00:00", "15600", "15600" ]
+, [ "row-a6be.d5bp_tcjx", "00000000-0000-0000-36A6-F5500D5B350A", 0, 1617797148, null, 1617797148, null, "{ }", "Puerto Rico", "2021-03-01T00:00:00", "34200", "34200" ]
+, [ "row-9j82_42i2.bkai", "00000000-0000-0000-4D6D-D6134AAD35E8", 0, 1617797148, null, 1617797148, null, "{ }", "Rhode Island", "2021-03-01T00:00:00", "10800", "10800" ]
+, [ "row-s7kv_g599-unen", "00000000-0000-0000-57E4-BECF900748CB", 0, 1617797148, null, 1617797148, null, "{ }", "South Carolina", "2021-03-01T00:00:00", "48800", "48800" ]
+, [ "row-ypd7~h6je_6bmx", "00000000-0000-0000-54F0-3DB2424DA4D1", 0, 1617797148, null, 1617797148, null, "{ }", "South Dakota", "2021-03-01T00:00:00", "8300", "8300" ]
+, [ "row-2fen.ab8b_meh9", "00000000-0000-0000-D1F5-2B19179BAA07", 0, 1617797148, null, 1617797148, null, "{ }", "Tennessee", "2021-03-01T00:00:00", "65200", "65200" ]
+, [ "row-cd4a~wtc2_ejsp", "00000000-0000-0000-DC6C-82D81F6041A2", 0, 1617797148, null, 1617797148, null, "{ }", "Texas", "2021-03-01T00:00:00", "260400", "260400" ]
+, [ "row-hn23~ugak.xjpg", "00000000-0000-0000-3AB6-E508D8F8B38F", 0, 1617797148, null, 1617797148, null, "{ }", "U.S. Virgin Islands", "2021-03-01T00:00:00", "1100", "1100" ]
+, [ "row-q4v6_qvtz-my83", "00000000-0000-0000-3DA6-0AC2D706725E", 0, 1617797148, null, 1617797148, null, "{ }", "Utah", "2021-03-01T00:00:00", "27100", "27100" ]
+, [ "row-sqbc_gnhu~m9bm", "00000000-0000-0000-7327-57314D80B7CE", 0, 1617797148, null, 1617797148, null, "{ }", "Vermont", "2021-03-01T00:00:00", "6500", "6500" ]
+, [ "row-5yr2_94te-sajy", "00000000-0000-0000-F0E1-7F2DFE314BF9", 0, 1617797148, null, 1617797148, null, "{ }", "Virginia", "2021-03-01T00:00:00", "82800", "82800" ]
+, [ "row-rr9a_s52w_x7nt", "00000000-0000-0000-4049-A3B060187683", 0, 1617797148, null, 1617797148, null, "{ }", "Washington", "2021-03-01T00:00:00", "72400", "72400" ]
+, [ "row-t9uf~jcf2~32sc", "00000000-0000-0000-B5CB-0E81EE879B84", 0, 1617797148, null, 1617797148, null, "{ }", "West Virginia", "2021-03-01T00:00:00", "18500", "18500" ]
+, [ "row-sqna_cnkx~97uz", "00000000-0000-0000-BF31-ECB9FC65E7B2", 0, 1617797148, null, 1617797148, null, "{ }", "Wisconsin", "2021-03-01T00:00:00", "57100", "57100" ]
+, [ "row-ij6m.uajj.qi5m", "00000000-0000-0000-32F5-C6E04B393D8E", 0, 1617797148, null, 1617797148, null, "{ }", "Wyoming", "2021-03-01T00:00:00", "5700", "5700" ]
+, [ "row-nmwd~nv3u-e8w6", "00000000-0000-0000-64C4-35FCCEF6E618", 0, 1617797148, null, 1617797148, null, "{ }", "Alabama", "2021-02-22T00:00:00", "47700", "47700" ]
+, [ "row-cgt2-6gur_kgpb", "00000000-0000-0000-167A-B7A988AC6E4E", 0, 1617797148, null, 1617797148, null, "{ }", "Alaska", "2021-02-22T00:00:00", "0", "0" ]
+, [ "row-rsew.sqg5.zyw6", "00000000-0000-0000-4663-F7FD70CB8E86", 0, 1617797148, null, 1617797148, null, "{ }", "American Samoa", "2021-02-22T00:00:00", "0", "0" ]
+, [ "row-x42y-54zg_yrre", "00000000-0000-0000-3465-29F72C1FD1A4", 0, 1617797148, null, 1617797148, null, "{ }", "Arizona", "2021-02-22T00:00:00", "67600", "67600" ]
+, [ "row-wyfy.hq42-2yvv", "00000000-0000-0000-BB3E-A13870257C1E", 0, 1617797148, null, 1617797148, null, "{ }", "Arkansas", "2021-02-22T00:00:00", "28900", "28900" ]
+, [ "row-356v~93r9~kq7g", "00000000-0000-0000-FC2F-69EFB881E590", 0, 1617797148, null, 1617797148, null, "{ }", "California", "2021-02-22T00:00:00", "380300", "380300" ]
+, [ "row-zqra-w72c~n6dm", "00000000-0000-0000-58F2-6042A4A433D4", 0, 1617797148, null, 1617797148, null, "{ }", "Chicago", "2021-02-22T00:00:00", "26500", "26500" ]
+, [ "row-wbre~59yg~au4p", "00000000-0000-0000-D1D2-E49C6BF96F6A", 0, 1617797148, null, 1617797148, null, "{ }", "Colorado", "2021-02-22T00:00:00", "54100", "54100" ]
+, [ "row-b5f9_rj5u.zajw", "00000000-0000-0000-0432-2DADD9FBAC71", 0, 1617797148, null, 1617797148, null, "{ }", "Connecticut", "2021-02-22T00:00:00", "35800", "35800" ]
+, [ "row-tgun_9gax~fe8k", "00000000-0000-0000-67D1-64CB9761C2BB", 0, 1617797148, null, 1617797148, null, "{ }", "Delaware", "2021-02-22T00:00:00", "9500", "9500" ]
+, [ "row-eqgv_4a4h_m3au", "00000000-0000-0000-DF45-FC0312784228", 0, 1617797148, null, 1617797148, null, "{ }", "District of Columbia", "2021-02-22T00:00:00", "7200", "7200" ]
+, [ "row-r6kz_kffq-tvkr", "00000000-0000-0000-417A-F05E8DEED203", 0, 1617797148, null, 1617797148, null, "{ }", "Federal Entities", "2021-02-22T00:00:00", "163500", "163500" ]
+, [ "row-jngu~6s2p~gce2", "00000000-0000-0000-65C6-9920990B3157", 0, 1617797148, null, 1617797148, null, "{ }", "Florida", "2021-02-22T00:00:00", "208000", "208000" ]
+, [ "row-j3gs.z4p5.rmp2", "00000000-0000-0000-B91F-D058C523368B", 0, 1617797148, null, 1617797148, null, "{ }", "Georgia", "2021-02-22T00:00:00", "98600", "98600" ]
+, [ "row-nxrr-659x-c84z", "00000000-0000-0000-2257-A388F9101F5E", 0, 1617797148, null, 1617797148, null, "{ }", "Guam", "2021-02-22T00:00:00", "0", "0" ]
+, [ "row-fv9z-kyi6~gnvp", "00000000-0000-0000-03D1-E813142486B9", 0, 1617797148, null, 1617797148, null, "{ }", "Hawaii", "2021-02-22T00:00:00", "14200", "14200" ]
+, [ "row-bfv7-nngp_mm8p", "00000000-0000-0000-A28B-4BE9BE7EE8E9", 0, 1617797148, null, 1617797148, null, "{ }", "Idaho", "2021-02-22T00:00:00", "15800", "15800" ]
+, [ "row-y7v4-e5gf-pd8x", "00000000-0000-0000-AB1F-78351127EBD5", 0, 1617797148, null, 1617797148, null, "{ }", "Illinois", "2021-02-22T00:00:00", "98700", "98700" ]
+, [ "row-nbc2-rxam_s76r", "00000000-0000-0000-EE71-F5C46C55093D", 0, 1617797148, null, 1617797148, null, "{ }", "Indiana", "2021-02-22T00:00:00", "64100", "64100" ]
+, [ "row-d9if_6ahh~6dih", "00000000-0000-0000-A154-6F7D0C39E44B", 0, 1617797148, null, 1617797148, null, "{ }", "Iowa", "2021-02-22T00:00:00", "30400", "30400" ]
+, [ "row-pepw-dbfm~pmuh", "00000000-0000-0000-CD50-752B6C6EA515", 0, 1617797148, null, 1617797148, null, "{ }", "Kansas", "2021-02-22T00:00:00", "27800", "27800" ]
+, [ "row-qx4k-mtu8_cvjm", "00000000-0000-0000-4885-E5FC09F8CEFF", 0, 1617797148, null, 1617797148, null, "{ }", "Kentucky", "2021-02-22T00:00:00", "43400", "43400" ]
+, [ "row-2ubs~8yt7-cyxx", "00000000-0000-0000-7033-F9664282D118", 0, 1617797148, null, 1617797148, null, "{ }", "Louisiana", "2021-02-22T00:00:00", "45000", "45000" ]
+, [ "row-r5b5.92pz_3wyn", "00000000-0000-0000-71E7-5B3162BCB78B", 0, 1617797148, null, 1617797148, null, "{ }", "Maine", "2021-02-22T00:00:00", "13700", "13700" ]
+, [ "row-ebxn.6dqf_d7f3", "00000000-0000-0000-C7B9-55BEB7CD27BC", 0, 1617797148, null, 1617797148, null, "{ }", "Mariana Islands", "2021-02-22T00:00:00", "0", "0" ]
+, [ "row-pp7f_aqe6~33ev", "00000000-0000-0000-3B81-46B1A5B37EE3", 0, 1617797148, null, 1617797148, null, "{ }", "Marshall Islands", "2021-02-22T00:00:00", "0", "0" ]
+, [ "row-n5e5~v7rk.ys6e", "00000000-0000-0000-76C4-921447FF5031", 0, 1617797148, null, 1617797148, null, "{ }", "Maryland", "2021-02-22T00:00:00", "59000", "59000" ]
+, [ "row-u4z7-evdf.357u", "00000000-0000-0000-08F3-7D7816E409B6", 0, 1617797148, null, 1617797148, null, "{ }", "Massachusetts", "2021-02-22T00:00:00", "69000", "69000" ]
+, [ "row-2kge.hr2i~ixr5", "00000000-0000-0000-208B-97CDFDBA9660", 0, 1617797148, null, 1617797148, null, "{ }", "Michigan", "2021-02-22T00:00:00", "98200", "98200" ]
+, [ "row-7kwj.gxzm.v8za", "00000000-0000-0000-3DB6-E5562F942922", 0, 1617797148, null, 1617797148, null, "{ }", "Micronesia", "2021-02-22T00:00:00", "0", "0" ]
+, [ "row-wm56~7857_5bzu", "00000000-0000-0000-D684-A9E594CF3FD0", 0, 1617797148, null, 1617797148, null, "{ }", "Minnesota", "2021-02-22T00:00:00", "53800", "53800" ]
+, [ "row-382h~w84j~tg65", "00000000-0000-0000-F027-780167A25BFA", 0, 1617797148, null, 1617797148, null, "{ }", "Mississippi", "2021-02-22T00:00:00", "28700", "28700" ]
+, [ "row-fhb3_y9x6.asm7", "00000000-0000-0000-F9A5-2FCE113456B4", 0, 1617797148, null, 1617797148, null, "{ }", "Missouri", "2021-02-22T00:00:00", "59500", "59500" ]
+, [ "row-e92c~xtk3~5gnj", "00000000-0000-0000-C9EE-D288EC734BE0", 0, 1617797148, null, 1617797148, null, "{ }", "Montana", "2021-02-22T00:00:00", "10400", "10400" ]
+, [ "row-crxq-jz42_ncqv", "00000000-0000-0000-B42B-64E0AF5C2146", 0, 1617797148, null, 1617797148, null, "{ }", "Nebraska", "2021-02-22T00:00:00", "18400", "18400" ]
+, [ "row-rfuq~97pj-q5gs", "00000000-0000-0000-A4CD-94572ABDA0F0", 0, 1617797148, null, 1617797148, null, "{ }", "Nevada", "2021-02-22T00:00:00", "28500", "28500" ]
+, [ "row-v3bv~tu2h.sim5", "00000000-0000-0000-854F-3D3F51119198", 0, 1617797148, null, 1617797148, null, "{ }", "New Hampshire", "2021-02-22T00:00:00", "13700", "13700" ]
+, [ "row-pjpn.th8g_4vrp", "00000000-0000-0000-BA39-2AC763CB52E9", 0, 1617797148, null, 1617797148, null, "{ }", "New Jersey", "2021-02-22T00:00:00", "87400", "87400" ]
+, [ "row-wdzt.62wu-q8qe", "00000000-0000-0000-317C-EFAB98F05858", 0, 1617797148, null, 1617797148, null, "{ }", "New Mexico", "2021-02-22T00:00:00", "20500", "20500" ]
+, [ "row-gshy.pvts_m8uj", "00000000-0000-0000-0F16-9F56B7E5AE35", 0, 1617797148, null, 1617797148, null, "{ }", "New York", "2021-02-22T00:00:00", "111300", "111300" ]
+, [ "row-cspj.hnmi-eps3", "00000000-0000-0000-5790-01EB08C4CA48", 0, 1617797148, null, 1617797148, null, "{ }", "New York City", "2021-02-22T00:00:00", "84500", "84500" ]
+, [ "row-mm6c_yain-g42z", "00000000-0000-0000-7FC6-27D398F59DBA", 0, 1617797148, null, 1617797148, null, "{ }", "North Carolina", "2021-02-22T00:00:00", "99500", "99500" ]
+, [ "row-2jgi_g435~m52j", "00000000-0000-0000-4677-60F2D72F65DC", 0, 1617797148, null, 1617797148, null, "{ }", "North Dakota", "2021-02-22T00:00:00", "7500", "7500" ]
+, [ "row-rd2w-bzsj.3eyz", "00000000-0000-0000-D795-938AB720C352", 0, 1617797148, null, 1617797148, null, "{ }", "Ohio", "2021-02-22T00:00:00", "114100", "114100" ]
+, [ "row-m5r4.ew9t-c5pq", "00000000-0000-0000-A248-56746AAB9B04", 0, 1617797148, null, 1617797148, null, "{ }", "Oklahoma", "2021-02-22T00:00:00", "37500", "37500" ]
+, [ "row-ps7f-dayc_ef7u", "00000000-0000-0000-16D5-9A78B1DF7F18", 0, 1617797148, null, 1617797148, null, "{ }", "Oregon", "2021-02-22T00:00:00", "40800", "40800" ]
+, [ "row-dyud.cjju-h9xt", "00000000-0000-0000-569D-56CE28FE7BDE", 0, 1617797148, null, 1617797148, null, "{ }", "Palau", "2021-02-22T00:00:00", "0", "0" ]
+, [ "row-qbm8.zv78~h49e", "00000000-0000-0000-9E3E-F7ECFE99B7C2", 0, 1617797148, null, 1617797148, null, "{ }", "Pennsylvania", "2021-02-22T00:00:00", "112400", "112400" ]
+, [ "row-8drx-7353_zyyj", "00000000-0000-0000-D7EE-0EA1A3BC3935", 0, 1617797148, null, 1617797148, null, "{ }", "Philadelphia", "2021-02-22T00:00:00", "15600", "15600" ]
+, [ "row-czd7.qyeu-hezx", "00000000-0000-0000-3DDB-87C388CF8B23", 0, 1617797148, null, 1617797148, null, "{ }", "Puerto Rico", "2021-02-22T00:00:00", "34200", "34200" ]
+, [ "row-wxwp-sx97~y8nj", "00000000-0000-0000-516C-1433E79DA77A", 0, 1617797148, null, 1617797148, null, "{ }", "Rhode Island", "2021-02-22T00:00:00", "10800", "10800" ]
+, [ "row-sngq~hjkb_bw5h", "00000000-0000-0000-F594-C9E500CD4323", 0, 1617797148, null, 1617797148, null, "{ }", "South Carolina", "2021-02-22T00:00:00", "48800", "48800" ]
+, [ "row-xgrm-6j6x-dkfh", "00000000-0000-0000-2D7F-24B1908867F0", 0, 1617797148, null, 1617797148, null, "{ }", "South Dakota", "2021-02-22T00:00:00", "8300", "8300" ]
+, [ "row-7njg.h7d2-gz69", "00000000-0000-0000-80C2-D2F35036BBF7", 0, 1617797148, null, 1617797148, null, "{ }", "Tennessee", "2021-02-22T00:00:00", "65200", "65200" ]
+, [ "row-y27x.qgas_qk2z", "00000000-0000-0000-5598-EB2A34B518EA", 0, 1617797148, null, 1617797148, null, "{ }", "Texas", "2021-02-22T00:00:00", "260400", "260400" ]
+, [ "row-ebgr_bitc~azbd", "00000000-0000-0000-1726-699A4473FBB1", 0, 1617797148, null, 1617797148, null, "{ }", "U.S. Virgin Islands", "2021-02-22T00:00:00", "1100", "1100" ]
+, [ "row-ckg4_ad4j.ark3", "00000000-0000-0000-E51A-032F47EF31B8", 0, 1617797148, null, 1617797148, null, "{ }", "Utah", "2021-02-22T00:00:00", "27100", "27100" ]
+, [ "row-eujv_xihq-eu94", "00000000-0000-0000-4554-14CD267DE176", 0, 1617797148, null, 1617797148, null, "{ }", "Vermont", "2021-02-22T00:00:00", "6500", "6500" ]
+, [ "row-veeq_58d8.654g", "00000000-0000-0000-0D4D-2AD399AC3508", 0, 1617797148, null, 1617797148, null, "{ }", "Virginia", "2021-02-22T00:00:00", "82800", "82800" ]
+, [ "row-xv3x~49xd-s96t", "00000000-0000-0000-7458-3E8563BDAD39", 0, 1617797148, null, 1617797148, null, "{ }", "Washington", "2021-02-22T00:00:00", "72400", "72400" ]
+, [ "row-c4vk.ajex_x76t", "00000000-0000-0000-691E-5968206A070D", 0, 1617797148, null, 1617797148, null, "{ }", "West Virginia", "2021-02-22T00:00:00", "18500", "18500" ]
+, [ "row-44zn_nsa7_h6v8", "00000000-0000-0000-461D-E4DBF39F294C", 0, 1617797148, null, 1617797148, null, "{ }", "Wisconsin", "2021-02-22T00:00:00", "57100", "57100" ]
+, [ "row-z9eu-v5ft.v4z4", "00000000-0000-0000-F611-1E6F9322593A", 0, 1617797148, null, 1617797148, null, "{ }", "Wyoming", "2021-02-22T00:00:00", "5700", "5700" ]
+, [ "row-v2a4~x4t4-hri9", "00000000-0000-0000-AB1A-37D34C917B7F", 0, 1617797148, null, 1617797148, null, "{ }", "Alabama", "2021-02-15T00:00:00", "47700", "47700" ]
+, [ "row-fvnn-vcv5_du94", "00000000-0000-0000-1F0C-4D97BEC46D64", 0, 1617797148, null, 1617797148, null, "{ }", "Alaska", "2021-02-15T00:00:00", "0", "0" ]
+, [ "row-ueuc_euwi_4spn", "00000000-0000-0000-72AA-73B329700196", 0, 1617797148, null, 1617797148, null, "{ }", "American Samoa", "2021-02-15T00:00:00", "0", "0" ]
+, [ "row-nztf-wrfy~d8up", "00000000-0000-0000-1833-AD8BEE69D337", 0, 1617797148, null, 1617797148, null, "{ }", "Arizona", "2021-02-15T00:00:00", "67600", "67600" ]
+, [ "row-r9b6.cscu.jbet", "00000000-0000-0000-648F-BEB4C4E25E6F", 0, 1617797148, null, 1617797148, null, "{ }", "Arkansas", "2021-02-15T00:00:00", "28900", "28900" ]
+, [ "row-3ei2~4svb~qqht", "00000000-0000-0000-5CB6-FA43FD1B38CE", 0, 1617797148, null, 1617797148, null, "{ }", "California", "2021-02-15T00:00:00", "380300", "380300" ]
+, [ "row-hbfv~yjkm-q5fq", "00000000-0000-0000-24DD-371459FA2996", 0, 1617797148, null, 1617797148, null, "{ }", "Chicago", "2021-02-15T00:00:00", "26500", "26500" ]
+, [ "row-zctb.pp8v.7jds", "00000000-0000-0000-361A-9F43CCD8B9FA", 0, 1617797148, null, 1617797148, null, "{ }", "Colorado", "2021-02-15T00:00:00", "54100", "54100" ]
+, [ "row-xfmq_w2gh~qbxt", "00000000-0000-0000-1E5B-9B563837910E", 0, 1617797148, null, 1617797148, null, "{ }", "Connecticut", "2021-02-15T00:00:00", "35800", "35800" ]
+, [ "row-bkbb~m2tv~2prb", "00000000-0000-0000-5DC3-924028E4AE0C", 0, 1617797148, null, 1617797148, null, "{ }", "Delaware", "2021-02-15T00:00:00", "9500", "9500" ]
+, [ "row-fy32_puwp-s4jn", "00000000-0000-0000-5411-58870CADFA45", 0, 1617797148, null, 1617797148, null, "{ }", "District of Columbia", "2021-02-15T00:00:00", "7200", "7200" ]
+, [ "row-zxnb_u82f.qsgm", "00000000-0000-0000-9D70-41665A8494AC", 0, 1617797148, null, 1617797148, null, "{ }", "Federal Entities", "2021-02-15T00:00:00", "163500", "163500" ]
+, [ "row-r8ee-xpu2-78fi", "00000000-0000-0000-21C3-137797C91821", 0, 1617797148, null, 1617797148, null, "{ }", "Florida", "2021-02-15T00:00:00", "208000", "208000" ]
+, [ "row-6gcd.j5fe_imzx", "00000000-0000-0000-DE3A-B767428BE19D", 0, 1617797148, null, 1617797148, null, "{ }", "Georgia", "2021-02-15T00:00:00", "98600", "98600" ]
+, [ "row-9pbz.rqb6-qbec", "00000000-0000-0000-2452-610E0A6038F2", 0, 1617797148, null, 1617797148, null, "{ }", "Guam", "2021-02-15T00:00:00", "0", "0" ]
+, [ "row-b54f-kpik-6khc", "00000000-0000-0000-4122-ACB4A8ED68D7", 0, 1617797148, null, 1617797148, null, "{ }", "Hawaii", "2021-02-15T00:00:00", "14200", "14200" ]
+, [ "row-e2v2.b66x_8fpj", "00000000-0000-0000-7429-CEC1068EB41D", 0, 1617797148, null, 1617797148, null, "{ }", "Idaho", "2021-02-15T00:00:00", "15800", "15800" ]
+, [ "row-vjw7~sxra-biez", "00000000-0000-0000-A142-6B29D82E037E", 0, 1617797148, null, 1617797148, null, "{ }", "Illinois", "2021-02-15T00:00:00", "98700", "98700" ]
+, [ "row-3xqa_thqe-kpsk", "00000000-0000-0000-6FBD-BDF12B78C2FE", 0, 1617797148, null, 1617797148, null, "{ }", "Indiana", "2021-02-15T00:00:00", "64100", "64100" ]
+, [ "row-5w5j~4t6f~u5p7", "00000000-0000-0000-1146-702E8D45CEC4", 0, 1617797148, null, 1617797148, null, "{ }", "Iowa", "2021-02-15T00:00:00", "30400", "30400" ]
+, [ "row-mm85.gep9~wpkq", "00000000-0000-0000-F5D3-1DFAA2A7F578", 0, 1617797148, null, 1617797148, null, "{ }", "Kansas", "2021-02-15T00:00:00", "27800", "27800" ]
+, [ "row-ywbh_7gxh_nt2s", "00000000-0000-0000-C4B9-FC536582ABE3", 0, 1617797148, null, 1617797148, null, "{ }", "Kentucky", "2021-02-15T00:00:00", "43400", "43400" ]
+, [ "row-276h-26fd.pvnn", "00000000-0000-0000-8F34-DF3589F367E7", 0, 1617797148, null, 1617797148, null, "{ }", "Louisiana", "2021-02-15T00:00:00", "45000", "45000" ]
+, [ "row-xvs7~7n33-wfcs", "00000000-0000-0000-9314-06D1506F4777", 0, 1617797148, null, 1617797148, null, "{ }", "Maine", "2021-02-15T00:00:00", "13700", "13700" ]
+, [ "row-effb~f9rb.bjqs", "00000000-0000-0000-21D8-960441C63D17", 0, 1617797148, null, 1617797148, null, "{ }", "Mariana Islands", "2021-02-15T00:00:00", "0", "0" ]
+, [ "row-s6nj.shg5.p8cb", "00000000-0000-0000-D03C-77851F0B7754", 0, 1617797148, null, 1617797148, null, "{ }", "Marshall Islands", "2021-02-15T00:00:00", "0", "0" ]
+, [ "row-4fj5_dsig.wfg4", "00000000-0000-0000-E864-F097FF2BB5A1", 0, 1617797148, null, 1617797148, null, "{ }", "Maryland", "2021-02-15T00:00:00", "59000", "59000" ]
+, [ "row-5kvy-4f67.9y9p", "00000000-0000-0000-B894-0FDAA20D5041", 0, 1617797148, null, 1617797148, null, "{ }", "Massachusetts", "2021-02-15T00:00:00", "69000", "69000" ]
+, [ "row-bsvh_97ub~9kj3", "00000000-0000-0000-B1D4-F254493727D5", 0, 1617797148, null, 1617797148, null, "{ }", "Michigan", "2021-02-15T00:00:00", "98200", "98200" ]
+, [ "row-27i6-y9sx-6h5j", "00000000-0000-0000-8979-63C11F402BB7", 0, 1617797148, null, 1617797148, null, "{ }", "Micronesia", "2021-02-15T00:00:00", "0", "0" ]
+, [ "row-z8pq.sjj8-rttb", "00000000-0000-0000-EFEB-245C53BB2D00", 0, 1617797148, null, 1617797148, null, "{ }", "Minnesota", "2021-02-15T00:00:00", "53800", "53800" ]
+, [ "row-czhj~nsw5~cp6x", "00000000-0000-0000-43CB-2E0EBC1CF7C8", 0, 1617797148, null, 1617797148, null, "{ }", "Mississippi", "2021-02-15T00:00:00", "28700", "28700" ]
+, [ "row-8i3f-fxm5.r3ie", "00000000-0000-0000-5FD2-4E48B9F22DC4", 0, 1617797148, null, 1617797148, null, "{ }", "Missouri", "2021-02-15T00:00:00", "59500", "59500" ]
+, [ "row-z79w-62sk~r6c4", "00000000-0000-0000-C44B-745B7E2F1FC9", 0, 1617797148, null, 1617797148, null, "{ }", "Montana", "2021-02-15T00:00:00", "10400", "10400" ]
+, [ "row-mxun_52k8-3g48", "00000000-0000-0000-8852-43DF0CB395FC", 0, 1617797148, null, 1617797148, null, "{ }", "Nebraska", "2021-02-15T00:00:00", "18400", "18400" ]
+, [ "row-t7yu_72ib_ufwt", "00000000-0000-0000-7494-AFCB05613E15", 0, 1617797148, null, 1617797148, null, "{ }", "Nevada", "2021-02-15T00:00:00", "28500", "28500" ]
+, [ "row-mzvm_krhe~i3cx", "00000000-0000-0000-35C4-E112C8DDE62B", 0, 1617797148, null, 1617797148, null, "{ }", "New Hampshire", "2021-02-15T00:00:00", "13700", "13700" ]
+, [ "row-ha6y_3k2e.bbaw", "00000000-0000-0000-5B3B-8D02E4DC6C84", 0, 1617797148, null, 1617797148, null, "{ }", "New Jersey", "2021-02-15T00:00:00", "87400", "87400" ]
+, [ "row-4g7n_r5n7-t2pc", "00000000-0000-0000-7651-9641775643FB", 0, 1617797148, null, 1617797148, null, "{ }", "New Mexico", "2021-02-15T00:00:00", "20500", "20500" ]
+, [ "row-vkaf.3zw2.7tnp", "00000000-0000-0000-922E-B8B482F7A89B", 0, 1617797148, null, 1617797148, null, "{ }", "New York", "2021-02-15T00:00:00", "111300", "111300" ]
+, [ "row-4idq_rpi7-yqb3", "00000000-0000-0000-1CEF-152525DCC839", 0, 1617797148, null, 1617797148, null, "{ }", "New York City", "2021-02-15T00:00:00", "84500", "84500" ]
+, [ "row-ds8h_4fh5-43if", "00000000-0000-0000-8650-CE5DA8595F94", 0, 1617797148, null, 1617797148, null, "{ }", "North Carolina", "2021-02-15T00:00:00", "99500", "99500" ]
+, [ "row-h5bg_pxix~qwya", "00000000-0000-0000-B8E6-9FD92AEF2B90", 0, 1617797148, null, 1617797148, null, "{ }", "North Dakota", "2021-02-15T00:00:00", "7500", "7500" ]
+, [ "row-3xg9-6868-eqdg", "00000000-0000-0000-B969-C4075204EFB1", 0, 1617797148, null, 1617797148, null, "{ }", "Ohio", "2021-02-15T00:00:00", "114100", "114100" ]
+, [ "row-jk2e~dbjm.acjn", "00000000-0000-0000-5A68-AAAF548BFFCE", 0, 1617797148, null, 1617797148, null, "{ }", "Oklahoma", "2021-02-15T00:00:00", "37500", "37500" ]
+, [ "row-zpu6~xjs4.tkds", "00000000-0000-0000-0DCF-FFE1C4E677EA", 0, 1617797148, null, 1617797148, null, "{ }", "Oregon", "2021-02-15T00:00:00", "40800", "40800" ]
+, [ "row-ygac-rebh_y2au", "00000000-0000-0000-B577-56FA3C4A4BA1", 0, 1617797148, null, 1617797148, null, "{ }", "Palau", "2021-02-15T00:00:00", "0", "0" ]
+, [ "row-w5jx.99ze.x3pj", "00000000-0000-0000-5213-09BB0419AA5E", 0, 1617797148, null, 1617797148, null, "{ }", "Pennsylvania", "2021-02-15T00:00:00", "112400", "112400" ]
+, [ "row-guui-gvmb_ivye", "00000000-0000-0000-EA85-D67388DFD3F5", 0, 1617797148, null, 1617797148, null, "{ }", "Philadelphia", "2021-02-15T00:00:00", "15600", "15600" ]
+, [ "row-33ga-344e.eecf", "00000000-0000-0000-970A-FA2371DF6960", 0, 1617797148, null, 1617797148, null, "{ }", "Puerto Rico", "2021-02-15T00:00:00", "34200", "34200" ]
+, [ "row-nquw~xb4m.4dqw", "00000000-0000-0000-FDA4-CEF19DA99D30", 0, 1617797148, null, 1617797148, null, "{ }", "Rhode Island", "2021-02-15T00:00:00", "10800", "10800" ]
+, [ "row-5u7p.9ybj_sexx", "00000000-0000-0000-9944-A7E1449665FA", 0, 1617797148, null, 1617797148, null, "{ }", "South Carolina", "2021-02-15T00:00:00", "48800", "48800" ]
+, [ "row-e7ct.i3dq_mpdn", "00000000-0000-0000-8895-45D36925EDA7", 0, 1617797148, null, 1617797148, null, "{ }", "South Dakota", "2021-02-15T00:00:00", "8300", "8300" ]
+, [ "row-2q96~qkqt~e7sj", "00000000-0000-0000-DB2B-D0957C9B044B", 0, 1617797148, null, 1617797148, null, "{ }", "Tennessee", "2021-02-15T00:00:00", "65200", "65200" ]
+, [ "row-99yp~mkjn.cygv", "00000000-0000-0000-80C5-FB934C87526B", 0, 1617797148, null, 1617797148, null, "{ }", "Texas", "2021-02-15T00:00:00", "260400", "260400" ]
+, [ "row-kd6a~5g55~z92d", "00000000-0000-0000-E68E-3E459B0C5179", 0, 1617797148, null, 1617797148, null, "{ }", "U.S. Virgin Islands", "2021-02-15T00:00:00", "1100", "1100" ]
+, [ "row-j8tk-bkqq~5dgc", "00000000-0000-0000-05E2-2223792FFF6B", 0, 1617797148, null, 1617797148, null, "{ }", "Utah", "2021-02-15T00:00:00", "27100", "27100" ]
+, [ "row-c9ue_mqxm.znzh", "00000000-0000-0000-8A10-CB575AAB5A23", 0, 1617797148, null, 1617797148, null, "{ }", "Vermont", "2021-02-15T00:00:00", "6500", "6500" ]
+, [ "row-5zdx-5aic.n2uy", "00000000-0000-0000-7E30-90CD69F5B7A0", 0, 1617797148, null, 1617797148, null, "{ }", "Virginia", "2021-02-15T00:00:00", "82800", "82800" ]
+, [ "row-xqi4~exi9_q6eb", "00000000-0000-0000-5779-434B9D196B8F", 0, 1617797148, null, 1617797148, null, "{ }", "Washington", "2021-02-15T00:00:00", "72400", "72400" ]
+, [ "row-rxv2_zpnf-dcpx", "00000000-0000-0000-68F3-2FDFE52A0D3E", 0, 1617797148, null, 1617797148, null, "{ }", "West Virginia", "2021-02-15T00:00:00", "18500", "18500" ]
+, [ "row-emx9.5m5y~d3sr", "00000000-0000-0000-1488-5638B9632614", 0, 1617797148, null, 1617797148, null, "{ }", "Wisconsin", "2021-02-15T00:00:00", "57100", "57100" ]
+, [ "row-dyqs_nkc2_uwjt", "00000000-0000-0000-2C24-3689DD4494B6", 0, 1617797148, null, 1617797148, null, "{ }", "Wyoming", "2021-02-15T00:00:00", "5700", "5700" ]
+, [ "row-mtja.9kig~7f8h", "00000000-0000-0000-9408-1179B78FC6E9", 0, 1617797148, null, 1617797148, null, "{ }", "Alabama", "2021-02-08T00:00:00", "44100", "44100" ]
+, [ "row-rj64~5myc-7x25", "00000000-0000-0000-5BDF-FE3BB8C365C1", 0, 1617797148, null, 1617797148, null, "{ }", "Alaska", "2021-02-08T00:00:00", "0", "0" ]
+, [ "row-q4z9-7etb_bgpv", "00000000-0000-0000-F0DE-CDD31426C0B2", 0, 1617797148, null, 1617797148, null, "{ }", "American Samoa", "2021-02-08T00:00:00", "0", "0" ]
+, [ "row-ypj6_rmeu~iufu", "00000000-0000-0000-CB16-E68A1C070394", 0, 1617797148, null, 1617797148, null, "{ }", "Arizona", "2021-02-08T00:00:00", "62500", "62500" ]
+, [ "row-bk6g-wac7_48pa", "00000000-0000-0000-65D1-E42402FE04C7", 0, 1617797148, null, 1617797148, null, "{ }", "Arkansas", "2021-02-08T00:00:00", "26800", "26800" ]
+, [ "row-tk63_dwsg_ppw3", "00000000-0000-0000-5D02-CC8BEBA6B8CE", 0, 1617797148, null, 1617797148, null, "{ }", "California", "2021-02-08T00:00:00", "351900", "351900" ]
+, [ "row-rdgb-8ckr.xtq5", "00000000-0000-0000-6FE9-78CD73278E79", 0, 1617797148, null, 1617797148, null, "{ }", "Chicago", "2021-02-08T00:00:00", "24500", "24500" ]
+, [ "row-qfv9~29z3.kh9i", "00000000-0000-0000-C0AB-978991FF1EEA", 0, 1617797148, null, 1617797148, null, "{ }", "Colorado", "2021-02-08T00:00:00", "50000", "50000" ]
+, [ "row-b95n-x377~bgvw", "00000000-0000-0000-99E1-44912B42EF18", 0, 1617797148, null, 1617797148, null, "{ }", "Connecticut", "2021-02-08T00:00:00", "33100", "33100" ]
+, [ "row-5evt-2wa7~x2pc", "00000000-0000-0000-BEA2-B4E2858EB229", 0, 1617797148, null, 1617797148, null, "{ }", "Delaware", "2021-02-08T00:00:00", "8800", "8800" ]
+, [ "row-earx_vgru.uczt", "00000000-0000-0000-17FD-057C8CAC16CD", 0, 1617797148, null, 1617797148, null, "{ }", "District of Columbia", "2021-02-08T00:00:00", "6600", "6600" ]
+, [ "row-wn5y-yrjz_xgmv", "00000000-0000-0000-2B0F-621DF5D0730D", 0, 1617797148, null, 1617797148, null, "{ }", "Federal Entities", "2021-02-08T00:00:00", "481400", "481400" ]
+, [ "row-amzk_est9.6x78", "00000000-0000-0000-2322-01F4930A11CD", 0, 1617797148, null, 1617797148, null, "{ }", "Florida", "2021-02-08T00:00:00", "192500", "192500" ]
+, [ "row-mks5_kcvk_dfw6", "00000000-0000-0000-A157-566AEFAD3448", 0, 1617797148, null, 1617797148, null, "{ }", "Georgia", "2021-02-08T00:00:00", "91300", "91300" ]
+, [ "row-43z9-bk3y_6s5m", "00000000-0000-0000-C1BF-FDB24B387904", 0, 1617797148, null, 1617797148, null, "{ }", "Guam", "2021-02-08T00:00:00", "0", "0" ]
+, [ "row-7kfd_w8xc_t6rp", "00000000-0000-0000-F8AD-BD8D71F2398E", 0, 1617797148, null, 1617797148, null, "{ }", "Hawaii", "2021-02-08T00:00:00", "13100", "13100" ]
+, [ "row-xu2g~9d6e.za3n", "00000000-0000-0000-C8DB-A3C17613213B", 0, 1617797148, null, 1617797148, null, "{ }", "Idaho", "2021-02-08T00:00:00", "14700", "14700" ]
+, [ "row-42qc.5p87~avxh", "00000000-0000-0000-CB1A-61A384FD53E3", 0, 1617797148, null, 1617797148, null, "{ }", "Illinois", "2021-02-08T00:00:00", "91300", "91300" ]
+, [ "row-kv2s-7jfk_p8v3", "00000000-0000-0000-A062-D5DBBC256444", 0, 1617797148, null, 1617797148, null, "{ }", "Indiana", "2021-02-08T00:00:00", "59300", "59300" ]
+, [ "row-uzff.b5uc~drg8", "00000000-0000-0000-7E83-3479CCBDD97A", 0, 1617797148, null, 1617797148, null, "{ }", "Iowa", "2021-02-08T00:00:00", "28200", "28200" ]
+, [ "row-m6mt_uff7_4c2j", "00000000-0000-0000-F359-83CA7B820326", 0, 1617797148, null, 1617797148, null, "{ }", "Kansas", "2021-02-08T00:00:00", "25700", "25700" ]
+, [ "row-hr2t.bpps~ie6k", "00000000-0000-0000-EBCA-9FFD404DDD3E", 0, 1617797148, null, 1617797148, null, "{ }", "Kentucky", "2021-02-08T00:00:00", "40200", "40200" ]
+, [ "row-9vc6.z6va.4p3s", "00000000-0000-0000-D277-C93869B33B7D", 0, 1617797148, null, 1617797148, null, "{ }", "Louisiana", "2021-02-08T00:00:00", "41600", "41600" ]
+, [ "row-79ef_hncp-mnpf", "00000000-0000-0000-D1E1-6E2F40F97A2A", 0, 1617797148, null, 1617797148, null, "{ }", "Maine", "2021-02-08T00:00:00", "12700", "12700" ]
+, [ "row-wt7f~miw3~4dms", "00000000-0000-0000-4021-E2DD620E6AE9", 0, 1617797148, null, 1617797148, null, "{ }", "Mariana Islands", "2021-02-08T00:00:00", "0", "0" ]
+, [ "row-ijg8-mz5r_nqqi", "00000000-0000-0000-A73D-B704E7FD9EDA", 0, 1617797148, null, 1617797148, null, "{ }", "Marshall Islands", "2021-02-08T00:00:00", "0", "0" ]
+, [ "row-kpd9_dg8n_ynim", "00000000-0000-0000-D96C-2E7EEF90C81E", 0, 1617797148, null, 1617797148, null, "{ }", "Maryland", "2021-02-08T00:00:00", "54600", "54600" ]
+, [ "row-3p79-6245~gckj", "00000000-0000-0000-05D7-8DFC04CFD4AD", 0, 1617797148, null, 1617797148, null, "{ }", "Massachusetts", "2021-02-08T00:00:00", "63800", "63800" ]
+, [ "row-vswy-3gr3.3qwk", "00000000-0000-0000-6823-C5D5D67E0C24", 0, 1617797148, null, 1617797148, null, "{ }", "Michigan", "2021-02-08T00:00:00", "90900", "90900" ]
+, [ "row-dhz9_bzms_epib", "00000000-0000-0000-DE18-5B3C8594C52C", 0, 1617797148, null, 1617797148, null, "{ }", "Micronesia", "2021-02-08T00:00:00", "0", "0" ]
+, [ "row-apf5~bte4_zuhw", "00000000-0000-0000-F60F-C1791C7D2E86", 0, 1617797148, null, 1617797148, null, "{ }", "Minnesota", "2021-02-08T00:00:00", "49700", "49700" ]
+, [ "row-kvdb-h5d4_hkqp", "00000000-0000-0000-3BE9-E2CB8C57BB47", 0, 1617797148, null, 1617797148, null, "{ }", "Mississippi", "2021-02-08T00:00:00", "26600", "26600" ]
+, [ "row-67nt~caj7_pcej", "00000000-0000-0000-490A-48EB6E2CEE6B", 0, 1617797148, null, 1617797148, null, "{ }", "Missouri", "2021-02-08T00:00:00", "55100", "55100" ]
+, [ "row-3d2d_3xw7.qyq9", "00000000-0000-0000-86C1-CC59CFC24D7C", 0, 1617797148, null, 1617797148, null, "{ }", "Montana", "2021-02-08T00:00:00", "9600", "9600" ]
+, [ "row-23t4~z49a_9vzs", "00000000-0000-0000-35C2-B0F0BE10DD92", 0, 1617797148, null, 1617797148, null, "{ }", "Nebraska", "2021-02-08T00:00:00", "17000", "17000" ]
+, [ "row-w9tf-gn6m.j3ns", "00000000-0000-0000-EC9E-5B9DE6A07D6E", 0, 1617797148, null, 1617797148, null, "{ }", "Nevada", "2021-02-08T00:00:00", "26400", "26400" ]
+, [ "row-ijnw.jnq4~izdh", "00000000-0000-0000-03E2-CB20523F85FC", 0, 1617797148, null, 1617797148, null, "{ }", "New Hampshire", "2021-02-08T00:00:00", "12700", "12700" ]
+, [ "row-9d8u~4cux.3ma2", "00000000-0000-0000-1BEA-255BB678F8DB", 0, 1617797148, null, 1617797148, null, "{ }", "New Jersey", "2021-02-08T00:00:00", "80900", "80900" ]
+, [ "row-cgxt_7rh5.t6bi", "00000000-0000-0000-B471-8722BA986282", 0, 1617797148, null, 1617797148, null, "{ }", "New Mexico", "2021-02-08T00:00:00", "19000", "19000" ]
+, [ "row-gw9y~gcu4~a3xd", "00000000-0000-0000-2F1E-D6D227CDED01", 0, 1617797148, null, 1617797148, null, "{ }", "New York", "2021-02-08T00:00:00", "103000", "103000" ]
+, [ "row-6dwq.ag2h-s4rc", "00000000-0000-0000-F3D1-1A57932208DF", 0, 1617797148, null, 1617797148, null, "{ }", "New York City", "2021-02-08T00:00:00", "78200", "78200" ]
+, [ "row-sqgx_jpdz.mhjb", "00000000-0000-0000-3F79-90B826F8B2D8", 0, 1617797148, null, 1617797148, null, "{ }", "North Carolina", "2021-02-08T00:00:00", "92000", "92000" ]
+, [ "row-eph3_9292~vm57", "00000000-0000-0000-B51D-A2805B1F593D", 0, 1617797148, null, 1617797148, null, "{ }", "North Dakota", "2021-02-08T00:00:00", "6900", "6900" ]
+, [ "row-krj7-rrg9_88w6", "00000000-0000-0000-BE0B-15A0A6E6B9E3", 0, 1617797148, null, 1617797148, null, "{ }", "Ohio", "2021-02-08T00:00:00", "105600", "105600" ]
+, [ "row-3ucm_6gwb_43vw", "00000000-0000-0000-81D8-DF73100EF559", 0, 1617797148, null, 1617797148, null, "{ }", "Oklahoma", "2021-02-08T00:00:00", "34700", "34700" ]
+, [ "row-r559~uhud.zpi8", "00000000-0000-0000-32AF-C9AE373A6450", 0, 1617797148, null, 1617797148, null, "{ }", "Oregon", "2021-02-08T00:00:00", "37800", "37800" ]
+, [ "row-nmb7~ygvg_79zn", "00000000-0000-0000-F61E-A89795D7E7C9", 0, 1617797148, null, 1617797148, null, "{ }", "Palau", "2021-02-08T00:00:00", "0", "0" ]
+, [ "row-ab6x.556s~7879", "00000000-0000-0000-E888-1ACF5C3F63BA", 0, 1617797148, null, 1617797148, null, "{ }", "Pennsylvania", "2021-02-08T00:00:00", "104000", "104000" ]
+, [ "row-33mz_ff56~p2g8", "00000000-0000-0000-7978-49636D8868B3", 0, 1617797148, null, 1617797148, null, "{ }", "Philadelphia", "2021-02-08T00:00:00", "14400", "14400" ]
+, [ "row-x86d.3ra5-z962", "00000000-0000-0000-E0C7-17B39292943B", 0, 1617797148, null, 1617797148, null, "{ }", "Puerto Rico", "2021-02-08T00:00:00", "31600", "31600" ]
+, [ "row-idke-zbz4.tqa3", "00000000-0000-0000-E44B-E874FC6A5D19", 0, 1617797148, null, 1617797148, null, "{ }", "Rhode Island", "2021-02-08T00:00:00", "10000", "10000" ]
+, [ "row-mgff_akqi.jwju", "00000000-0000-0000-CB35-785585726FEA", 0, 1617797148, null, 1617797148, null, "{ }", "South Carolina", "2021-02-08T00:00:00", "45200", "45200" ]
+, [ "row-kg8x~9czx_af5b", "00000000-0000-0000-B004-FD4B54D98BA1", 0, 1617797148, null, 1617797148, null, "{ }", "South Dakota", "2021-02-08T00:00:00", "7700", "7700" ]
+, [ "row-sj82~22rf.jpyu", "00000000-0000-0000-D178-3085CF53AF18", 0, 1617797148, null, 1617797148, null, "{ }", "Tennessee", "2021-02-08T00:00:00", "60300", "60300" ]
+, [ "row-rwb9_nrb8-sc2p", "00000000-0000-0000-07F5-49BF85D9277F", 0, 1617797148, null, 1617797148, null, "{ }", "Texas", "2021-02-08T00:00:00", "241000", "241000" ]
+, [ "row-hwff~jw25.rp9p", "00000000-0000-0000-B374-926E23948E13", 0, 1617797148, null, 1617797148, null, "{ }", "U.S. Virgin Islands", "2021-02-08T00:00:00", "1000", "1000" ]
+, [ "row-wbhj~ak6m.p76i", "00000000-0000-0000-E5E6-C0AE2D3FE270", 0, 1617797148, null, 1617797148, null, "{ }", "Utah", "2021-02-08T00:00:00", "25100", "25100" ]
+, [ "row-bf49~kejt.5ybz", "00000000-0000-0000-3B79-E4CDB6EF1713", 0, 1617797148, null, 1617797148, null, "{ }", "Vermont", "2021-02-08T00:00:00", "6000", "6000" ]
+, [ "row-ix5b_n7ub-t49g", "00000000-0000-0000-7ABF-2744E762660E", 0, 1617797148, null, 1617797148, null, "{ }", "Virginia", "2021-02-08T00:00:00", "76600", "76600" ]
+, [ "row-w9nw_rpx7.wea7", "00000000-0000-0000-8B0A-280E1E4DDBCB", 0, 1617797148, null, 1617797148, null, "{ }", "Washington", "2021-02-08T00:00:00", "67000", "67000" ]
+, [ "row-xrmt~trnr-6krw", "00000000-0000-0000-0A56-15C631491A8E", 0, 1617797148, null, 1617797148, null, "{ }", "West Virginia", "2021-02-08T00:00:00", "17100", "17100" ]
+, [ "row-ts68_raq6_4qwz", "00000000-0000-0000-A379-F48897BDD73D", 0, 1617797148, null, 1617797148, null, "{ }", "Wisconsin", "2021-02-08T00:00:00", "52900", "52900" ]
+, [ "row-rgv3-eyaq-ipgv", "00000000-0000-0000-A0EE-0EBD5573268F", 0, 1617797148, null, 1617797148, null, "{ }", "Wyoming", "2021-02-08T00:00:00", "5300", "5300" ]
+, [ "row-kwtw_v5zd-b8d9", "00000000-0000-0000-60FD-D8965C556BE6", 0, 1617797148, null, 1617797148, null, "{ }", "Alabama", "2021-02-01T00:00:00", "40400", "40400" ]
+, [ "row-rsr7.q9z6_8dtx", "00000000-0000-0000-7027-1501ECE19376", 0, 1617797148, null, 1617797148, null, "{ }", "Alaska", "2021-02-01T00:00:00", "32300", "32300" ]
+, [ "row-3j75~i9w7_jt9n", "00000000-0000-0000-2E01-CCD02F171C81", 0, 1617797148, null, 1617797148, null, "{ }", "American Samoa", "2021-02-01T00:00:00", "3200", "0" ]
+, [ "row-tnjr_gskf.h7ij", "00000000-0000-0000-0B5C-D0238177979D", 0, 1617797148, null, 1617797148, null, "{ }", "Arizona", "2021-02-01T00:00:00", "57200", "57200" ]
+, [ "row-fpqp_tn8r.qdbt", "00000000-0000-0000-48B9-152D6441D5B5", 0, 1617797148, null, 1617797148, null, "{ }", "Arkansas", "2021-02-01T00:00:00", "24500", "24500" ]
+, [ "row-yu8t.mfkk.4h5s", "00000000-0000-0000-6168-4F3056AA31D8", 0, 1617797148, null, 1617797148, null, "{ }", "California", "2021-02-01T00:00:00", "322000", "322000" ]
+, [ "row-j8md~3z2q~f6fn", "00000000-0000-0000-E5D5-7B99ADE3988B", 0, 1617797148, null, 1617797148, null, "{ }", "Chicago", "2021-02-01T00:00:00", "22400", "22400" ]
+, [ "row-32n6.v7qj-pt9k", "00000000-0000-0000-F6C2-97E8C352C3A6", 0, 1617797148, null, 1617797148, null, "{ }", "Colorado", "2021-02-01T00:00:00", "45800", "45800" ]
+, [ "row-pv82_b3n9_i7sy", "00000000-0000-0000-4E21-2983AE269FB3", 0, 1617797148, null, 1617797148, null, "{ }", "Connecticut", "2021-02-01T00:00:00", "30300", "30300" ]
+, [ "row-xtbt~ekud_4adp", "00000000-0000-0000-33B0-7310FF8E18FD", 0, 1617797148, null, 1617797148, null, "{ }", "Delaware", "2021-02-01T00:00:00", "8000", "8000" ]
+, [ "row-hzk2_s9xt-avdn", "00000000-0000-0000-9E10-9AFD4DAA9504", 0, 1617797148, null, 1617797148, null, "{ }", "District of Columbia", "2021-02-01T00:00:00", "6100", "6100" ]
+, [ "row-p64u-94sc.8zdp", "00000000-0000-0000-C133-184DE4A5D823", 0, 1617797148, null, 1617797148, null, "{ }", "Federal Entities", "2021-02-01T00:00:00", "151180", "151800" ]
+, [ "row-yguw-v7jx-beqw", "00000000-0000-0000-C239-3D313FFD104A", 0, 1617797148, null, 1617797148, null, "{ }", "Florida", "2021-02-01T00:00:00", "176100", "176100" ]
+, [ "row-97qc~fbsh-s6bg", "00000000-0000-0000-5966-D4ABF4509DBB", 0, 1617797148, null, 1617797148, null, "{ }", "Georgia", "2021-02-01T00:00:00", "83500", "83500" ]
+, [ "row-tfr6~77sa.r763", "00000000-0000-0000-E8D7-2EB3431F532A", 0, 1617797148, null, 1617797148, null, "{ }", "Guam", "2021-02-01T00:00:00", "9200", "0" ]
+, [ "row-csx6.tynw.v9qz", "00000000-0000-0000-CDDF-D4417C21B6C5", 0, 1617797148, null, 1617797148, null, "{ }", "Hawaii", "2021-02-01T00:00:00", "12000", "12000" ]
+, [ "row-wgvk~cd8p-pshb", "00000000-0000-0000-4205-0E04A8721D31", 0, 1617797148, null, 1617797148, null, "{ }", "Idaho", "2021-02-01T00:00:00", "13400", "13400" ]
+, [ "row-kpag-83sg~89tr", "00000000-0000-0000-8945-433C6830F151", 0, 1617797148, null, 1617797148, null, "{ }", "Illinois", "2021-02-01T00:00:00", "83600", "83600" ]
+, [ "row-xf6y~p5ad_pvpw", "00000000-0000-0000-62AE-6864460FB835", 0, 1617797148, null, 1617797148, null, "{ }", "Indiana", "2021-02-01T00:00:00", "54300", "54300" ]
+, [ "row-wqma-zdn9.ewr7", "00000000-0000-0000-53F6-797E96C3F474", 0, 1617797148, null, 1617797148, null, "{ }", "Iowa", "2021-02-01T00:00:00", "25800", "25800" ]
+, [ "row-nsxw~hu8p~ssmw", "00000000-0000-0000-0F59-1A0F50B408BB", 0, 1617797148, null, 1617797148, null, "{ }", "Kansas", "2021-02-01T00:00:00", "23500", "23500" ]
+, [ "row-nm6k_rzsj.e267", "00000000-0000-0000-0D02-C48BAFA73D15", 0, 1617797148, null, 1617797148, null, "{ }", "Kentucky", "2021-02-01T00:00:00", "36700", "36700" ]
+, [ "row-4wni~renx_hm6j", "00000000-0000-0000-400A-F6EA8A8AFCC2", 0, 1617797148, null, 1617797148, null, "{ }", "Louisiana", "2021-02-01T00:00:00", "38100", "38100" ]
+, [ "row-5vj7_dixz.myqv", "00000000-0000-0000-F601-6DBF91115B02", 0, 1617797148, null, 1617797148, null, "{ }", "Maine", "2021-02-01T00:00:00", "11600", "11600" ]
+, [ "row-xycn-b9fk.uk99", "00000000-0000-0000-A761-000AA7112E40", 0, 1617797148, null, 1617797148, null, "{ }", "Mariana Islands", "2021-02-01T00:00:00", "3200", "0" ]
+, [ "row-f79j_dwue-gima", "00000000-0000-0000-570A-06531CD8CCBF", 0, 1617797148, null, 1617797148, null, "{ }", "Marshall Islands", "2021-02-01T00:00:00", "6600", "0" ]
+, [ "row-menk~3kzu_4nva", "00000000-0000-0000-6350-B3500F8B965D", 0, 1617797148, null, 1617797148, null, "{ }", "Maryland", "2021-02-01T00:00:00", "49900", "49900" ]
+, [ "row-ny2w-hx3u_3tuw", "00000000-0000-0000-9DC3-4506B7F061A0", 0, 1617797148, null, 1617797148, null, "{ }", "Massachusetts", "2021-02-01T00:00:00", "58400", "58400" ]
+, [ "row-t4bn~md56~8txy", "00000000-0000-0000-C1A4-9ED9E1A9BB94", 0, 1617797148, null, 1617797148, null, "{ }", "Michigan", "2021-02-01T00:00:00", "83100", "83100" ]
+, [ "row-3w6g.xvpx.6tce", "00000000-0000-0000-942F-B4960C4E3615", 0, 1617797148, null, 1617797148, null, "{ }", "Micronesia", "2021-02-01T00:00:00", "9400", "0" ]
+, [ "row-xxex.qhnr.zpfy", "00000000-0000-0000-00E4-F6F4BE7CF5D5", 0, 1617797148, null, 1617797148, null, "{ }", "Minnesota", "2021-02-01T00:00:00", "45500", "45500" ]
+, [ "row-f6ux.83ej_mcvr", "00000000-0000-0000-FBFB-853F18CEA434", 0, 1617797148, null, 1617797148, null, "{ }", "Mississippi", "2021-02-01T00:00:00", "24300", "24300" ]
+, [ "row-gxxa_gyss-qppv", "00000000-0000-0000-AC65-31D4A60799BE", 0, 1617797148, null, 1617797148, null, "{ }", "Missouri", "2021-02-01T00:00:00", "50400", "50400" ]
+, [ "row-hj6n-qn5i_wjq6", "00000000-0000-0000-9FEA-5F091624EF8C", 0, 1617797148, null, 1617797148, null, "{ }", "Montana", "2021-02-01T00:00:00", "8800", "8800" ]
+, [ "row-prq3~59v9-5way", "00000000-0000-0000-A4E5-E34DA62EB085", 0, 1617797148, null, 1617797148, null, "{ }", "Nebraska", "2021-02-01T00:00:00", "15500", "15500" ]
+, [ "row-dyh2.ckic_hcce", "00000000-0000-0000-BB9B-BE5B938DD514", 0, 1617797148, null, 1617797148, null, "{ }", "Nevada", "2021-02-01T00:00:00", "24100", "24100" ]
+, [ "row-5d6w.xebb~knan", "00000000-0000-0000-6963-9A704FCAB723", 0, 1617797148, null, 1617797148, null, "{ }", "New Hampshire", "2021-02-01T00:00:00", "11600", "11600" ]
+, [ "row-m9bz~h88c-bhif", "00000000-0000-0000-3092-F5179169A02A", 0, 1617797148, null, 1617797148, null, "{ }", "New Jersey", "2021-02-01T00:00:00", "74000", "74000" ]
+, [ "row-8khc.kpij~nr58", "00000000-0000-0000-CAC2-BE88E57C6F20", 0, 1617797148, null, 1617797148, null, "{ }", "New Mexico", "2021-02-01T00:00:00", "17300", "17300" ]
+, [ "row-6xcu.iyfn.x5es", "00000000-0000-0000-2109-FA43159FBBF7", 0, 1617797148, null, 1617797148, null, "{ }", "New York", "2021-02-01T00:00:00", "94200", "94200" ]
+, [ "row-8mui-rwh3_6uq9", "00000000-0000-0000-57D1-335496800664", 0, 1617797148, null, 1617797148, null, "{ }", "New York City", "2021-02-01T00:00:00", "71500", "71500" ]
+, [ "row-9e2t.28jg-6t28", "00000000-0000-0000-C3F8-788789F12F01", 0, 1617797148, null, 1617797148, null, "{ }", "North Carolina", "2021-02-01T00:00:00", "84200", "84200" ]
+, [ "row-s4id~deve_zn6c", "00000000-0000-0000-33F6-D68549E9D5BD", 0, 1617797148, null, 1617797148, null, "{ }", "North Dakota", "2021-02-01T00:00:00", "6400", "6400" ]
+, [ "row-trrg.9jx4.84sd", "00000000-0000-0000-5BC0-F9CC87B31338", 0, 1617797148, null, 1617797148, null, "{ }", "Ohio", "2021-02-01T00:00:00", "96600", "96600" ]
+, [ "row-fa6s~2qad-sdh9", "00000000-0000-0000-276D-1444AEAB5ADA", 0, 1617797148, null, 1617797148, null, "{ }", "Oklahoma", "2021-02-01T00:00:00", "31700", "31700" ]
+, [ "row-9jz2~dnk9_krah", "00000000-0000-0000-6050-287DD88CDD6F", 0, 1617797148, null, 1617797148, null, "{ }", "Oregon", "2021-02-01T00:00:00", "34600", "34600" ]
+, [ "row-me42-nq5s.8upv", "00000000-0000-0000-69B3-6207021958FB", 0, 1617797148, null, 1617797148, null, "{ }", "Palau", "2021-02-01T00:00:00", "2800", "0" ]
+, [ "row-phw2_mrgf~dy3z", "00000000-0000-0000-775D-1EFC772492AA", 0, 1617797148, null, 1617797148, null, "{ }", "Pennsylvania", "2021-02-01T00:00:00", "95200", "95200" ]
+, [ "row-vspd-7cni_qg68", "00000000-0000-0000-15B8-1D6C7F11B071", 0, 1617797148, null, 1617797148, null, "{ }", "Philadelphia", "2021-02-01T00:00:00", "13200", "13200" ]
+, [ "row-r2c8-b3xa.rhnw", "00000000-0000-0000-BE5A-36F3A6F41AF0", 0, 1617797148, null, 1617797148, null, "{ }", "Puerto Rico", "2021-02-01T00:00:00", "28900", "28900" ]
+, [ "row-mc4x.3t9t_qhbz", "00000000-0000-0000-732B-6E1F01F0DDDA", 0, 1617797148, null, 1617797148, null, "{ }", "Rhode Island", "2021-02-01T00:00:00", "9100", "9100" ]
+, [ "row-dair_879z.r5nr", "00000000-0000-0000-2128-02DA5EE7AF2C", 0, 1617797148, null, 1617797148, null, "{ }", "South Carolina", "2021-02-01T00:00:00", "41400", "41400" ]
+, [ "row-q9ur-egub_92rk", "00000000-0000-0000-ECDA-D83F12958E51", 0, 1617797148, null, 1617797148, null, "{ }", "South Dakota", "2021-02-01T00:00:00", "7000", "7000" ]
+, [ "row-dwdt-he7n_ugde", "00000000-0000-0000-AF31-CE4EBE61AD41", 0, 1617797148, null, 1617797148, null, "{ }", "Tennessee", "2021-02-01T00:00:00", "55200", "55200" ]
+, [ "row-trjx~f6ry_8h3d", "00000000-0000-0000-7A9B-71F0F365A542", 0, 1617797148, null, 1617797148, null, "{ }", "Texas", "2021-02-01T00:00:00", "220500", "220500" ]
+, [ "row-ywva-w5bm_xhhp", "00000000-0000-0000-8381-994255867C61", 0, 1617797148, null, 1617797148, null, "{ }", "U.S. Virgin Islands", "2021-02-01T00:00:00", "900", "900" ]
+, [ "row-dvnp-4w6d.ehb6", "00000000-0000-0000-A29C-D34D88734140", 0, 1617797148, null, 1617797148, null, "{ }", "Utah", "2021-02-01T00:00:00", "22900", "22900" ]
+, [ "row-rptk-46qm_jhy4", "00000000-0000-0000-F324-903C4A287624", 0, 1617797148, null, 1617797148, null, "{ }", "Vermont", "2021-02-01T00:00:00", "5500", "5500" ]
+, [ "row-27tu-gr2h_gmvc", "00000000-0000-0000-0C12-EC1B139C851D", 0, 1617797148, null, 1617797148, null, "{ }", "Virginia", "2021-02-01T00:00:00", "70100", "70100" ]
+, [ "row-73se_3uas_fux9", "00000000-0000-0000-544A-F460AA41E938", 0, 1617797148, null, 1617797148, null, "{ }", "Washington", "2021-02-01T00:00:00", "61300", "61300" ]
+, [ "row-8yfk_is7e.vjx8", "00000000-0000-0000-7884-F0E5F4685D72", 0, 1617797148, null, 1617797148, null, "{ }", "West Virginia", "2021-02-01T00:00:00", "15600", "15600" ]
+, [ "row-9mav~f39x.nxk5", "00000000-0000-0000-1A47-C5112A96D6FD", 0, 1617797148, null, 1617797148, null, "{ }", "Wisconsin", "2021-02-01T00:00:00", "48300", "48300" ]
+, [ "row-7i9j.8izu-xq73", "00000000-0000-0000-C65A-E197A07B6619", 0, 1617797148, null, 1617797148, null, "{ }", "Wyoming", "2021-02-01T00:00:00", "4800", "4800" ]
+, [ "row-mhv9_ia3z-4ax8", "00000000-0000-0000-D432-3DD4E708B3A7", 0, 1617797148, null, 1617797148, null, "{ }", "Alabama", "2021-01-25T00:00:00", "30600", "30600" ]
+, [ "row-5g95.t4s4~qbag", "00000000-0000-0000-1342-3C98FF1EE0ED", 0, 1617797148, null, 1617797148, null, "{ }", "Alaska", "2021-01-25T00:00:00", "0", "0" ]
+, [ "row-bgpy~dazm~apt2", "00000000-0000-0000-3BC5-F17D24A5E824", 0, 1617797148, null, 1617797148, null, "{ }", "American Samoa", "2021-01-25T00:00:00", "0", "0" ]
+, [ "row-z238~4rxa-7dj6", "00000000-0000-0000-B395-FE2111B668F9", 0, 1617797148, null, 1617797148, null, "{ }", "Arizona", "2021-01-25T00:00:00", "43400", "43400" ]
+, [ "row-nkmj.9gpi.9a3q", "00000000-0000-0000-3F41-DBA7DF75721B", 0, 1617797148, null, 1617797148, null, "{ }", "Arkansas", "2021-01-25T00:00:00", "18600", "18600" ]
+, [ "row-9b4d~au8p.iqtg", "00000000-0000-0000-1B87-D251258C25D2", 0, 1617797148, null, 1617797148, null, "{ }", "California", "2021-01-25T00:00:00", "244000", "244000" ]
+, [ "row-izcd_e78p-ptw3", "00000000-0000-0000-8203-F60CDA8A8DC3", 0, 1617797148, null, 1617797148, null, "{ }", "Chicago", "2021-01-25T00:00:00", "17000", "17000" ]
+, [ "row-aiv4-wc7j~j5te", "00000000-0000-0000-0B29-C98F3830F967", 0, 1617797148, null, 1617797148, null, "{ }", "Colorado", "2021-01-25T00:00:00", "34700", "34700" ]
+, [ "row-k8md_n4re.gkpn", "00000000-0000-0000-C2EA-25948B6ED5A3", 0, 1617797148, null, 1617797148, null, "{ }", "Connecticut", "2021-01-25T00:00:00", "23000", "23000" ]
+, [ "row-mibc.vbkn_8hez", "00000000-0000-0000-9057-8F2771C494A0", 0, 1617797148, null, 1617797148, null, "{ }", "Delaware", "2021-01-25T00:00:00", "6100", "6100" ]
+, [ "row-ixb3_33c5_u68h", "00000000-0000-0000-4F1F-8E710A885B7F", 0, 1617797148, null, 1617797148, null, "{ }", "District of Columbia", "2021-01-25T00:00:00", "4600", "4600" ]
+, [ "row-bzzz-74fy_9qze", "00000000-0000-0000-C937-124670611819", 0, 1617797148, null, 1617797148, null, "{ }", "Federal Entities", "2021-01-25T00:00:00", "105300", "105300" ]
+, [ "row-8z6n-jqf9-wyei", "00000000-0000-0000-45FF-19F16CBFEF69", 0, 1617797148, null, 1617797148, null, "{ }", "Florida", "2021-01-25T00:00:00", "133500", "133500" ]
+, [ "row-tkqn~3dmw-e96d", "00000000-0000-0000-2A01-C64FEB1EC421", 0, 1617797148, null, 1617797148, null, "{ }", "Georgia", "2021-01-25T00:00:00", "63300", "63300" ]
+, [ "row-ucis_98ts_6m7e", "00000000-0000-0000-9ABD-EE4E8A62BF3E", 0, 1617797148, null, 1617797148, null, "{ }", "Guam", "2021-01-25T00:00:00", "0", "0" ]
+, [ "row-vcab.3fwa_nqxi", "00000000-0000-0000-E7AA-EB920281D557", 0, 1617797148, null, 1617797148, null, "{ }", "Hawaii", "2021-01-25T00:00:00", "9100", "9100" ]
+, [ "row-xfh2.9nns.7mbg", "00000000-0000-0000-9031-1359C3A2E36C", 0, 1617797148, null, 1617797148, null, "{ }", "Idaho", "2021-01-25T00:00:00", "10200", "10200" ]
+, [ "row-t6ra_vv3x-mwe2", "00000000-0000-0000-0614-A1495DBBFBB4", 0, 1617797148, null, 1617797148, null, "{ }", "Illinois", "2021-01-25T00:00:00", "63300", "63300" ]
+, [ "row-dfzq-acb8~nzwa", "00000000-0000-0000-6A4D-6D8734831A3A", 0, 1617797148, null, 1617797148, null, "{ }", "Indiana", "2021-01-25T00:00:00", "41100", "41100" ]
+, [ "row-4dwm~u8u3.bge7", "00000000-0000-0000-5B1C-0E7BA8911B51", 0, 1617797148, null, 1617797148, null, "{ }", "Iowa", "2021-01-25T00:00:00", "19500", "19500" ]
+, [ "row-ve2t_jhqg_2ynm", "00000000-0000-0000-232F-9E8DD5807F9B", 0, 1617797148, null, 1617797148, null, "{ }", "Kansas", "2021-01-25T00:00:00", "17800", "17800" ]
+, [ "row-q29r-tr2b_wpcn", "00000000-0000-0000-9322-B0755B417CC7", 0, 1617797148, null, 1617797148, null, "{ }", "Kentucky", "2021-01-25T00:00:00", "27900", "27900" ]
+, [ "row-2f23~nn55~rfbe", "00000000-0000-0000-016C-F1813E58C7C3", 0, 1617797148, null, 1617797148, null, "{ }", "Louisiana", "2021-01-25T00:00:00", "28900", "28900" ]
+, [ "row-v2e5_53pk.v4b3", "00000000-0000-0000-A958-4A0452B048E3", 0, 1617797148, null, 1617797148, null, "{ }", "Maine", "2021-01-25T00:00:00", "8800", "8800" ]
+, [ "row-cmb7_xd2f.kdpm", "00000000-0000-0000-2255-5244B44FDFBE", 0, 1617797148, null, 1617797148, null, "{ }", "Mariana Islands", "2021-01-25T00:00:00", "0", "0" ]
+, [ "row-2rf4~496e.huir", "00000000-0000-0000-721B-7A891A809C6F", 0, 1617797148, null, 1617797148, null, "{ }", "Marshall Islands", "2021-01-25T00:00:00", "0", "0" ]
+, [ "row-8vsd~jyw4~j8gx", "00000000-0000-0000-FE41-FCD1A7A7C363", 0, 1617797148, null, 1617797148, null, "{ }", "Maryland", "2021-01-25T00:00:00", "37800", "37800" ]
+, [ "row-xt32~vbn6-a32y", "00000000-0000-0000-896B-A579528F228E", 0, 1617797148, null, 1617797148, null, "{ }", "Massachusetts", "2021-01-25T00:00:00", "44300", "44300" ]
+, [ "row-wzf5.aj8d_qfjm", "00000000-0000-0000-211F-4C76B446C051", 0, 1617797148, null, 1617797148, null, "{ }", "Michigan", "2021-01-25T00:00:00", "63000", "63000" ]
+, [ "row-eca2~mpjk_jpiy", "00000000-0000-0000-5BB7-A215FB44A45C", 0, 1617797148, null, 1617797148, null, "{ }", "Micronesia", "2021-01-25T00:00:00", "0", "0" ]
+, [ "row-2bgq-87fp~6ydf", "00000000-0000-0000-4E8A-679C0C2934D5", 0, 1617797148, null, 1617797148, null, "{ }", "Minnesota", "2021-01-25T00:00:00", "34500", "34500" ]
+, [ "row-9is9_9kbm.mwgz", "00000000-0000-0000-022C-4D7719A4B3C2", 0, 1617797148, null, 1617797148, null, "{ }", "Mississippi", "2021-01-25T00:00:00", "18500", "18500" ]
+, [ "row-psjg_8wq9-erug", "00000000-0000-0000-76F8-8EF430CE78B4", 0, 1617797148, null, 1617797148, null, "{ }", "Missouri", "2021-01-25T00:00:00", "38200", "38200" ]
+, [ "row-vtrp_bc2p-ejcc", "00000000-0000-0000-D76F-45328BE962F6", 0, 1617797148, null, 1617797148, null, "{ }", "Montana", "2021-01-25T00:00:00", "6700", "6700" ]
+, [ "row-agt7~2zhg.bey2", "00000000-0000-0000-4DB6-4B2C3A246AA6", 0, 1617797148, null, 1617797148, null, "{ }", "Nebraska", "2021-01-25T00:00:00", "11800", "11800" ]
+, [ "row-jict-xjyp_uw54", "00000000-0000-0000-3BF6-AAB631493141", 0, 1617797148, null, 1617797148, null, "{ }", "Nevada", "2021-01-25T00:00:00", "18300", "18300" ]
+, [ "row-6c2h.93vk_d7n2", "00000000-0000-0000-E88B-A72333810FCB", 0, 1617797148, null, 1617797148, null, "{ }", "New Hampshire", "2021-01-25T00:00:00", "8800", "8800" ]
+, [ "row-zq9v.dv57-api6", "00000000-0000-0000-83B0-21417DBF6E10", 0, 1617797148, null, 1617797148, null, "{ }", "New Jersey", "2021-01-25T00:00:00", "56100", "56100" ]
+, [ "row-wnzs-khnm-yffm", "00000000-0000-0000-9683-536457494F6D", 0, 1617797148, null, 1617797148, null, "{ }", "New Mexico", "2021-01-25T00:00:00", "13200", "13200" ]
+, [ "row-aucq.773k~4akw", "00000000-0000-0000-BF13-5DB2E855BC38", 0, 1617797148, null, 1617797148, null, "{ }", "New York", "2021-01-25T00:00:00", "71400", "71400" ]
+, [ "row-vywq.grh3~kp7d", "00000000-0000-0000-6897-86828072F1F1", 0, 1617797148, null, 1617797148, null, "{ }", "New York City", "2021-01-25T00:00:00", "54200", "54200" ]
+, [ "row-cwxw_w5js.p9i7", "00000000-0000-0000-77F6-AB82B8931C56", 0, 1617797148, null, 1617797148, null, "{ }", "North Carolina", "2021-01-25T00:00:00", "63800", "63800" ]
+, [ "row-b54s_gas2.tq2n", "00000000-0000-0000-D8F4-17AEAD3F4D4F", 0, 1617797148, null, 1617797148, null, "{ }", "North Dakota", "2021-01-25T00:00:00", "4800", "4800" ]
+, [ "row-6ren_jzxw_s9sh", "00000000-0000-0000-D131-B9304A091EC5", 0, 1617797148, null, 1617797148, null, "{ }", "Ohio", "2021-01-25T00:00:00", "73200", "73200" ]
+, [ "row-c2uh-k7yv.4j3m", "00000000-0000-0000-3724-219F5D9B0346", 0, 1617797148, null, 1617797148, null, "{ }", "Oklahoma", "2021-01-25T00:00:00", "24100", "24100" ]
+, [ "row-pvs6-diwz-m3jk", "00000000-0000-0000-4743-DCB6698A2405", 0, 1617797148, null, 1617797148, null, "{ }", "Oregon", "2021-01-25T00:00:00", "26200", "26200" ]
+, [ "row-6uhy~qx4u.mi4p", "00000000-0000-0000-8048-04F0F75A1155", 0, 1617797148, null, 1617797148, null, "{ }", "Palau", "2021-01-25T00:00:00", "0", "0" ]
+, [ "row-a6zz_i227_davg", "00000000-0000-0000-43FD-AB608C1905B9", 0, 1617797148, null, 1617797148, null, "{ }", "Pennsylvania", "2021-01-25T00:00:00", "72100", "72100" ]
+, [ "row-6k7b.yjm6~zgz5", "00000000-0000-0000-CDB2-A4B3F20B2A85", 0, 1617797148, null, 1617797148, null, "{ }", "Philadelphia", "2021-01-25T00:00:00", "10000", "10000" ]
+, [ "row-774i_hdp4.6i2d", "00000000-0000-0000-B368-6593EF621DB8", 0, 1617797148, null, 1617797148, null, "{ }", "Puerto Rico", "2021-01-25T00:00:00", "21900", "21900" ]
+, [ "row-y5wk_jzsk.nqsi", "00000000-0000-0000-7C05-B6A73E0D626C", 0, 1617797148, null, 1617797148, null, "{ }", "Rhode Island", "2021-01-25T00:00:00", "6900", "6900" ]
+, [ "row-vtk6-2xi7-6hn5", "00000000-0000-0000-4374-A8C93A0E8771", 0, 1617797148, null, 1617797148, null, "{ }", "South Carolina", "2021-01-25T00:00:00", "31400", "31400" ]
+, [ "row-pe9t~j98r~2wig", "00000000-0000-0000-BFDF-85C38F0AB11D", 0, 1617797148, null, 1617797148, null, "{ }", "South Dakota", "2021-01-25T00:00:00", "5300", "5300" ]
+, [ "row-ebzc-etbj.y8c8", "00000000-0000-0000-F494-1E929E6BEFF0", 0, 1617797148, null, 1617797148, null, "{ }", "Tennessee", "2021-01-25T00:00:00", "41800", "41800" ]
+, [ "row-cuuz.h2j2~45mv", "00000000-0000-0000-DB8C-0D313EBEC7ED", 0, 1617797148, null, 1617797148, null, "{ }", "Texas", "2021-01-25T00:00:00", "167100", "167100" ]
+, [ "row-6vem-qrir~z6un", "00000000-0000-0000-99FC-50EAA223990A", 0, 1617797148, null, 1617797148, null, "{ }", "U.S. Virgin Islands", "2021-01-25T00:00:00", "700", "700" ]
+, [ "row-3ee6_b8t2_2yuq", "00000000-0000-0000-511F-7AA49A5C36B1", 0, 1617797148, null, 1617797148, null, "{ }", "Utah", "2021-01-25T00:00:00", "17400", "17400" ]
+, [ "row-ec8m.5r86_5ky3", "00000000-0000-0000-BA65-0B72B976BFE5", 0, 1617797148, null, 1617797148, null, "{ }", "Vermont", "2021-01-25T00:00:00", "4200", "4200" ]
+, [ "row-7ehm-2v4q_4nu3", "00000000-0000-0000-8F19-60B1A1BCCB18", 0, 1617797148, null, 1617797148, null, "{ }", "Virginia", "2021-01-25T00:00:00", "53100", "53100" ]
+, [ "row-i8k5.my4e~sikc", "00000000-0000-0000-AF10-BD4D86881120", 0, 1617797148, null, 1617797148, null, "{ }", "Washington", "2021-01-25T00:00:00", "46500", "46500" ]
+, [ "row-4wf3-3839-b5d4", "00000000-0000-0000-C9AD-93AA90F2B3D5", 0, 1617797148, null, 1617797148, null, "{ }", "West Virginia", "2021-01-25T00:00:00", "11900", "11900" ]
+, [ "row-8h5w-annt.xwv3", "00000000-0000-0000-0CED-F6571FBD4345", 0, 1617797148, null, 1617797148, null, "{ }", "Wisconsin", "2021-01-25T00:00:00", "36700", "36700" ]
+, [ "row-qtrh-kseb~qirq", "00000000-0000-0000-84A9-BC86CA0D1265", 0, 1617797148, null, 1617797148, null, "{ }", "Wyoming", "2021-01-25T00:00:00", "3700", "3700" ]
+, [ "row-cu8c.ndkx_wmwb", "00000000-0000-0000-F4C0-997A07A1B96E", 0, 1617797148, null, 1617797148, null, "{ }", "Alabama", "2021-01-18T00:00:00", "30600", "30600" ]
+, [ "row-rrpm~mtr9-sz93", "00000000-0000-0000-60EF-01A060C3A4F6", 0, 1617797148, null, 1617797148, null, "{ }", "Alaska", "2021-01-18T00:00:00", "0", "0" ]
+, [ "row-qy5s_wzqz_cf54", "00000000-0000-0000-4ACF-FAC254FEB703", 0, 1617797148, null, 1617797148, null, "{ }", "American Samoa", "2021-01-18T00:00:00", "0", "0" ]
+, [ "row-rssy.k5xg.xk29", "00000000-0000-0000-8753-66518AF519E4", 0, 1617797148, null, 1617797148, null, "{ }", "Arizona", "2021-01-18T00:00:00", "43400", "43400" ]
+, [ "row-mh6q~xbj3_vbyf", "00000000-0000-0000-D8A1-1407BC617810", 0, 1617797148, null, 1617797148, null, "{ }", "Arkansas", "2021-01-18T00:00:00", "18600", "18600" ]
+, [ "row-husn.6tuy.5r9k", "00000000-0000-0000-C3C3-E28852E513F2", 0, 1617797148, null, 1617797148, null, "{ }", "California", "2021-01-18T00:00:00", "244000", "244000" ]
+, [ "row-fdpk~h8d2~b3uy", "00000000-0000-0000-6732-EDF5E869C0B0", 0, 1617797148, null, 1617797148, null, "{ }", "Chicago", "2021-01-18T00:00:00", "17000", "17000" ]
+, [ "row-cqp8.dt3n.3ir4", "00000000-0000-0000-871C-547ECABAF816", 0, 1617797148, null, 1617797148, null, "{ }", "Colorado", "2021-01-18T00:00:00", "34700", "34700" ]
+, [ "row-25ba.kvqp_vn6q", "00000000-0000-0000-DA61-A2DB073709B6", 0, 1617797148, null, 1617797148, null, "{ }", "Connecticut", "2021-01-18T00:00:00", "23000", "23000" ]
+, [ "row-uw6e_w66k.wntf", "00000000-0000-0000-3F3A-2B24592C5EBB", 0, 1617797148, null, 1617797148, null, "{ }", "Delaware", "2021-01-18T00:00:00", "6100", "6100" ]
+, [ "row-pa4a.36m9-dg5t", "00000000-0000-0000-DDBC-FC8D80FF3213", 0, 1617797148, null, 1617797148, null, "{ }", "District of Columbia", "2021-01-18T00:00:00", "4600", "4600" ]
+, [ "row-r55f_u7ii_eauc", "00000000-0000-0000-6B79-5ADCEE66A438", 0, 1617797148, null, 1617797148, null, "{ }", "Federal Entities", "2021-01-18T00:00:00", "105000", "105000" ]
+, [ "row-7vmn~ubi3-yj8s", "00000000-0000-0000-6E39-916B0727C4F0", 0, 1617797148, null, 1617797148, null, "{ }", "Florida", "2021-01-18T00:00:00", "133500", "133500" ]
+, [ "row-shdt-yiez_6h2d", "00000000-0000-0000-454E-CF09527ED887", 0, 1617797148, null, 1617797148, null, "{ }", "Georgia", "2021-01-18T00:00:00", "63300", "63300" ]
+, [ "row-yfsk-uxip-iuf2", "00000000-0000-0000-3EA0-EF83CAD6565F", 0, 1617797148, null, 1617797148, null, "{ }", "Guam", "2021-01-18T00:00:00", "0", "0" ]
+, [ "row-qpf2.xvxq.s985", "00000000-0000-0000-484A-7C9D7DCB898D", 0, 1617797148, null, 1617797148, null, "{ }", "Hawaii", "2021-01-18T00:00:00", "9100", "9100" ]
+, [ "row-5jd5.stej-9in3", "00000000-0000-0000-277D-C5285BF8BB77", 0, 1617797148, null, 1617797148, null, "{ }", "Idaho", "2021-01-18T00:00:00", "10200", "10200" ]
+, [ "row-be3n_g8v5-8ych", "00000000-0000-0000-8215-64AACFC67017", 0, 1617797148, null, 1617797148, null, "{ }", "Illinois", "2021-01-18T00:00:00", "63300", "63300" ]
+, [ "row-dgju~kic4_tnmv", "00000000-0000-0000-6FE8-08502AF597D3", 0, 1617797148, null, 1617797148, null, "{ }", "Indiana", "2021-01-18T00:00:00", "41100", "41100" ]
+, [ "row-e37v-w7rx~6prg", "00000000-0000-0000-16A5-EF6183B41762", 0, 1617797148, null, 1617797148, null, "{ }", "Iowa", "2021-01-18T00:00:00", "19500", "19500" ]
+, [ "row-ifwd-kien~4b2h", "00000000-0000-0000-F276-07E0B8505A22", 0, 1617797148, null, 1617797148, null, "{ }", "Kansas", "2021-01-18T00:00:00", "17800", "17800" ]
+, [ "row-8qyk-gwq8_86zr", "00000000-0000-0000-A74C-61EFA1E1062D", 0, 1617797148, null, 1617797148, null, "{ }", "Kentucky", "2021-01-18T00:00:00", "27900", "27900" ]
+, [ "row-5kd3_b6q8_4d9j", "00000000-0000-0000-C24D-113D086A080A", 0, 1617797148, null, 1617797148, null, "{ }", "Louisiana", "2021-01-18T00:00:00", "28900", "28900" ]
+, [ "row-rv5u_wmqn-3gfw", "00000000-0000-0000-143B-801568F70CDF", 0, 1617797148, null, 1617797148, null, "{ }", "Maine", "2021-01-18T00:00:00", "8800", "8800" ]
+, [ "row-r97t_d9da.msng", "00000000-0000-0000-0A78-D85AD6E513A2", 0, 1617797148, null, 1617797148, null, "{ }", "Mariana Islands", "2021-01-18T00:00:00", "0", "0" ]
+, [ "row-r4py.x6k3.prff", "00000000-0000-0000-CD8A-8756115A2351", 0, 1617797148, null, 1617797148, null, "{ }", "Marshall Islands", "2021-01-18T00:00:00", "0", "0" ]
+, [ "row-d2bv.gz69~2t3w", "00000000-0000-0000-1C86-B3CE4A66050F", 0, 1617797148, null, 1617797148, null, "{ }", "Maryland", "2021-01-18T00:00:00", "37800", "37800" ]
+, [ "row-6798.3f5p.29t4", "00000000-0000-0000-7C68-9FAD13FB61A6", 0, 1617797148, null, 1617797148, null, "{ }", "Massachusetts", "2021-01-18T00:00:00", "44300", "44300" ]
+, [ "row-rmer-774j-n9je", "00000000-0000-0000-79E8-9659B8011E10", 0, 1617797148, null, 1617797148, null, "{ }", "Michigan", "2021-01-18T00:00:00", "63000", "63000" ]
+, [ "row-6t95.8heh.5ea4", "00000000-0000-0000-3B8F-7DEC1A4D0FB9", 0, 1617797148, null, 1617797148, null, "{ }", "Micronesia", "2021-01-18T00:00:00", "0", "0" ]
+, [ "row-gb3g_npc8_t8qb", "00000000-0000-0000-8B37-147F7645E030", 0, 1617797148, null, 1617797148, null, "{ }", "Minnesota", "2021-01-18T00:00:00", "34500", "34500" ]
+, [ "row-rvpr-4ab5-vsza", "00000000-0000-0000-A784-7D0EE7492C40", 0, 1617797148, null, 1617797148, null, "{ }", "Mississippi", "2021-01-18T00:00:00", "18500", "18500" ]
+, [ "row-pj32-u9wq-2zyi", "00000000-0000-0000-116E-0B7E82805D40", 0, 1617797148, null, 1617797148, null, "{ }", "Missouri", "2021-01-18T00:00:00", "38200", "38200" ]
+, [ "row-czsa_y785~dh3y", "00000000-0000-0000-0D62-14F8243368C5", 0, 1617797148, null, 1617797148, null, "{ }", "Montana", "2021-01-18T00:00:00", "6700", "6700" ]
+, [ "row-3ka8-47fs.n8rg", "00000000-0000-0000-25C7-72DBCD1E2779", 0, 1617797148, null, 1617797148, null, "{ }", "Nebraska", "2021-01-18T00:00:00", "11800", "11800" ]
+, [ "row-uid5.5ms9-x4i5", "00000000-0000-0000-5843-8F41DDE30482", 0, 1617797148, null, 1617797148, null, "{ }", "Nevada", "2021-01-18T00:00:00", "18300", "18300" ]
+, [ "row-wi8h.7hfh.ma3n", "00000000-0000-0000-6238-C20802334167", 0, 1617797148, null, 1617797148, null, "{ }", "New Hampshire", "2021-01-18T00:00:00", "8800", "8800" ]
+, [ "row-6iee-5zg2.cwin", "00000000-0000-0000-015D-CEC185C34CE5", 0, 1617797148, null, 1617797148, null, "{ }", "New Jersey", "2021-01-18T00:00:00", "56100", "56100" ]
+, [ "row-69px-cq6a-fcv7", "00000000-0000-0000-6260-6DCBFFBA4F5F", 0, 1617797148, null, 1617797148, null, "{ }", "New Mexico", "2021-01-18T00:00:00", "13200", "13200" ]
+, [ "row-j9zg.5g6v_4nji", "00000000-0000-0000-A4A4-2D6C11F6B7AE", 0, 1617797148, null, 1617797148, null, "{ }", "New York", "2021-01-18T00:00:00", "71400", "71400" ]
+, [ "row-m5fc~nam2.uqae", "00000000-0000-0000-D74C-57E8C480CD5D", 0, 1617797148, null, 1617797148, null, "{ }", "New York City", "2021-01-18T00:00:00", "54200", "54200" ]
+, [ "row-eik4-h7w5_5nnc", "00000000-0000-0000-87FF-F013D6C5B674", 0, 1617797148, null, 1617797148, null, "{ }", "North Carolina", "2021-01-18T00:00:00", "63800", "63800" ]
+, [ "row-eacz~xfat-er89", "00000000-0000-0000-6271-B5821EE290C6", 0, 1617797148, null, 1617797148, null, "{ }", "North Dakota", "2021-01-18T00:00:00", "4800", "4800" ]
+, [ "row-cr6f-e29y~2d23", "00000000-0000-0000-6BDC-0514C2B16AC7", 0, 1617797148, null, 1617797148, null, "{ }", "Ohio", "2021-01-18T00:00:00", "73200", "73200" ]
+, [ "row-xr3n~v7rm~xp77", "00000000-0000-0000-2177-082CEB080F4B", 0, 1617797148, null, 1617797148, null, "{ }", "Oklahoma", "2021-01-18T00:00:00", "24100", "24100" ]
+, [ "row-3dij-ka34_sd5z", "00000000-0000-0000-285C-06B3F7A4B507", 0, 1617797148, null, 1617797148, null, "{ }", "Oregon", "2021-01-18T00:00:00", "26200", "26200" ]
+, [ "row-cnzt.pbsr.as69", "00000000-0000-0000-C29F-4109CE34867A", 0, 1617797148, null, 1617797148, null, "{ }", "Palau", "2021-01-18T00:00:00", "0", "0" ]
+, [ "row-dx2e-wbk2_v5k2", "00000000-0000-0000-BB74-B53271BA1E10", 0, 1617797148, null, 1617797148, null, "{ }", "Pennsylvania", "2021-01-18T00:00:00", "72100", "72100" ]
+, [ "row-r7w8~rfcq.nip3", "00000000-0000-0000-46D6-2413960B4E8E", 0, 1617797148, null, 1617797148, null, "{ }", "Philadelphia", "2021-01-18T00:00:00", "10000", "10000" ]
+, [ "row-qbwm_6e4t~u9i8", "00000000-0000-0000-4B4E-2C91FFD7298F", 0, 1617797148, null, 1617797148, null, "{ }", "Puerto Rico", "2021-01-18T00:00:00", "21900", "21900" ]
+, [ "row-cq6m_h9gf~yaej", "00000000-0000-0000-E2EB-4C6611924664", 0, 1617797148, null, 1617797148, null, "{ }", "Rhode Island", "2021-01-18T00:00:00", "6900", "6900" ]
+, [ "row-mjxk_eqqb-i8td", "00000000-0000-0000-FB29-EEBE8780F477", 0, 1617797148, null, 1617797148, null, "{ }", "South Carolina", "2021-01-18T00:00:00", "31400", "31400" ]
+, [ "row-43yv_29ek.w7na", "00000000-0000-0000-0291-64E2D3F09413", 0, 1617797148, null, 1617797148, null, "{ }", "South Dakota", "2021-01-18T00:00:00", "5300", "5300" ]
+, [ "row-4bs4-d5ii_6jec", "00000000-0000-0000-2431-4153F3DB5638", 0, 1617797148, null, 1617797148, null, "{ }", "Tennessee", "2021-01-18T00:00:00", "41800", "41800" ]
+, [ "row-x3he.ztkx_qg5i", "00000000-0000-0000-621E-F4CC875971E1", 0, 1617797148, null, 1617797148, null, "{ }", "Texas", "2021-01-18T00:00:00", "167100", "167100" ]
+, [ "row-rg8a~m563.gnxw", "00000000-0000-0000-FC80-BA9756005098", 0, 1617797148, null, 1617797148, null, "{ }", "U.S. Virgin Islands", "2021-01-18T00:00:00", "700", "700" ]
+, [ "row-4km2.sg24~paj4", "00000000-0000-0000-5276-3398585034A0", 0, 1617797148, null, 1617797148, null, "{ }", "Utah", "2021-01-18T00:00:00", "17400", "17400" ]
+, [ "row-2kgb.83a6-myn8", "00000000-0000-0000-EC30-3A491CAB023A", 0, 1617797148, null, 1617797148, null, "{ }", "Vermont", "2021-01-18T00:00:00", "4200", "4200" ]
+, [ "row-9ig2~r8t9.8znc", "00000000-0000-0000-B44C-B605443FDFEC", 0, 1617797148, null, 1617797148, null, "{ }", "Virginia", "2021-01-18T00:00:00", "53100", "53100" ]
+, [ "row-jjcx_s8xx.teq5", "00000000-0000-0000-6B5F-25D30B15307B", 0, 1617797148, null, 1617797148, null, "{ }", "Washington", "2021-01-18T00:00:00", "46500", "46500" ]
+, [ "row-brm9-wqh6_g4y4", "00000000-0000-0000-5134-7F36335F8196", 0, 1617797148, null, 1617797148, null, "{ }", "West Virginia", "2021-01-18T00:00:00", "11900", "11900" ]
+, [ "row-wruc-3cuf_ev33", "00000000-0000-0000-7283-722A6287F083", 0, 1617797148, null, 1617797148, null, "{ }", "Wisconsin", "2021-01-18T00:00:00", "36700", "36700" ]
+, [ "row-qxqz-cep5~9bw4", "00000000-0000-0000-2071-77BAD99EDE60", 0, 1617797148, null, 1617797148, null, "{ }", "Wyoming", "2021-01-18T00:00:00", "3700", "3700" ]
+, [ "row-5i2k_gtpw-ambp", "00000000-0000-0000-9543-4C26CBC83F6C", 0, 1617797148, null, 1617797148, null, "{ }", "Alabama", "2021-01-11T00:00:00", "29100", "29100" ]
+, [ "row-wqx5~5taj~jg3q", "00000000-0000-0000-CF7B-C153A3114CE8", 0, 1617797148, null, 1617797148, null, "{ }", "Alaska", "2021-01-11T00:00:00", "0", "0" ]
+, [ "row-u4b3_74p4_bb9z", "00000000-0000-0000-1213-9ACB9453FCB6", 0, 1617797148, null, 1617797148, null, "{ }", "American Samoa", "2021-01-11T00:00:00", "0", "0" ]
+, [ "row-pup8~v8hd.66nb", "00000000-0000-0000-F2A1-D3284F328681", 0, 1617797148, null, 1617797148, null, "{ }", "Arizona", "2021-01-11T00:00:00", "41300", "41300" ]
+, [ "row-a3gp-r27t-e6wu", "00000000-0000-0000-C684-BCB609BF599A", 0, 1617797148, null, 1617797148, null, "{ }", "Arkansas", "2021-01-11T00:00:00", "17700", "17700" ]
+, [ "row-uhsh_c9g4~a2u4", "00000000-0000-0000-FEB2-D4A4FD312D4D", 0, 1617797148, null, 1617797148, null, "{ }", "California", "2021-01-11T00:00:00", "232300", "232300" ]
+, [ "row-8dgc_wk5r-8tek", "00000000-0000-0000-2E02-9A293D995B20", 0, 1617797148, null, 1617797148, null, "{ }", "Chicago", "2021-01-11T00:00:00", "16200", "16200" ]
+, [ "row-cp52_wyke~dxg5", "00000000-0000-0000-8EFA-CA80D0CAAFE8", 0, 1617797148, null, 1617797148, null, "{ }", "Colorado", "2021-01-11T00:00:00", "33000", "33000" ]
+, [ "row-4ji5-fngy-9d4w", "00000000-0000-0000-9402-DFCE4EB35C78", 0, 1617797148, null, 1617797148, null, "{ }", "Connecticut", "2021-01-11T00:00:00", "21900", "21900" ]
+, [ "row-xet5_z42k-5xc9", "00000000-0000-0000-EC2B-4F813EF16C4E", 0, 1617797148, null, 1617797148, null, "{ }", "Delaware", "2021-01-11T00:00:00", "5800", "5800" ]
+, [ "row-wvg5_6qbg.acfn", "00000000-0000-0000-1D95-F8E2FA7A0AD2", 0, 1617797148, null, 1617797148, null, "{ }", "District of Columbia", "2021-01-11T00:00:00", "4400", "4400" ]
+, [ "row-f4js_hhf9.bgsc", "00000000-0000-0000-32B0-384580DFECC8", 0, 1617797148, null, 1617797148, null, "{ }", "Federal Entities", "2021-01-11T00:00:00", "99900", "99900" ]
+, [ "row-vgu7~js9h_c75z", "00000000-0000-0000-3D60-84A21B48A3B6", 0, 1617797148, null, 1617797148, null, "{ }", "Florida", "2021-01-11T00:00:00", "127100", "127100" ]
+, [ "row-mgij_hkcn.w956", "00000000-0000-0000-2E89-46F27D08847B", 0, 1617797148, null, 1617797148, null, "{ }", "Georgia", "2021-01-11T00:00:00", "60200", "60200" ]
+, [ "row-fnem~b88y-sx2m", "00000000-0000-0000-AA0A-185D867A92FD", 0, 1617797148, null, 1617797148, null, "{ }", "Guam", "2021-01-11T00:00:00", "0", "0" ]
+, [ "row-pqmd_nh23-g8sa", "00000000-0000-0000-B0CE-1AD64BA89856", 0, 1617797148, null, 1617797148, null, "{ }", "Hawaii", "2021-01-11T00:00:00", "8700", "8700" ]
+, [ "row-6n74~jzh5~qyw6", "00000000-0000-0000-35EB-8747A32FC64D", 0, 1617797148, null, 1617797148, null, "{ }", "Idaho", "2021-01-11T00:00:00", "9700", "9700" ]
+, [ "row-erax.8pv7_r64p", "00000000-0000-0000-AACA-45752937B287", 0, 1617797148, null, 1617797148, null, "{ }", "Illinois", "2021-01-11T00:00:00", "60300", "60300" ]
+, [ "row-95e5_q9ab~8nug", "00000000-0000-0000-B006-170831042A46", 0, 1617797148, null, 1617797148, null, "{ }", "Indiana", "2021-01-11T00:00:00", "39200", "39200" ]
+, [ "row-jyaz~va84.q4m2", "00000000-0000-0000-0B7F-DF3F8D753002", 0, 1617797148, null, 1617797148, null, "{ }", "Iowa", "2021-01-11T00:00:00", "18600", "18600" ]
+, [ "row-9fwm-7he5.k7p7", "00000000-0000-0000-3CC3-00E1E4509169", 0, 1617797148, null, 1617797148, null, "{ }", "Kansas", "2021-01-11T00:00:00", "17000", "17000" ]
+, [ "row-9ejd.7nzr_erxw", "00000000-0000-0000-4685-4F10DDD4B9AE", 0, 1617797148, null, 1617797148, null, "{ }", "Kentucky", "2021-01-11T00:00:00", "26500", "26500" ]
+, [ "row-mksj~s6et~vpw6", "00000000-0000-0000-9D66-670435F20B60", 0, 1617797148, null, 1617797148, null, "{ }", "Louisiana", "2021-01-11T00:00:00", "27500", "27500" ]
+, [ "row-p7jy.pzs5~rhwd", "00000000-0000-0000-36BF-9A9AE1BDD5B1", 0, 1617797148, null, 1617797148, null, "{ }", "Maine", "2021-01-11T00:00:00", "8400", "8400" ]
+, [ "row-a4wd-fggr_ugws", "00000000-0000-0000-D934-C74FC16819AD", 0, 1617797148, null, 1617797148, null, "{ }", "Mariana Islands", "2021-01-11T00:00:00", "0", "0" ]
+, [ "row-twv7.bgt7_bwz9", "00000000-0000-0000-EFAE-F13A1C59C1C8", 0, 1617797148, null, 1617797148, null, "{ }", "Marshall Islands", "2021-01-11T00:00:00", "0", "0" ]
+, [ "row-zcv2.waae~j5i7", "00000000-0000-0000-D8E0-65B492E4C456", 0, 1617797148, null, 1617797148, null, "{ }", "Maryland", "2021-01-11T00:00:00", "36000", "36000" ]
+, [ "row-6ta4-9v5w.6989", "00000000-0000-0000-F27B-D627533FC25A", 0, 1617797148, null, 1617797148, null, "{ }", "Massachusetts", "2021-01-11T00:00:00", "42100", "42100" ]
+, [ "row-ni7j~tyuh~m5hq", "00000000-0000-0000-526B-4F76A15233EC", 0, 1617797148, null, 1617797148, null, "{ }", "Michigan", "2021-01-11T00:00:00", "60000", "60000" ]
+, [ "row-59m8-r6rt.7xnu", "00000000-0000-0000-BFAA-B1DEC7558225", 0, 1617797148, null, 1617797148, null, "{ }", "Micronesia", "2021-01-11T00:00:00", "0", "0" ]
+, [ "row-ubp5~kzb5~d7ev", "00000000-0000-0000-78DB-FB43BF1CEC04", 0, 1617797148, null, 1617797148, null, "{ }", "Minnesota", "2021-01-11T00:00:00", "32900", "32900" ]
+, [ "row-qm4r-qnje-24ig", "00000000-0000-0000-A568-4F1D5F6408E0", 0, 1617797148, null, 1617797148, null, "{ }", "Mississippi", "2021-01-11T00:00:00", "17600", "17600" ]
+, [ "row-k4pi-gc75-qcu6", "00000000-0000-0000-36B3-5A1E7A922F25", 0, 1617797148, null, 1617797148, null, "{ }", "Missouri", "2021-01-11T00:00:00", "36400", "36400" ]
+, [ "row-j6yd-u42m.xz6s", "00000000-0000-0000-D291-74945C56624B", 0, 1617797148, null, 1617797148, null, "{ }", "Montana", "2021-01-11T00:00:00", "6400", "6400" ]
+, [ "row-nr4p~5cpq.87b8", "00000000-0000-0000-6507-407045914940", 0, 1617797148, null, 1617797148, null, "{ }", "Nebraska", "2021-01-11T00:00:00", "11200", "11200" ]
+, [ "row-hwzy-w5xw.n5f8", "00000000-0000-0000-A98A-D06DE0FD09AA", 0, 1617797148, null, 1617797148, null, "{ }", "Nevada", "2021-01-11T00:00:00", "17400", "17400" ]
+, [ "row-ictw-ie4z-pkrb", "00000000-0000-0000-AFC2-9DBCC78E0876", 0, 1617797148, null, 1617797148, null, "{ }", "New Hampshire", "2021-01-11T00:00:00", "8400", "8400" ]
+, [ "row-jb4w.bubk_6zgy", "00000000-0000-0000-94BA-5FA1FD2625EB", 0, 1617797148, null, 1617797148, null, "{ }", "New Jersey", "2021-01-11T00:00:00", "53400", "53400" ]
+, [ "row-u2x6~im4m_v9af", "00000000-0000-0000-4E9F-8F194B0D7F18", 0, 1617797148, null, 1617797148, null, "{ }", "New Mexico", "2021-01-11T00:00:00", "12500", "12500" ]
+, [ "row-prwc-remw.86d2", "00000000-0000-0000-8D31-E8480B063062", 0, 1617797148, null, 1617797148, null, "{ }", "New York", "2021-01-11T00:00:00", "68000", "68000" ]
+, [ "row-mt6m~fyrx~zj2m", "00000000-0000-0000-2D92-5CCA1CC654B3", 0, 1617797148, null, 1617797148, null, "{ }", "New York City", "2021-01-11T00:00:00", "51600", "51600" ]
+, [ "row-dx8x~akcv.i33s", "00000000-0000-0000-612E-E7BC20F038BC", 0, 1617797148, null, 1617797148, null, "{ }", "North Carolina", "2021-01-11T00:00:00", "60800", "60800" ]
+, [ "row-vn9j~a5yr_embj", "00000000-0000-0000-7EBF-9F831C56461B", 0, 1617797148, null, 1617797148, null, "{ }", "North Dakota", "2021-01-11T00:00:00", "4600", "4600" ]
+, [ "row-jnps-xb5d~zvv6", "00000000-0000-0000-311A-4B258045C8EB", 0, 1617797148, null, 1617797148, null, "{ }", "Ohio", "2021-01-11T00:00:00", "69700", "69700" ]
+, [ "row-qgir_5fnr_6pky", "00000000-0000-0000-BF8C-41ED7184B912", 0, 1617797148, null, 1617797148, null, "{ }", "Oklahoma", "2021-01-11T00:00:00", "22900", "22900" ]
+, [ "row-8g43.mdk6_ia34", "00000000-0000-0000-605B-C990725B26BD", 0, 1617797148, null, 1617797148, null, "{ }", "Oregon", "2021-01-11T00:00:00", "25000", "25000" ]
+, [ "row-w7ma.bvtp_d9bv", "00000000-0000-0000-420E-76711CA4EC3E", 0, 1617797148, null, 1617797148, null, "{ }", "Palau", "2021-01-11T00:00:00", "0", "0" ]
+, [ "row-q8wt_z4t8-cd3y", "00000000-0000-0000-9EFF-987D95D8ED32", 0, 1617797148, null, 1617797148, null, "{ }", "Pennsylvania", "2021-01-11T00:00:00", "68700", "68700" ]
+, [ "row-wdxe~kmku_c2jz", "00000000-0000-0000-A6B7-4EDA78C81498", 0, 1617797148, null, 1617797148, null, "{ }", "Philadelphia", "2021-01-11T00:00:00", "9500", "9500" ]
+, [ "row-9gvy_xszy-376r", "00000000-0000-0000-16FA-F56F7ABF8096", 0, 1617797148, null, 1617797148, null, "{ }", "Puerto Rico", "2021-01-11T00:00:00", "20900", "20900" ]
+, [ "row-74cc.evta_3edu", "00000000-0000-0000-1A93-B5F1456B9ACA", 0, 1617797148, null, 1617797148, null, "{ }", "Rhode Island", "2021-01-11T00:00:00", "6600", "6600" ]
+, [ "row-96wb~4q9p~5zbu", "00000000-0000-0000-5CC8-615804790050", 0, 1617797148, null, 1617797148, null, "{ }", "South Carolina", "2021-01-11T00:00:00", "29900", "29900" ]
+, [ "row-2sie_22cw_565q", "00000000-0000-0000-A9B3-450A30614ADE", 0, 1617797148, null, 1617797148, null, "{ }", "South Dakota", "2021-01-11T00:00:00", "5100", "5100" ]
+, [ "row-tt7k_z5i6_c58z", "00000000-0000-0000-CC50-CBF0C56AD468", 0, 1617797148, null, 1617797148, null, "{ }", "Tennessee", "2021-01-11T00:00:00", "39800", "39800" ]
+, [ "row-cjyj~33h5-ju6k", "00000000-0000-0000-364A-FFCF32D3464D", 0, 1617797148, null, 1617797148, null, "{ }", "Texas", "2021-01-11T00:00:00", "159100", "159100" ]
+, [ "row-xcad-ry8x-ms5q", "00000000-0000-0000-5916-BCA0AEACD9FF", 0, 1617797148, null, 1617797148, null, "{ }", "U.S. Virgin Islands", "2021-01-11T00:00:00", "700", "700" ]
+, [ "row-u2ie.fazj_3nck", "00000000-0000-0000-F709-16DB0FD709C3", 0, 1617797148, null, 1617797148, null, "{ }", "Utah", "2021-01-11T00:00:00", "16600", "16600" ]
+, [ "row-x9s9.ijh3_6m33", "00000000-0000-0000-64A6-A831292D0DA5", 0, 1617797148, null, 1617797148, null, "{ }", "Vermont", "2021-01-11T00:00:00", "4000", "4000" ]
+, [ "row-itsq~pu33.3d7u", "00000000-0000-0000-C9E0-4E40BE0883B2", 0, 1617797148, null, 1617797148, null, "{ }", "Virginia", "2021-01-11T00:00:00", "50600", "50600" ]
+, [ "row-ixqx_tqx6~k8i8", "00000000-0000-0000-3525-360992CDC9C8", 0, 1617797148, null, 1617797148, null, "{ }", "Washington", "2021-01-11T00:00:00", "44300", "44300" ]
+, [ "row-qfmg~34v8-9gqg", "00000000-0000-0000-596C-806C69E23F62", 0, 1617797148, null, 1617797148, null, "{ }", "West Virginia", "2021-01-11T00:00:00", "11300", "11300" ]
+, [ "row-7vt9~bwz4.uju3", "00000000-0000-0000-A31E-96B76DD80D2B", 0, 1617797148, null, 1617797148, null, "{ }", "Wisconsin", "2021-01-11T00:00:00", "34900", "34900" ]
+, [ "row-yauc-w4mf_qpq3", "00000000-0000-0000-70EC-5AB2664D5347", 0, 1617797148, null, 1617797148, null, "{ }", "Wyoming", "2021-01-11T00:00:00", "3500", "3500" ]
+, [ "row-f9t9_v8p2~wkie", "00000000-0000-0000-AB4C-C19E91F49592", 0, 1617797148, null, 1617797148, null, "{ }", "Alabama", "2021-01-04T00:00:00", "29000", "29000" ]
+, [ "row-mf75.d4gm.hirk", "00000000-0000-0000-EBBE-89C23C947A85", 0, 1617797148, null, 1617797148, null, "{ }", "Alaska", "2021-01-04T00:00:00", "25600", "25600" ]
+, [ "row-stjd~gudi~ybcn", "00000000-0000-0000-E25E-559F83D4AB3F", 0, 1617797148, null, 1617797148, null, "{ }", "American Samoa", "2021-01-04T00:00:00", "2400", "0" ]
+, [ "row-atcy_tvb2.m5kb", "00000000-0000-0000-C09B-662DD9F2046E", 0, 1617797148, null, 1617797148, null, "{ }", "Arizona", "2021-01-04T00:00:00", "41100", "41100" ]
+, [ "row-h5fe~79f7-kuws", "00000000-0000-0000-7348-5C737140DBA4", 0, 1617797148, null, 1617797148, null, "{ }", "Arkansas", "2021-01-04T00:00:00", "17600", "17600" ]
+, [ "row-mcwb.z3xe-xcjt", "00000000-0000-0000-8BA9-4ED38B0A0E03", 0, 1617797148, null, 1617797148, null, "{ }", "California", "2021-01-04T00:00:00", "231400", "231400" ]
+, [ "row-wg85~byrz~ph2f", "00000000-0000-0000-7E4B-F262B046DE80", 0, 1617797148, null, 1617797148, null, "{ }", "Chicago", "2021-01-04T00:00:00", "16100", "16100" ]
+, [ "row-qdsn-rv2f-i75h", "00000000-0000-0000-7591-C9CFBE8CC677", 0, 1617797148, null, 1617797148, null, "{ }", "Colorado", "2021-01-04T00:00:00", "32900", "32900" ]
+, [ "row-qdqc_48xk_zwj8", "00000000-0000-0000-A260-3523989CBEF9", 0, 1617797148, null, 1617797148, null, "{ }", "Connecticut", "2021-01-04T00:00:00", "21800", "21800" ]
+, [ "row-jqw2.ah62~537e", "00000000-0000-0000-8BD2-BFEFDD44A153", 0, 1617797148, null, 1617797148, null, "{ }", "Delaware", "2021-01-04T00:00:00", "5800", "5800" ]
+, [ "row-rgvh_s3md.ise6", "00000000-0000-0000-9286-603859C4A12E", 0, 1617797148, null, 1617797148, null, "{ }", "District of Columbia", "2021-01-04T00:00:00", "4400", "4400" ]
+, [ "row-2caf_aihb-pnm4", "00000000-0000-0000-4370-466995D885AE", 0, 1617797148, null, 1617797148, null, "{ }", "Federal Entities", "2021-01-04T00:00:00", "108400", "99600" ]
+, [ "row-ak7x.7426_f2gn", "00000000-0000-0000-1E5F-0DED2D542911", 0, 1617797148, null, 1617797148, null, "{ }", "Florida", "2021-01-04T00:00:00", "126600", "126600" ]
+, [ "row-sb2e~i8gt-jexd", "00000000-0000-0000-74AA-FAAC845EA3AF", 0, 1617797148, null, 1617797148, null, "{ }", "Georgia", "2021-01-04T00:00:00", "60000", "60000" ]
+, [ "row-hgxj~46fg~eej4", "00000000-0000-0000-E1DA-471EE9CFFBB5", 0, 1617797148, null, 1617797148, null, "{ }", "Guam", "2021-01-04T00:00:00", "7200", "0" ]
+, [ "row-jsz5~4ag9~taak", "00000000-0000-0000-0147-6AE55831E3C3", 0, 1617797148, null, 1617797148, null, "{ }", "Hawaii", "2021-01-04T00:00:00", "8600", "8600" ]
+, [ "row-czhr~ytxn~jrbb", "00000000-0000-0000-6803-368A4D276811", 0, 1617797148, null, 1617797148, null, "{ }", "Idaho", "2021-01-04T00:00:00", "9700", "9700" ]
+, [ "row-32wr~9x36.xpfa", "00000000-0000-0000-5D64-E8E8C4B1F92E", 0, 1617797148, null, 1617797148, null, "{ }", "Illinois", "2021-01-04T00:00:00", "60100", "60100" ]
+, [ "row-qynn.iz8c-tzqp", "00000000-0000-0000-A24F-F468567B484E", 0, 1617797148, null, 1617797148, null, "{ }", "Indiana", "2021-01-04T00:00:00", "39000", "39000" ]
+, [ "row-w83u~yqec.3va5", "00000000-0000-0000-6192-2EDC95A5E2A8", 0, 1617797148, null, 1617797148, null, "{ }", "Iowa", "2021-01-04T00:00:00", "18500", "18500" ]
+, [ "row-e6h9-w78q~765t", "00000000-0000-0000-1624-F9BF65CB1916", 0, 1617797148, null, 1617797148, null, "{ }", "Kansas", "2021-01-04T00:00:00", "16900", "16900" ]
+, [ "row-bjvf_utpq_t8ak", "00000000-0000-0000-3827-89BC2DE3B61E", 0, 1617797148, null, 1617797148, null, "{ }", "Kentucky", "2021-01-04T00:00:00", "26400", "26400" ]
+, [ "row-ps5f.9xuq~udpp", "00000000-0000-0000-7F92-6F4C44007C71", 0, 1617797148, null, 1617797148, null, "{ }", "Louisiana", "2021-01-04T00:00:00", "27400", "27400" ]
+, [ "row-7i4x~qftr~g66v", "00000000-0000-0000-D519-87B2033BC9D7", 0, 1617797148, null, 1617797148, null, "{ }", "Maine", "2021-01-04T00:00:00", "8300", "8300" ]
+, [ "row-7urr.3ppk.6fja", "00000000-0000-0000-245E-51272B10ABF3", 0, 1617797148, null, 1617797148, null, "{ }", "Mariana Islands", "2021-01-04T00:00:00", "2400", "0" ]
+, [ "row-77tq~tyqt.mih8", "00000000-0000-0000-5282-1D9F56DADEBE", 0, 1617797148, null, 1617797148, null, "{ }", "Marshall Islands", "2021-01-04T00:00:00", "6400", "0" ]
+, [ "row-cuny_8x2m-qi3c", "00000000-0000-0000-CD99-6BAB15DC316A", 0, 1617797148, null, 1617797148, null, "{ }", "Maryland", "2021-01-04T00:00:00", "35900", "35900" ]
+, [ "row-g82e_f2sn_gr9y", "00000000-0000-0000-1705-AA8AE9A6F95F", 0, 1617797148, null, 1617797148, null, "{ }", "Massachusetts", "2021-01-04T00:00:00", "42000", "42000" ]
+, [ "row-h85m~a4qc-ek9e", "00000000-0000-0000-349B-94C9E469694C", 0, 1617797148, null, 1617797148, null, "{ }", "Michigan", "2021-01-04T00:00:00", "59800", "59800" ]
+, [ "row-rrit_nc2s-hea2", "00000000-0000-0000-4670-FFB70518968A", 0, 1617797148, null, 1617797148, null, "{ }", "Micronesia", "2021-01-04T00:00:00", "9600", "0" ]
+, [ "row-h8up~uz5i_yfe3", "00000000-0000-0000-F1DA-0D70D46EA59A", 0, 1617797148, null, 1617797148, null, "{ }", "Minnesota", "2021-01-04T00:00:00", "32700", "32700" ]
+, [ "row-xv5v_buig_7m68", "00000000-0000-0000-F946-53509BA432CA", 0, 1617797148, null, 1617797148, null, "{ }", "Mississippi", "2021-01-04T00:00:00", "17500", "17500" ]
+, [ "row-cjjk-s7ar-gbcr", "00000000-0000-0000-BF1F-FCFFF00E5904", 0, 1617797148, null, 1617797148, null, "{ }", "Missouri", "2021-01-04T00:00:00", "36200", "36200" ]
+, [ "row-4smh.ajdr_x8m3", "00000000-0000-0000-BD05-BA5836DDDA02", 0, 1617797148, null, 1617797148, null, "{ }", "Montana", "2021-01-04T00:00:00", "6300", "6300" ]
+, [ "row-s67b_u35x-65ir", "00000000-0000-0000-3A24-B0AAA39F1925", 0, 1617797148, null, 1617797148, null, "{ }", "Nebraska", "2021-01-04T00:00:00", "11200", "11200" ]
+, [ "row-ykue-xeix_5eig", "00000000-0000-0000-91CA-DA2FA4B334AC", 0, 1617797148, null, 1617797148, null, "{ }", "Nevada", "2021-01-04T00:00:00", "17300", "17300" ]
+, [ "row-hx5u_w7ct_ja5t", "00000000-0000-0000-2114-502906C0ABFD", 0, 1617797148, null, 1617797148, null, "{ }", "New Hampshire", "2021-01-04T00:00:00", "8400", "8400" ]
+, [ "row-nxds.b9xv_3fsn", "00000000-0000-0000-A3F0-2592D65CA263", 0, 1617797148, null, 1617797148, null, "{ }", "New Jersey", "2021-01-04T00:00:00", "53200", "53200" ]
+, [ "row-jt72.638p.znk7", "00000000-0000-0000-ADAA-BCEFC1620E0D", 0, 1617797148, null, 1617797148, null, "{ }", "New Mexico", "2021-01-04T00:00:00", "12500", "12500" ]
+, [ "row-kd72-jyyw-ikxq", "00000000-0000-0000-D0F9-319758574BFD", 0, 1617797148, null, 1617797148, null, "{ }", "New York", "2021-01-04T00:00:00", "67700", "67700" ]
+, [ "row-rk9t_kr5g.xac3", "00000000-0000-0000-130B-E81A309661C4", 0, 1617797148, null, 1617797148, null, "{ }", "New York City", "2021-01-04T00:00:00", "51400", "51400" ]
+, [ "row-duwv.qakn_zftd", "00000000-0000-0000-F5B0-A5759407C3A3", 0, 1617797148, null, 1617797148, null, "{ }", "North Carolina", "2021-01-04T00:00:00", "60500", "60500" ]
+, [ "row-unx9.ckz6.k77e", "00000000-0000-0000-F2EC-30B9AF297E92", 0, 1617797148, null, 1617797148, null, "{ }", "North Dakota", "2021-01-04T00:00:00", "4600", "4600" ]
+, [ "row-3f8c.kbqx-97zf", "00000000-0000-0000-765C-6C12F3F675B1", 0, 1617797148, null, 1617797148, null, "{ }", "Ohio", "2021-01-04T00:00:00", "69500", "69500" ]
+, [ "row-emmh.nvus.4nnk", "00000000-0000-0000-1F5E-DA194D3E956B", 0, 1617797148, null, 1617797148, null, "{ }", "Oklahoma", "2021-01-04T00:00:00", "22800", "22800" ]
+, [ "row-4bqb-5tey_qbic", "00000000-0000-0000-97BB-98277114F492", 0, 1617797148, null, 1617797148, null, "{ }", "Oregon", "2021-01-04T00:00:00", "24800", "24800" ]
+, [ "row-2yk7~zdrr~5dt5", "00000000-0000-0000-84F6-9D98CCEDF80A", 0, 1617797148, null, 1617797148, null, "{ }", "Palau", "2021-01-04T00:00:00", "3200", "0" ]
+, [ "row-hac2.gu9k~a9zi", "00000000-0000-0000-A176-3A17E8418455", 0, 1617797148, null, 1617797148, null, "{ }", "Pennsylvania", "2021-01-04T00:00:00", "68400", "68400" ]
+, [ "row-7fm5.bt32~hz66", "00000000-0000-0000-16C9-B7F4CC56C3B3", 0, 1617797148, null, 1617797148, null, "{ }", "Philadelphia", "2021-01-04T00:00:00", "9500", "9500" ]
+, [ "row-xk33-mexu-x8f2", "00000000-0000-0000-A5EA-223F67721A38", 0, 1617797148, null, 1617797148, null, "{ }", "Puerto Rico", "2021-01-04T00:00:00", "20800", "20800" ]
+, [ "row-wkq7~ind7.zebc", "00000000-0000-0000-A072-E8500B815603", 0, 1617797148, null, 1617797148, null, "{ }", "Rhode Island", "2021-01-04T00:00:00", "6600", "6600" ]
+, [ "row-gs99.vcuz~wagt", "00000000-0000-0000-AC3C-80E1E408E279", 0, 1617797148, null, 1617797148, null, "{ }", "South Carolina", "2021-01-04T00:00:00", "29700", "29700" ]
+, [ "row-74tx~wdug-ycxh", "00000000-0000-0000-43B7-80A44EE91111", 0, 1617797148, null, 1617797148, null, "{ }", "South Dakota", "2021-01-04T00:00:00", "5100", "5100" ]
+, [ "row-ctbc~2jmc-x7f9", "00000000-0000-0000-EFC6-1117A30BDDEE", 0, 1617797148, null, 1617797148, null, "{ }", "Tennessee", "2021-01-04T00:00:00", "39700", "39700" ]
+, [ "row-d7qn-8udn_9ej5", "00000000-0000-0000-7774-2BDC85C7A07D", 0, 1617797148, null, 1617797148, null, "{ }", "Texas", "2021-01-04T00:00:00", "158500", "158500" ]
+, [ "row-tkkg~nyqr.c4fu", "00000000-0000-0000-3033-34828FC655B8", 0, 1617797148, null, 1617797148, null, "{ }", "U.S. Virgin Islands", "2021-01-04T00:00:00", "700", "700" ]
+, [ "row-pu7y.3tnc.2b2u", "00000000-0000-0000-A283-A86C7601F74A", 0, 1617797148, null, 1617797148, null, "{ }", "Utah", "2021-01-04T00:00:00", "16500", "16500" ]
+, [ "row-5xr8.7nzn.ky3s", "00000000-0000-0000-3494-2639F3E5ED27", 0, 1617797148, null, 1617797148, null, "{ }", "Vermont", "2021-01-04T00:00:00", "3900", "3900" ]
+, [ "row-ffjj.peiu_3cbp", "00000000-0000-0000-5C31-A3C4AAFF7708", 0, 1617797148, null, 1617797148, null, "{ }", "Virginia", "2021-01-04T00:00:00", "50400", "50400" ]
+, [ "row-dty3-agw4_a8j9", "00000000-0000-0000-53D2-514BEA38F31D", 0, 1617797148, null, 1617797148, null, "{ }", "Washington", "2021-01-04T00:00:00", "44100", "44100" ]
+, [ "row-qiji.qjr7-54s9", "00000000-0000-0000-3F93-C31FFE91E771", 0, 1617797148, null, 1617797148, null, "{ }", "West Virginia", "2021-01-04T00:00:00", "11200", "11200" ]
+, [ "row-7uxh-eaab.tz5y", "00000000-0000-0000-0AA1-E64B753314BC", 0, 1617797148, null, 1617797148, null, "{ }", "Wisconsin", "2021-01-04T00:00:00", "34700", "34700" ]
+, [ "row-c5aw_fkcx-zu94", "00000000-0000-0000-E696-2D148FEB5048", 0, 1617797148, null, 1617797148, null, "{ }", "Wyoming", "2021-01-04T00:00:00", "3500", "3500" ]
+, [ "row-2ede-m7it~kupp", "00000000-0000-0000-8B4D-9224099E5B18", 0, 1617797148, null, 1617797148, null, "{ }", "Alabama", "2020-12-28T00:00:00", "29100", "29100" ]
+, [ "row-xqzs.nsnn.n5xf", "00000000-0000-0000-F816-41267B874590", 0, 1617797148, null, 1617797148, null, "{ }", "Alaska", "2020-12-28T00:00:00", "0", "0" ]
+, [ "row-wst7-5a5y-4p9f", "00000000-0000-0000-20E1-B6B67618F623", 0, 1617797148, null, 1617797148, null, "{ }", "American Samoa", "2020-12-28T00:00:00", "0", "0" ]
+, [ "row-p96a.5w8a~tjh4", "00000000-0000-0000-A0D8-AEE783FEE1C6", 0, 1617797148, null, 1617797148, null, "{ }", "Arizona", "2020-12-28T00:00:00", "41300", "41300" ]
+, [ "row-dedr~sx47_mzf5", "00000000-0000-0000-3056-D7753F4F510D", 0, 1617797148, null, 1617797148, null, "{ }", "Arkansas", "2020-12-28T00:00:00", "17700", "17700" ]
+, [ "row-t535.g4x3~fdcc", "00000000-0000-0000-77F0-4A819CAF3E63", 0, 1617797148, null, 1617797148, null, "{ }", "California", "2020-12-28T00:00:00", "232300", "232300" ]
+, [ "row-qjn7~6bs2-wj93", "00000000-0000-0000-DC9F-C6A23F9E7B22", 0, 1617797148, null, 1617797148, null, "{ }", "Chicago", "2020-12-28T00:00:00", "16200", "16200" ]
+, [ "row-5byp-e7an.bwj7", "00000000-0000-0000-2137-CD062C54BAF9", 0, 1617797148, null, 1617797148, null, "{ }", "Colorado", "2020-12-28T00:00:00", "33000", "33000" ]
+, [ "row-rs55~b324~w2gq", "00000000-0000-0000-4266-CB006A80EF6E", 0, 1617797148, null, 1617797148, null, "{ }", "Connecticut", "2020-12-28T00:00:00", "21900", "21900" ]
+, [ "row-gfye~73p9_8g3p", "00000000-0000-0000-141B-40D22DBBEC38", 0, 1617797148, null, 1617797148, null, "{ }", "Delaware", "2020-12-28T00:00:00", "5800", "5800" ]
+, [ "row-b4eb-vsen_7q6u", "00000000-0000-0000-E3CC-5671DC113711", 0, 1617797148, null, 1617797148, null, "{ }", "District of Columbia", "2020-12-28T00:00:00", "4400", "4400" ]
+, [ "row-8r9q-r3fy~39jk", "00000000-0000-0000-22A6-E31FA05EC664", 0, 1617797148, null, 1617797148, null, "{ }", "Federal Entities", "2020-12-28T00:00:00", "100000", "100000" ]
+, [ "row-23m4-37ra~kn6q", "00000000-0000-0000-98FA-D1CD12B51E9A", 0, 1617797148, null, 1617797148, null, "{ }", "Florida", "2020-12-28T00:00:00", "127100", "127100" ]
+, [ "row-3sak_8788-mcs6", "00000000-0000-0000-2843-778BB6CA8D7C", 0, 1617797148, null, 1617797148, null, "{ }", "Georgia", "2020-12-28T00:00:00", "60200", "60200" ]
+, [ "row-ewxu~bytb.ar8w", "00000000-0000-0000-A3B5-91893EB2AE2C", 0, 1617797148, null, 1617797148, null, "{ }", "Guam", "2020-12-28T00:00:00", "0", "0" ]
+, [ "row-kx5u_bitu.uepb", "00000000-0000-0000-6373-B845A554C637", 0, 1617797148, null, 1617797148, null, "{ }", "Hawaii", "2020-12-28T00:00:00", "8700", "8700" ]
+, [ "row-qumc~42h4~8b5r", "00000000-0000-0000-21BE-EF7328E42015", 0, 1617797148, null, 1617797148, null, "{ }", "Idaho", "2020-12-28T00:00:00", "9700", "9700" ]
+, [ "row-7c7h.cdjw.ujey", "00000000-0000-0000-6453-F76A4E2897C7", 0, 1617797148, null, 1617797148, null, "{ }", "Illinois", "2020-12-28T00:00:00", "60300", "60300" ]
+, [ "row-mv7r-772c-wpph", "00000000-0000-0000-38EC-4C1DDB990FF9", 0, 1617797148, null, 1617797148, null, "{ }", "Indiana", "2020-12-28T00:00:00", "39200", "39200" ]
+, [ "row-nn78.jqjp~v2br", "00000000-0000-0000-3BBA-A93C3909F8B2", 0, 1617797148, null, 1617797148, null, "{ }", "Iowa", "2020-12-28T00:00:00", "18600", "18600" ]
+, [ "row-xh3n_edbq_pkk7", "00000000-0000-0000-0A24-3A5AB0F1595B", 0, 1617797148, null, 1617797148, null, "{ }", "Kansas", "2020-12-28T00:00:00", "17000", "17000" ]
+, [ "row-593c_8yvi.64d6", "00000000-0000-0000-18DF-5F341E4628E9", 0, 1617797148, null, 1617797148, null, "{ }", "Kentucky", "2020-12-28T00:00:00", "26500", "26500" ]
+, [ "row-id7t-6wcc~uyv9", "00000000-0000-0000-8054-7CFA9F25816E", 0, 1617797148, null, 1617797148, null, "{ }", "Louisiana", "2020-12-28T00:00:00", "27500", "27500" ]
+, [ "row-6gmy_vewt_b8zd", "00000000-0000-0000-0716-D9D728DFDAEB", 0, 1617797148, null, 1617797148, null, "{ }", "Maine", "2020-12-28T00:00:00", "8400", "8400" ]
+, [ "row-tuvg_piif_zzbj", "00000000-0000-0000-87EF-119FC5EF9293", 0, 1617797148, null, 1617797148, null, "{ }", "Mariana Islands", "2020-12-28T00:00:00", "0", "0" ]
+, [ "row-g8in.i56e_k34u", "00000000-0000-0000-7A64-D301DD296BC4", 0, 1617797148, null, 1617797148, null, "{ }", "Marshall Islands", "2020-12-28T00:00:00", "0", "0" ]
+, [ "row-gvwy.3h3x_5gnw", "00000000-0000-0000-6313-8312D7DA2C16", 0, 1617797148, null, 1617797148, null, "{ }", "Maryland", "2020-12-28T00:00:00", "36000", "36000" ]
+, [ "row-qnna-uy6b~87bb", "00000000-0000-0000-A07C-BF3411F45202", 0, 1617797148, null, 1617797148, null, "{ }", "Massachusetts", "2020-12-28T00:00:00", "42100", "42100" ]
+, [ "row-z3nc.3yvn~7sxd", "00000000-0000-0000-28EE-7A6EFC77C81B", 0, 1617797148, null, 1617797148, null, "{ }", "Michigan", "2020-12-28T00:00:00", "60000", "60000" ]
+, [ "row-c5km~icmc-b3xt", "00000000-0000-0000-E9BB-E304093322D3", 0, 1617797148, null, 1617797148, null, "{ }", "Micronesia", "2020-12-28T00:00:00", "0", "0" ]
+, [ "row-tvry.gx8g-uqs2", "00000000-0000-0000-5921-6986F6EC56ED", 0, 1617797148, null, 1617797148, null, "{ }", "Minnesota", "2020-12-28T00:00:00", "32900", "32900" ]
+, [ "row-nmeg_2p54-fh2y", "00000000-0000-0000-BC76-C48A3A0AD96A", 0, 1617797148, null, 1617797148, null, "{ }", "Mississippi", "2020-12-28T00:00:00", "17600", "17600" ]
+, [ "row-dz74.udri_6tp8", "00000000-0000-0000-19E2-00FD05D63E2B", 0, 1617797148, null, 1617797148, null, "{ }", "Missouri", "2020-12-28T00:00:00", "36400", "36400" ]
+, [ "row-hhgd-8ece-zfw9", "00000000-0000-0000-5738-DD9D50A5872B", 0, 1617797148, null, 1617797148, null, "{ }", "Montana", "2020-12-28T00:00:00", "6400", "6400" ]
+, [ "row-9urz-it9z-9uhc", "00000000-0000-0000-FE34-21B22264933B", 0, 1617797148, null, 1617797148, null, "{ }", "Nebraska", "2020-12-28T00:00:00", "11200", "11200" ]
+, [ "row-ui6m-mf9y_jbbw", "00000000-0000-0000-782B-D6C9FD380842", 0, 1617797148, null, 1617797148, null, "{ }", "Nevada", "2020-12-28T00:00:00", "17400", "17400" ]
+, [ "row-zrym-cq8t.bsdr", "00000000-0000-0000-7FE4-E909F1748EA8", 0, 1617797148, null, 1617797148, null, "{ }", "New Hampshire", "2020-12-28T00:00:00", "8400", "8400" ]
+, [ "row-miqt.y87q-b5zm", "00000000-0000-0000-D71C-C62F0EF5A27F", 0, 1617797148, null, 1617797148, null, "{ }", "New Jersey", "2020-12-28T00:00:00", "53400", "53400" ]
+, [ "row-rtqf-7jmk~bhz6", "00000000-0000-0000-31C0-3FA2AD2EABB4", 0, 1617797148, null, 1617797148, null, "{ }", "New Mexico", "2020-12-28T00:00:00", "12500", "12500" ]
+, [ "row-h3fr.7t5i~h675", "00000000-0000-0000-DAFE-F19654AAEEB7", 0, 1617797148, null, 1617797148, null, "{ }", "New York", "2020-12-28T00:00:00", "68000", "68000" ]
+, [ "row-75rd.nyzk-xuvk", "00000000-0000-0000-68C6-2B07B2ED5D14", 0, 1617797148, null, 1617797148, null, "{ }", "New York City", "2020-12-28T00:00:00", "51600", "51600" ]
+, [ "row-6fu5_shwt.23cy", "00000000-0000-0000-950B-EBD98832B093", 0, 1617797148, null, 1617797148, null, "{ }", "North Carolina", "2020-12-28T00:00:00", "60800", "60800" ]
+, [ "row-99kj-54z7~nkcj", "00000000-0000-0000-6586-A42623461910", 0, 1617797148, null, 1617797148, null, "{ }", "North Dakota", "2020-12-28T00:00:00", "4600", "4600" ]
+, [ "row-2fdb_tw86.9exr", "00000000-0000-0000-028E-DE01B6B5B621", 0, 1617797148, null, 1617797148, null, "{ }", "Ohio", "2020-12-28T00:00:00", "69700", "69700" ]
+, [ "row-rwhh~nicw.zejk", "00000000-0000-0000-12C3-5E010AD068D7", 0, 1617797148, null, 1617797148, null, "{ }", "Oklahoma", "2020-12-28T00:00:00", "22900", "22900" ]
+, [ "row-2rgj_cwp8.byzs", "00000000-0000-0000-7194-CCA75AC20E16", 0, 1617797148, null, 1617797148, null, "{ }", "Oregon", "2020-12-28T00:00:00", "25000", "25000" ]
+, [ "row-vzj2_tvcm.qr7q", "00000000-0000-0000-3087-09C021D36947", 0, 1617797148, null, 1617797148, null, "{ }", "Palau", "2020-12-28T00:00:00", "0", "0" ]
+, [ "row-qfb2-drf5_3t93", "00000000-0000-0000-6920-54001E7D6C8A", 0, 1617797148, null, 1617797148, null, "{ }", "Pennsylvania", "2020-12-28T00:00:00", "68700", "68700" ]
+, [ "row-ygug~bmnr~ggjr", "00000000-0000-0000-51B9-15100E3CCDAA", 0, 1617797148, null, 1617797148, null, "{ }", "Philadelphia", "2020-12-28T00:00:00", "9500", "9500" ]
+, [ "row-wf6x~rmne-zr8s", "00000000-0000-0000-8379-FE8FA6F746D6", 0, 1617797148, null, 1617797148, null, "{ }", "Puerto Rico", "2020-12-28T00:00:00", "20900", "20900" ]
+, [ "row-vv38_2sws~tm5t", "00000000-0000-0000-8AE7-99D59F74052E", 0, 1617797148, null, 1617797148, null, "{ }", "Rhode Island", "2020-12-28T00:00:00", "6600", "6600" ]
+, [ "row-2z5v-b24f~b882", "00000000-0000-0000-F23A-7BA1F170D34D", 0, 1617797148, null, 1617797148, null, "{ }", "South Carolina", "2020-12-28T00:00:00", "29900", "29900" ]
+, [ "row-2vua.ubeh.dkt3", "00000000-0000-0000-07F8-E4301BCCE77A", 0, 1617797148, null, 1617797148, null, "{ }", "South Dakota", "2020-12-28T00:00:00", "5100", "5100" ]
+, [ "row-e4qy.tve3.uhct", "00000000-0000-0000-5D16-AD0C6816AE43", 0, 1617797148, null, 1617797148, null, "{ }", "Tennessee", "2020-12-28T00:00:00", "39800", "39800" ]
+, [ "row-mvi7.eabx_y4ra", "00000000-0000-0000-CC71-2926C4903FA6", 0, 1617797148, null, 1617797148, null, "{ }", "Texas", "2020-12-28T00:00:00", "159100", "159100" ]
+, [ "row-w26y_3jbi.zirb", "00000000-0000-0000-E1E1-EFD9AF0691A6", 0, 1617797148, null, 1617797148, null, "{ }", "U.S. Virgin Islands", "2020-12-28T00:00:00", "700", "700" ]
+, [ "row-vuyd~4qz9.bq7m", "00000000-0000-0000-BF03-70C8F43B6E4A", 0, 1617797148, null, 1617797148, null, "{ }", "Utah", "2020-12-28T00:00:00", "16600", "16600" ]
+, [ "row-3gav-ds37-43vs", "00000000-0000-0000-6232-2F959D93C82C", 0, 1617797148, null, 1617797148, null, "{ }", "Vermont", "2020-12-28T00:00:00", "4000", "4000" ]
+, [ "row-j4u9~zzbn-chkr", "00000000-0000-0000-814B-03059B777CF6", 0, 1617797148, null, 1617797148, null, "{ }", "Virginia", "2020-12-28T00:00:00", "50600", "50600" ]
+, [ "row-gce9.8kwg-weza", "00000000-0000-0000-760E-EB954DF3BA9A", 0, 1617797148, null, 1617797148, null, "{ }", "Washington", "2020-12-28T00:00:00", "44300", "44300" ]
+, [ "row-q4xn.2cmt.kg6z", "00000000-0000-0000-A9A6-5ACB8FF569CA", 0, 1617797148, null, 1617797148, null, "{ }", "West Virginia", "2020-12-28T00:00:00", "11300", "11300" ]
+, [ "row-sqnt~5gd7_bpnt", "00000000-0000-0000-6E81-092E62ACB918", 0, 1617797148, null, 1617797148, null, "{ }", "Wisconsin", "2020-12-28T00:00:00", "34900", "34900" ]
+, [ "row-nzwy~sm2c-88as", "00000000-0000-0000-51CA-789BB74B9705", 0, 1617797148, null, 1617797148, null, "{ }", "Wyoming", "2020-12-28T00:00:00", "3500", "3500" ]
+, [ "row-3t9s~hjmk~2thy", "00000000-0000-0000-CAEA-0CFDBA32D81C", 0, 1617797148, null, 1617797148, null, "{ }", "Alabama", "2020-12-21T00:00:00", "84300", "84300" ]
+, [ "row-fbd5-syqw-vx2w", "00000000-0000-0000-68B9-CEA648E4B3CD", 0, 1617797148, null, 1617797148, null, "{ }", "Alaska", "2020-12-21T00:00:00", "26800", "26800" ]
+, [ "row-4phs.iacc_ebcw", "00000000-0000-0000-C916-D6C8F4EEDA4A", 0, 1617797148, null, 1617797148, null, "{ }", "American Samoa", "2020-12-21T00:00:00", "2400", "0" ]
+, [ "row-9sa2-ixcp_5mwn", "00000000-0000-0000-DF21-F277B4A1642E", 0, 1617797148, null, 1617797148, null, "{ }", "Arizona", "2020-12-21T00:00:00", "119400", "119400" ]
+, [ "row-ab2h.p5pk_4ws2", "00000000-0000-0000-D8C7-24308A2D622F", 0, 1617797148, null, 1617797148, null, "{ }", "Arkansas", "2020-12-21T00:00:00", "51100", "51100" ]
+, [ "row-7gup-7v44-bajj", "00000000-0000-0000-2F49-64C550006485", 0, 1617797148, null, 1617797148, null, "{ }", "California", "2020-12-21T00:00:00", "672600", "672600" ]
+, [ "row-xw2r.2jvj_wkhv", "00000000-0000-0000-AF75-F565353DE006", 0, 1617797148, null, 1617797148, null, "{ }", "Chicago", "2020-12-21T00:00:00", "46800", "46800" ]
+, [ "row-rtap_5az6.e8zh", "00000000-0000-0000-01A3-1B9244F848A2", 0, 1617797148, null, 1617797148, null, "{ }", "Colorado", "2020-12-21T00:00:00", "95600", "95600" ]
+, [ "row-t7j5~tdya_j4mp", "00000000-0000-0000-7481-05B945D78086", 0, 1617797148, null, 1617797148, null, "{ }", "Connecticut", "2020-12-21T00:00:00", "63300", "63300" ]
+, [ "row-kf4k~27ug~u87x", "00000000-0000-0000-6EE2-E15BA759614F", 0, 1617797148, null, 1617797148, null, "{ }", "Delaware", "2020-12-21T00:00:00", "16700", "16700" ]
+, [ "row-8zbs_up83.r7jn", "00000000-0000-0000-934D-C7580FF6D2AA", 0, 1617797148, null, 1617797148, null, "{ }", "District of Columbia", "2020-12-21T00:00:00", "12600", "12600" ]
+, [ "row-pqak-qeqc_srvp", "00000000-0000-0000-0B96-0033B096E5E4", 0, 1617797148, null, 1617797148, null, "{ }", "Federal Entities", "2020-12-21T00:00:00", "298200", "289200" ]
+, [ "row-ifre_4zae_u2va", "00000000-0000-0000-80B1-E219287615AE", 0, 1617797148, null, 1617797148, null, "{ }", "Florida", "2020-12-21T00:00:00", "367900", "367900" ]
+, [ "row-4e9p~6mny~73ku", "00000000-0000-0000-EB16-589C9E31889F", 0, 1617797148, null, 1617797148, null, "{ }", "Georgia", "2020-12-21T00:00:00", "174400", "174400" ]
+, [ "row-dvj5_njie.qtja", "00000000-0000-0000-220A-70A5BE99A545", 0, 1617797148, null, 1617797148, null, "{ }", "Guam", "2020-12-21T00:00:00", "7600", "0" ]
+, [ "row-cujv~d5n7_2j46", "00000000-0000-0000-773F-8E31218462BF", 0, 1617797148, null, 1617797148, null, "{ }", "Hawaii", "2020-12-21T00:00:00", "25000", "25000" ]
+, [ "row-fc79~fhn7~kavp", "00000000-0000-0000-BAC7-A255FBC23545", 0, 1617797148, null, 1617797148, null, "{ }", "Idaho", "2020-12-21T00:00:00", "28000", "28000" ]
+, [ "row-dcds_fseu-7g3a", "00000000-0000-0000-B5C2-7EBF9D806FD6", 0, 1617797148, null, 1617797148, null, "{ }", "Illinois", "2020-12-21T00:00:00", "174600", "174600" ]
+, [ "row-s3aj~cy6v~zgw2", "00000000-0000-0000-D351-CB849EFE4085", 0, 1617797148, null, 1617797148, null, "{ }", "Indiana", "2020-12-21T00:00:00", "113300", "113300" ]
+, [ "row-npw9-4izn~vchw", "00000000-0000-0000-9784-E02C1EA7528E", 0, 1617797148, null, 1617797148, null, "{ }", "Iowa", "2020-12-21T00:00:00", "53800", "53800" ]
+, [ "row-c6h8~t8f8-rway", "00000000-0000-0000-6C07-A9E62F918835", 0, 1617797148, null, 1617797148, null, "{ }", "Kansas", "2020-12-21T00:00:00", "49100", "49100" ]
+, [ "row-a2ej-bifv-g3ww", "00000000-0000-0000-C8BB-1A130904A19A", 0, 1617797148, null, 1617797148, null, "{ }", "Kentucky", "2020-12-21T00:00:00", "76700", "76700" ]
+, [ "row-cn2m~mv35_weqb", "00000000-0000-0000-CD8E-5FA0375FB188", 0, 1617797148, null, 1617797148, null, "{ }", "Louisiana", "2020-12-21T00:00:00", "79500", "79500" ]
+, [ "row-nc48-9z2t_mw6f", "00000000-0000-0000-881D-B13B04C4844E", 0, 1617797148, null, 1617797148, null, "{ }", "Maine", "2020-12-21T00:00:00", "24200", "24200" ]
+, [ "row-r9d5_uitv~g7xy", "00000000-0000-0000-293E-05B3B715C615", 0, 1617797148, null, 1617797148, null, "{ }", "Mariana Islands", "2020-12-21T00:00:00", "2600", "0" ]
+, [ "row-tv4e-fwhv-4473", "00000000-0000-0000-335F-E8CD1338A467", 0, 1617797148, null, 1617797148, null, "{ }", "Marshall Islands", "2020-12-21T00:00:00", "7200", "0" ]
+, [ "row-5gig_nn66-thfh", "00000000-0000-0000-1D6C-5905686F436C", 0, 1617797148, null, 1617797148, null, "{ }", "Maryland", "2020-12-21T00:00:00", "104300", "104300" ]
+, [ "row-hdpr_ghks_k9qc", "00000000-0000-0000-FE3C-AC2A25FB3BA8", 0, 1617797148, null, 1617797148, null, "{ }", "Massachusetts", "2020-12-21T00:00:00", "121900", "121900" ]
+, [ "row-dbrh-rmt2.przj", "00000000-0000-0000-549B-3C77A4C96D1E", 0, 1617797148, null, 1617797148, null, "{ }", "Michigan", "2020-12-21T00:00:00", "173600", "173600" ]
+, [ "row-unk6-b6vx_zw6x", "00000000-0000-0000-3E66-ECF145ADF9EA", 0, 1617797148, null, 1617797148, null, "{ }", "Micronesia", "2020-12-21T00:00:00", "9800", "0" ]
+, [ "row-k6uj_e5kb_mnse", "00000000-0000-0000-D580-DA9DD3D18744", 0, 1617797148, null, 1617797148, null, "{ }", "Minnesota", "2020-12-21T00:00:00", "94900", "94900" ]
+, [ "row-8etc.8bmd.fbri", "00000000-0000-0000-2F4C-4CE5EE167BB9", 0, 1617797148, null, 1617797148, null, "{ }", "Mississippi", "2020-12-21T00:00:00", "50800", "50800" ]
+, [ "row-56x4_kpre~shz4", "00000000-0000-0000-ED4F-0A5350775B93", 0, 1617797148, null, 1617797148, null, "{ }", "Missouri", "2020-12-21T00:00:00", "105300", "105300" ]
+, [ "row-k95u_z7gy_drpi", "00000000-0000-0000-9EF7-13FED6F7A8A4", 0, 1617797148, null, 1617797148, null, "{ }", "Montana", "2020-12-21T00:00:00", "18300", "18300" ]
+, [ "row-w8kw-ga9y.rpqz", "00000000-0000-0000-9522-0CA416CFF2C5", 0, 1617797148, null, 1617797148, null, "{ }", "Nebraska", "2020-12-21T00:00:00", "32400", "32400" ]
+, [ "row-gju6.jcv8_mfym", "00000000-0000-0000-0C06-4B0824A5E9BE", 0, 1617797148, null, 1617797148, null, "{ }", "Nevada", "2020-12-21T00:00:00", "50300", "50300" ]
+, [ "row-enrh.7m4b_8s42", "00000000-0000-0000-CD25-72EFF462CD72", 0, 1617797148, null, 1617797148, null, "{ }", "New Hampshire", "2020-12-21T00:00:00", "24200", "24200" ]
+, [ "row-y8bt-2anb_tx9r", "00000000-0000-0000-DB08-52163C3136AB", 0, 1617797148, null, 1617797148, null, "{ }", "New Jersey", "2020-12-21T00:00:00", "154500", "154500" ]
+, [ "row-weap.34dh_cmtk", "00000000-0000-0000-39B3-89FEF063DF79", 0, 1617797148, null, 1617797148, null, "{ }", "New Mexico", "2020-12-21T00:00:00", "36100", "36100" ]
+, [ "row-kuq7_rp22~yvbf", "00000000-0000-0000-A493-3A19163C587C", 0, 1617797148, null, 1617797148, null, "{ }", "New York", "2020-12-21T00:00:00", "196800", "196800" ]
+, [ "row-75ab-kjfk-tiqd", "00000000-0000-0000-1BDC-4800F7FF8CA8", 0, 1617797148, null, 1617797148, null, "{ }", "New York City", "2020-12-21T00:00:00", "149400", "149400" ]
+, [ "row-egvf.54g3~23jw", "00000000-0000-0000-9EC3-DFB34E3DF337", 0, 1617797148, null, 1617797148, null, "{ }", "North Carolina", "2020-12-21T00:00:00", "175900", "175900" ]
+, [ "row-dhim-ey33.hzmv", "00000000-0000-0000-7CA0-DE0766883562", 0, 1617797148, null, 1617797148, null, "{ }", "North Dakota", "2020-12-21T00:00:00", "13200", "13200" ]
+, [ "row-chsn~eauj.m3yt", "00000000-0000-0000-C1D5-20238A795A18", 0, 1617797148, null, 1617797148, null, "{ }", "Ohio", "2020-12-21T00:00:00", "201900", "201900" ]
+, [ "row-ke2k-53ef~9tbi", "00000000-0000-0000-94E3-B6D342EA90CC", 0, 1617797148, null, 1617797148, null, "{ }", "Oklahoma", "2020-12-21T00:00:00", "66200", "66200" ]
+, [ "row-jcip-8nrf-b49r", "00000000-0000-0000-D012-C224FA818CA8", 0, 1617797148, null, 1617797148, null, "{ }", "Oregon", "2020-12-21T00:00:00", "72100", "72100" ]
+, [ "row-u4pv~u5gd_eikx", "00000000-0000-0000-11A0-DD9F5E7ED9BD", 0, 1617797148, null, 1617797148, null, "{ }", "Palau", "2020-12-21T00:00:00", "2800", "0" ]
+, [ "row-v7x8~8gc6-65ir", "00000000-0000-0000-7AAD-07E0063C3527", 0, 1617797148, null, 1617797148, null, "{ }", "Pennsylvania", "2020-12-21T00:00:00", "198800", "198800" ]
+, [ "row-pkut~emep.2dnj", "00000000-0000-0000-B6F8-D58B4B8B5827", 0, 1617797148, null, 1617797148, null, "{ }", "Philadelphia", "2020-12-21T00:00:00", "27600", "27600" ]
+, [ "row-vtxs~xe63.7kk3", "00000000-0000-0000-19BE-7BEDA41626F2", 0, 1617797148, null, 1617797148, null, "{ }", "Puerto Rico", "2020-12-21T00:00:00", "60400", "60400" ]
+, [ "row-5a65-9z2z~xeev", "00000000-0000-0000-AD1A-0A1C504D8F53", 0, 1617797148, null, 1617797148, null, "{ }", "Rhode Island", "2020-12-21T00:00:00", "19000", "19000" ]
+, [ "row-w8r9~cwii.bv4h", "00000000-0000-0000-0422-A3FE8EFE37EF", 0, 1617797148, null, 1617797148, null, "{ }", "South Carolina", "2020-12-21T00:00:00", "86400", "86400" ]
+, [ "row-kpzj~qt7d.w3yn", "00000000-0000-0000-AE6F-ABD563854FB1", 0, 1617797148, null, 1617797148, null, "{ }", "South Dakota", "2020-12-21T00:00:00", "14600", "14600" ]
+, [ "row-tpnd~h4qj~dbc9", "00000000-0000-0000-DD4F-6D25261E6466", 0, 1617797148, null, 1617797148, null, "{ }", "Tennessee", "2020-12-21T00:00:00", "115200", "115200" ]
+, [ "row-g2w3.piai-q9mh", "00000000-0000-0000-1042-7229B0DB762D", 0, 1617797148, null, 1617797148, null, "{ }", "Texas", "2020-12-21T00:00:00", "460500", "460500" ]
+, [ "row-p446.b5j6~ipef", "00000000-0000-0000-B241-BF73B03A3D1D", 0, 1617797148, null, 1617797148, null, "{ }", "U.S. Virgin Islands", "2020-12-21T00:00:00", "1900", "1900" ]
+, [ "row-bis9-77ep.bx74", "00000000-0000-0000-F054-91EDC2E232E2", 0, 1617797148, null, 1617797148, null, "{ }", "Utah", "2020-12-21T00:00:00", "47800", "47800" ]
+, [ "row-k27h.7g5k.84hj", "00000000-0000-0000-602F-411E11A4B844", 0, 1617797148, null, 1617797148, null, "{ }", "Vermont", "2020-12-21T00:00:00", "11400", "11400" ]
+, [ "row-53wi_7yxf~ahy6", "00000000-0000-0000-D959-06D505E41435", 0, 1617797148, null, 1617797148, null, "{ }", "Virginia", "2020-12-21T00:00:00", "146400", "146400" ]
+, [ "row-g458~p8zz_npvp", "00000000-0000-0000-B52F-BA6C119DC492", 0, 1617797148, null, 1617797148, null, "{ }", "Washington", "2020-12-21T00:00:00", "128000", "128000" ]
+, [ "row-r5ib~t8s4~q5rg", "00000000-0000-0000-C2AE-7A48FA01A654", 0, 1617797148, null, 1617797148, null, "{ }", "West Virginia", "2020-12-21T00:00:00", "32600", "32600" ]
+, [ "row-up94.gwnt-e9q2", "00000000-0000-0000-988F-2A701AE7C6C2", 0, 1617797148, null, 1617797148, null, "{ }", "Wisconsin", "2020-12-21T00:00:00", "101000", "101000" ]
+, [ "row-hehr-qmqi.szy4", "00000000-0000-0000-7D37-175BB20DF476", 0, 1617797148, null, 1617797148, null, "{ }", "Wyoming", "2020-12-21T00:00:00", "10000", "10000" ]
+ ]
+}
