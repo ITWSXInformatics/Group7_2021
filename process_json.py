@@ -11,13 +11,13 @@ def create_dict(vac_dict):
 	return state_dict
 
 def convert_json():
-	with open("janssen_distribution.json") as file:
+	with open("Data/janssen_distribution.json") as file:
 		janssen_dict = json.loads(file.read())
 	
-	with open("moderna_distribution.json") as file:
+	with open("Data/moderna_distribution.json") as file:
 		moderna_dict = json.loads(file.read())
 	
-	with open("pfizer_distribution.json") as file:
+	with open("Data/pfizer_distribution.json") as file:
 		pfizer_dict = json.loads(file.read())
 
 	for key, value in moderna_dict.items():
@@ -30,8 +30,6 @@ def convert_json():
 	full_vac_dict = dict()
 	for key in janssen_vaccine_dict.keys():
 		full_vac_dict[key] = janssen_vaccine_dict[key]+moderna_vaccine_dict[key]+pfizer_vaccine_dict[key]
-
-	print(full_vac_dict)
 
 if __name__ == "__main__":
 	convert_json()
