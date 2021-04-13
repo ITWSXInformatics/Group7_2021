@@ -13,7 +13,6 @@ def dispMap(mapType):
 	plt.show()
 	
 
-
 def showMenu():
 	print("Menu:")
 	print("0. State level view")
@@ -39,9 +38,6 @@ def showMenu():
 		else:
 			inp = ""
 			inp = input("Select Option 0-3: ")
-
-
-
 
 showMenu()
 #﷽
