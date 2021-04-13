@@ -1,19 +1,47 @@
 import geopandas as gpd
 from shapely.geometry import Point, Polygon
 import matplotlib.pyplot as plt
-#import "process.py"
+import process
 
 
-mapType = ""
-while (mapType != "state" and mapType != "county"):
-	mapType = input("State or County view? ")
+def dispMap(mapType):
+	if mapType == 0:
+		usa = gpd.read_file('./map/counties/UScounties.shp')
+	elif mapType == 1:
+		usa = gpd.read_file('./map/states/States_shapefile.shp')
+	usa.plot()
+	plt.show()
+	
 
 
-if mapType == "county":
-	usa = gpd.read_file('./map/counties/UScounties.shp')
-elif mapType == "state":
-	usa = gpd.read_file('./map/states/States_shapefile.shp')
+def showMenu():
+	print("Menu:")
+	print("0. State level view")
+	print("1. County level view")
+	print("2. search state")
+	print("3. search county")
+	inp = input("Select Option 0-3: ")
 
 
-usa.plot()
-plt.show()
+	while(1):
+		if(inp == "0"):
+			dispMap(0)
+			break
+		elif(inp == "1"):
+			dispMap(1)
+			break	
+		elif(inp == "2"):
+			print("z")
+			break
+		elif(inp == "3"):
+			print("s")
+			break
+		else:
+			inp = ""
+			inp = input("Select Option 0-3: ")
+
+
+
+
+showMenu()
+#﷽
