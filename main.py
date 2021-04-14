@@ -4,6 +4,22 @@ import matplotlib.pyplot as plt
 import process
 
 
+def getState():
+	usa = gpd.read_file('./map/counties/UScounties.shp')
+	state = input("Enter state name: ")
+	state = state.lower().capitalize()
+	stateMap = usa[usa['state_name'] == state]
+	if(stateMap.empty):
+		print("State not found")
+	else:
+		stateMap.plot()
+		plt.show()
+
+
+def getCounty():
+	county = input("Enter county name: ")
+
+
 def dispMap(mapType):
 	if mapType == 0:
 		usa = gpd.read_file('./map/counties/UScounties.shp')
@@ -30,13 +46,12 @@ def showMenu():
 			dispMap(1)
 			break	
 		elif(inp == "2"):
-			print("z")
+			getState()
 			break
 		elif(inp == "3"):
-			print("s")
+			getCounty()
 			break
 		else:
-			inp = ""
 			inp = input("Select Option 0-3: ")
 
 showMenu()
