@@ -1,7 +1,7 @@
 import geopandas as gpd
 from shapely.geometry import Point, Polygon
 import matplotlib.pyplot as plt
-import process
+import process_json
 
 
 def getState():
@@ -15,9 +15,8 @@ def getState():
 		stateMap.plot()
 		plt.show()
 
-
-def getCounty():
-	county = input("Enter county name: ")
+#def getCounty():
+#	county = input("Enter county name: ")
 
 
 def dispMap(mapType):
@@ -34,8 +33,7 @@ def showMenu():
 	print("0. State level view")
 	print("1. County level view")
 	print("2. search state")
-	print("3. search county")
-	inp = input("Select Option 0-3: ")
+	inp = input("Select Option 0-2: ")
 
 
 	while(1):
@@ -48,9 +46,9 @@ def showMenu():
 		elif(inp == "2"):
 			getState()
 			break
-		elif(inp == "3"):
-			getCounty()
-			break
+		#elif(inp == "3"):
+		#	getCounty()
+		#	break
 		else:
 			inp = input("Select Option 0-3: ")
 
