@@ -85,6 +85,22 @@ def convert_csv():
 
 	return vaccine_dict
 
+def ranking(state):
+	shippedDict = convert_json()
+	conditionDict, populationDict = convert_excel()
+	vaccineDict = convert_csv()
+
+	shippedData = shippedDict[state]
+	conditionData = conditionDict[state]
+	populationData = populaitonDict[state]
+	vaccineData = vaccineDict[state]
+
+	print(shippedDict.values())
+
+	mortalityIndex = condtionData
+
+
+
 '''
 Main function used to test
 '''	
