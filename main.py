@@ -15,10 +15,24 @@ def getState():
 		stateMap.plot()
 		plt.show()
 
-#def getCounty():
-#	county = input("Enter county name: ")
+"""
+def getCounty():
+	usa = gpd.read_file('./map/counties/UScounties.shp')
+	county = input("Enter county name: ")
+	county = county.lower().capitalize()
 
+	#needs state as well cuz some counties are in multiple states
+	state = input("Enter state name: ")
+	state = state.lower().capitalize()
 
+	countyMap = usa[usa['name'] == county]
+	countyMap = countyMap[countyMap["state_name"] == state]
+	if(countyMap.empty):
+		print("County not found")
+	else:
+		countyMap.plot()
+		plt.show()
+"""
 def dispMap(mapType):
 	if mapType == 0:
 		usa = gpd.read_file('./map/counties/UScounties.shp')
@@ -46,11 +60,13 @@ def showMenu():
 		elif(inp == "2"):
 			getState()
 			break
-		#elif(inp == "3"):
-		#	getCounty()
-		#	break
+		"""
+		elif(inp == "﷽"):
+		
+			getCounty()
+			break
+		"""
 		else:
 			inp = input("Select Option 0-3: ")
 
 showMenu()
-#﷽
