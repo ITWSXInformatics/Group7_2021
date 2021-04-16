@@ -52,18 +52,30 @@ def convert_excel():
 	data = pandas.read_excel("Data/underlying conditions.xlsx")
 	condition_data = pandas.DataFrame(data, columns= ['STATE_NAME', 'county_pop2018_18 and older', 'anycondition_number'])
 	condition_dict = dict()
-	population_dict = dict()
 	for index, row in condition_data.iterrows():
 		if row['STATE_NAME'] not in condition_dict.keys():
 			condition_dict[row['STATE_NAME']] = float(row['anycondition_number'])
 		else:
 			condition_dict[row['STATE_NAME']] += float(row['anycondition_number'])
-		if row['STATE_NAME'] not in population_dict.keys():
-			population_dict[row['STATE_NAME']] = float(row['county_pop2018_18 and older'])
-		else:
-			population_dict[row['STATE_NAME']] += float(row['county_pop2018_18 and older'])
 
-	return condition_dict, population_dict
+	return condition_dict
+
+def convert_population():
+	population_dict = dict()
+	name_file = open('Data/state_name.txt');
+	names = name_file.read()
+	data_file = open('Data/census_2010.txt');
+	data = data_file.read()
+
+	name_array = names.split("\n");
+	data_array_out = data.split("\n");
+
+	for i in range(len(name_array)):
+		data_array_inner = data_array_out[i].split(" ")
+		name = name_array[i]
+		population = float(data_array_inner[len(data_array_inner)-1].replace(",", ""))
+		population_dict[name] = population
+	return population_dict
 
 '''
 Converts csv file to dictionaries through use of panda DataFrame
@@ -78,7 +90,7 @@ def convert_csv():
 	for index, row in vaccine_data.iterrows():
 		if count >= 3:
 			current_data = row.to_string().split(',')
-			current_state = current_data[0][4:]
+			current_state = current_data[0][5:]
 			if current_state not in vaccine_dict.keys():
 				vaccine_dict[current_state] = float(current_data[1])
 		count += 1
@@ -87,17 +99,24 @@ def convert_csv():
 
 def ranking(state):
 	shippedDict = convert_json()
-	conditionDict, populationDict = convert_excel()
+	conditionDict = convert_excel()
 	vaccineDict = convert_csv()
+	populationDict = convert_population()
 
 	shippedData = shippedDict[state]
 	conditionData = conditionDict[state]
-	populationData = populaitonDict[state]
+	populationData = populationDict[state]
 	vaccineData = vaccineDict[state]
 
-	print(shippedDict.values())
+	print(populationData)
 
-	mortalityIndex = condtionData
+	print(vaccineData)
+
+	mortalityIndex = conditionData/sum(list(conditionDict.values()))
+
+	vaccineIndex = shippedData/(populationData-vaccineData)
+
+	return mortalityIndex/vaccineIndex
 
 
 
@@ -105,6 +124,7 @@ def ranking(state):
 Main function used to test
 '''	
 if __name__ == "__main__":
-	convert_json()
-	convert_excel()
-	convert_csv()
+	#convert_json()
+	#convert_excel()
+	#convert_csv()
+	ranking('Connecticut')
