@@ -29,8 +29,8 @@ def convert_json():
 	with open("Data/pfizer_distribution.json") as file:
 		pfizer_dict = json.loads(file.read())
 
-	for key, value in moderna_dict.items():
-		print (key)
+	#for key, value in moderna_dict.items():
+	#	print (key)
 
 	janssen_vaccine_dict = create_dict(janssen_dict)
 	moderna_vaccine_dict = create_dict(moderna_dict)
