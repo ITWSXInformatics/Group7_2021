@@ -108,10 +108,6 @@ def ranking(state):
 	populationData = populationDict[state]
 	vaccineData = vaccineDict[state]
 
-	print(populationData)
-
-	print(vaccineData)
-
 	mortalityIndex = conditionData/sum(list(conditionDict.values()))
 
 	vaccineIndex = shippedData/(populationData-vaccineData)
