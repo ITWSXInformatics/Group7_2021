@@ -49,7 +49,7 @@ returns two dictionaries:
 2. a population dictionary containing the population from 2018 that are 18 and older, population_dict['New York'] = some number
 '''
 def convert_excel():
-	data = pandas.read_excel("Data/underlying conditions.xlsx")
+	data = pandas.read_excel("Data/underlying conditions.xlsx", engine="openpyxl")
 	condition_data = pandas.DataFrame(data, columns= ['STATE_NAME', 'county_pop2018_18 and older', 'anycondition_number'])
 	condition_dict = dict()
 	for index, row in condition_data.iterrows():
@@ -83,7 +83,7 @@ returns a dictionary containing the covid vaccines in that state
 condition_dict['Alabama'] = some number
 '''
 def convert_csv():
-	data = pandas.read_csv("Data/covid19_vaccinations_in_the_united_states.csv", sep='delimiter', header=None, engine='python')
+	data = pandas.read_csv("Data/covid19_vaccinations_in_the_united_states.csv", sep='delimiter', header=4, engine='python')
 	vaccine_data = pandas.DataFrame(data)
 	vaccine_dict = dict()
 	count = 0
@@ -97,24 +97,33 @@ def convert_csv():
 
 	return vaccine_dict
 
-def ranking(state):
+def ranking(states):
+	
 	shippedDict = convert_json()
 	conditionDict = convert_excel()
 	vaccineDict = convert_csv()
 	populationDict = convert_population()
 
-	shippedData = shippedDict[state]
-	conditionData = conditionDict[state]
-	populationData = populationDict[state]
-	vaccineData = vaccineDict[state]
+	dataArr = []
 
-	mortalityIndex = conditionData/sum(list(conditionDict.values()))
+	print(states)
+	for state in states:
+		shippedData = shippedDict[state]
+		conditionData = conditionDict[state]
+		populationData = populationDict[state]
+		vaccineData = vaccineDict[state]
 
-	vaccineIndex = shippedData/(populationData-vaccineData)
+		mortalityIndex = conditionData/sum(list(conditionDict.values()))
 
-	return mortalityIndex/vaccineIndex
+		vaccineIndex = shippedData/(populationData-vaccineData)
 
+		rank = mortalityIndex/vaccineIndex
 
+		stateStats = {"name": state, "Underlying conditions (number)": [conditionData], "Population": [populationData], "Rank": [rank]}
+
+		dataArr.append(stateStats)
+
+	return(dataArr)
 
 '''
 Main function used to test
