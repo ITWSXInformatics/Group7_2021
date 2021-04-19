@@ -1,19 +1,30 @@
 import geopandas as gpd
 from shapely.geometry import Point, Polygon
 import matplotlib.pyplot as plt
-import process_json
+import process_json as pj
+import pandas as pd
 
 
 def getState():
 	usa = gpd.read_file('./map/counties/UScounties.shp')
+	
 	state = input("Enter state name: ")
 	state = state.lower().capitalize()
+	
 	stateMap = usa[usa['state_name'] == state]
+	
 	if(stateMap.empty):
 		print("State not found")
-	else:
-		stateMap.plot()
-		plt.show()
+		return
+
+	stateData = pj.ranking([state])
+	df = pd.DataFrame.from_dict(data = stateData[0])
+	print(df)
+
+	merged = stateMap.set_index('state_name').join(df.set_index("name"))
+	
+	merged.plot(column = "Rank")
+	plt.show()
 
 """
 def getCounty():
@@ -33,12 +44,35 @@ def getCounty():
 		countyMap.plot()
 		plt.show()
 """
+
 def dispMap(mapType):
+	
+	states = open('Data/state_name.txt');
+	stateNames = states.read()
+	nameArray = stateNames.split("\n");
+
+	dataArr = pj.ranking(nameArray)
+	df = pd.DataFrame(dataArr)
+	df.head()
+	#print(df)
+
 	if mapType == 0:
 		usa = gpd.read_file('./map/counties/UScounties.shp')
+		merged = usa.set_index('state_name').join(df.set_index("name"))
+
 	elif mapType == 1:
 		usa = gpd.read_file('./map/states/States_shapefile.shp')
-	usa.plot()
+		print(usa)
+		df["name"] = df["name"].str.upper()
+		merged = usa.set_index('State_Name').join(df.set_index("name"))
+
+	print(merged)
+	merged.head()
+
+
+	fig, ax = plt.subplots(1, figsize=(10, 6))
+
+	merged.plot(column="Rank", ax=ax)
 	plt.show()
 	
 
@@ -60,13 +94,15 @@ def showMenu():
 		elif(inp == "2"):
 			getState()
 			break
+		else:
+			inp = input("Select Option 0-2: ")	
 		"""
 		elif(inp == "﷽"):
 		
 			getCounty()
 			break
 		"""
-		else:
-			inp = input("Select Option 0-3: ")
+		
+
 
 showMenu()
