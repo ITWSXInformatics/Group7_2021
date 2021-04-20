@@ -1,8 +1,8 @@
-import geopandas as gpd
 from shapely.geometry import Point, Polygon
 import matplotlib.pyplot as plt
 import process_json as pj
 import pandas as pd
+import geopandas as gpd
 
 
 def getState():
@@ -23,6 +23,7 @@ def getState():
 
 	merged = stateMap.set_index('state_name').join(df.set_index("name"))
 	
+
 	merged.plot(column = "Rank")
 	plt.show()
 
@@ -52,27 +53,25 @@ def dispMap(mapType):
 	nameArray = stateNames.split("\n");
 
 	dataArr = pj.ranking(nameArray)
-	df = pd.DataFrame(dataArr)
-	df.head()
-	#print(df)
+	covidData = pd.DataFrame(dataArr)
+	#print(covidData)
 
-	if mapType == 0:
+	if mapType == 1:
 		usa = gpd.read_file('./map/counties/UScounties.shp')
-		merged = usa.set_index('state_name').join(df.set_index("name"))
+		merged = usa.merge(covidData, left_on='state_name', right_on='name')
 
-	elif mapType == 1:
+	elif mapType == 0:
 		usa = gpd.read_file('./map/states/States_shapefile.shp')
 		print(usa)
-		df["name"] = df["name"].str.upper()
-		merged = usa.set_index('State_Name').join(df.set_index("name"))
+		covidData["name"] = covidData["name"].str.upper()
+		merged = covidData.merge(usa, left_on='name', right_on='State_Name')
 
 	print(merged)
 	merged.head()
 
+	print(type(merged))
 
-	fig, ax = plt.subplots(1, figsize=(10, 6))
-
-	merged.plot(column="Rank", ax=ax)
+	merged.plot(column="Rank")
 	plt.show()
 	
 
