@@ -83,12 +83,12 @@ returns a dictionary containing the covid vaccines in that state
 condition_dict['Alabama'] = some number
 '''
 def convert_csv():
-	data = pandas.read_csv("Data/covid19_vaccinations_in_the_united_states.csv", sep='delimiter', header=4, engine='python')
+	data = pandas.read_csv("Data/covid19_vaccinations_in_the_united_states.csv", sep='delimiter', header=None, engine='python')
 	vaccine_data = pandas.DataFrame(data)
 	vaccine_dict = dict()
 	count = 0
 	for index, row in vaccine_data.iterrows():
-		if count >= 3:
+		if count >= 4:
 			current_data = row.to_string().split(',')
 			current_state = current_data[0][5:]
 			if current_state not in vaccine_dict.keys():
@@ -106,7 +106,7 @@ def ranking(states):
 
 	dataArr = []
 
-	print(states)
+
 	for state in states:
 		shippedData = shippedDict[state]
 		conditionData = conditionDict[state]
@@ -119,7 +119,7 @@ def ranking(states):
 
 		rank = mortalityIndex/vaccineIndex
 
-		stateStats = {"name": state, "Underlying conditions (number)": [conditionData], "Population": [populationData], "Rank": [rank]}
+		stateStats = {"name": state, "Underlying conditions (number)": conditionData, "Population": populationData, "Rank": rank}
 
 		dataArr.append(stateStats)
 
