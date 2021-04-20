@@ -73,13 +73,11 @@ def dispMap(mapType):
 	#merged.head()
 
 	#df2 = merged[merged.applymap(lambda x: x[0] if isinstance(x, list) else x).duplicated('State_Name')]
-
-
 	fig, ax = plt.subplots(1, figsize=(10, 6))
 	ax.axis('off')
 	ax.set_title("Vaccine Index Ranking")
 
-	merged.plot(column="Rank", ax=ax)
+	merged.plot(column="Rank", ax=ax, legend = True)
 	plt.show()
 	
 
