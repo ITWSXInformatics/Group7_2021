@@ -58,20 +58,28 @@ def dispMap(mapType):
 
 	if mapType == 1:
 		usa = gpd.read_file('./map/counties/UScounties.shp')
-		merged = usa.merge(covidData, left_on='state_name', right_on='name')
+		covidData.rename(columns = {'name': 'state_name'}, inplace=True)
+		merged = usa.merge(covidData, on='state_name')
 
 	elif mapType == 0:
 		usa = gpd.read_file('./map/states/States_shapefile.shp')
-		print(usa)
+		
+		#print(usa)
 		covidData["name"] = covidData["name"].str.upper()
-		merged = covidData.merge(usa, left_on='name', right_on='State_Name')
+		covidData.rename(columns = {'name': 'State_Name'}, inplace=True)
+		merged = usa.merge(covidData, on='State_Name')
 
-	print(merged)
-	merged.head()
+	#print(merged["Rank"])
+	#merged.head()
 
-	print(type(merged))
+	#df2 = merged[merged.applymap(lambda x: x[0] if isinstance(x, list) else x).duplicated('State_Name')]
 
-	merged.plot(column="Rank")
+
+	fig, ax = plt.subplots(1, figsize=(10, 6))
+	ax.axis('off')
+	ax.set_title("Vaccine Index Ranking")
+
+	merged.plot(column="Rank", ax=ax)
 	plt.show()
 	
 
