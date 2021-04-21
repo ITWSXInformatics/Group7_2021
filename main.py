@@ -18,7 +18,7 @@ def getState():
 		return
 
 	stateData = pj.ranking([state])
-	df = pd.DataFrame.from_dict(data = stateData[0])
+	df = pd.DataFrame.from_dict(data = stateData)
 	print(df)
 
 	merged = stateMap.set_index('state_name').join(df.set_index("name"))
