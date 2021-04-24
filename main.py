@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import process_json as pj
 import pandas as pd
 import geopandas as gpd
-
+import matplotlib.colors as colors
 
 def getState():
 	usa = gpd.read_file('./map/counties/UScounties.shp')
@@ -73,11 +73,19 @@ def dispMap(mapType):
 	#merged.head()
 
 	#df2 = merged[merged.applymap(lambda x: x[0] if isinstance(x, list) else x).duplicated('State_Name')]
-	fig, ax = plt.subplots(1, figsize=(10, 6))
+	norm = colors.Normalize()
+	cbar = plt.cm.ScalarMappable(norm=norm)
+
+	fig, ax = plt.subplots(1, figsize=(15, 8))
 	ax.axis('off')
 	ax.set_title("Vaccine Index Ranking")
+	ax.legend(['Higher Priority'])
 
-	merged.plot(column="Rank", ax=ax, legend = True)
+	merged.plot(column="Rank", ax=ax, legend = False)
+
+
+	ax_cbar = fig.colorbar(cbar, ax=ax, orientation='horizontal', shrink=.5, aspect=50)
+	ax_cbar.set_label('Lower to Higher')
 	plt.show()
 	
 
