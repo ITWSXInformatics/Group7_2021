@@ -97,6 +97,18 @@ def convert_csv():
 
 	return vaccine_dict
 
+
+
+
+def countyPop():
+	data = pandas.read_csv("Data/county census data 2019.csv", sep='delimiter', header=None, engine='python')
+
+
+#data at county level: underlying conditions, population
+# data needed: vaccine distribution, prior vcaccination (maybe we can extrapolate this?)
+def rankCounties():
+
+
 def ranking(states):
 	
 	shippedDict = convert_json()
