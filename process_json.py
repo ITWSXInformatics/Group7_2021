@@ -88,9 +88,11 @@ def convert_csv():
 	vaccine_dict = dict()
 	count = 0
 	for index, row in vaccine_data.iterrows():
-		if count >= 4:
+		if count >= 3:
 			current_data = row.to_string().split(',')
 			current_state = current_data[0][5:]
+			if current_state == 'New York State':
+				current_state = 'New York'
 			if current_state not in vaccine_dict.keys():
 				vaccine_dict[current_state] = float(current_data[1])
 		count += 1
@@ -106,7 +108,7 @@ def countyPop():
 
 #data at county level: underlying conditions, population
 # data needed: vaccine distribution, prior vcaccination (maybe we can extrapolate this?)
-def rankCounties():
+#def rankCounties():
 
 
 def ranking(states):
@@ -117,7 +119,6 @@ def ranking(states):
 	populationDict = convert_population()
 
 	dataArr = []
-
 
 	for state in states:
 		shippedData = shippedDict[state]

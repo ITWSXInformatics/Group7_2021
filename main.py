@@ -108,7 +108,7 @@ def showMenu():
 			getState()
 			break
 		else:
-			inp = input("Select Option 0-2: ")	
+			inp = input("Select Option 0-2: ")
 		"""
 		elif(inp == "﷽"):
 		
