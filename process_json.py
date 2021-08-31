@@ -244,7 +244,7 @@ def ranking(states):
 	'Tennessee' : 'TN',
 	'Texas' : 'TX',
 	'Utah' : 'UT',
-	'Vermont' : 'TV',
+	'Vermont' : 'VT',
 	'Virginia' : 'VA',
 	'Washington' : 'WA',
 	'West Virginia' : 'WV',
