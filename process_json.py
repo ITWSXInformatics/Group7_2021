@@ -1,6 +1,7 @@
 import json
 import pandas
 import statistics
+import plotly.express as px
 
 '''
 Helper function to create a dictionary, should only be called within this file
@@ -196,6 +197,60 @@ def countyPop():
 
 
 def ranking(states):
+
+	abbreviations = {
+	'Alabama' : 'AL',
+	'Alaska' : 'AK',
+	'Arizona' :'AZ',
+	'Arkansas' : 'AR',
+	'California' : 'CA',
+	'Colorado' : 'CO',
+	'Connecticut' : 'CT',
+	'Delaware' : 'DE',
+	'District of Columbia' : 'DC',
+	'Florida' : 'FL',
+	'Georgia' : 'GA',
+	'Hawaii' : 'HA',
+	'Idaho' : 'ID',
+	'Illinois' : 'IL',
+	'Indiana' : 'IN',
+	'Iowa' : 'IA',
+	'Kansas' : 'KS',
+	'Kentucky' : 'KY',
+	'Louisiana' : 'LA',
+	'Maine' : 'ME',
+	'Maryland' : 'MD',
+	'Massachusetts' : 'MA',
+	'Michigan' : 'MI',
+	'Mississippi' : 'MS',
+	'Missouri' : 'MO',
+	'Minnesota' : 'MN',
+	'Montana' : 'MT',
+	'Nebraska' : 'NE',
+	'Nevada' : 'NV',
+	'New Hampshire' : 'NH',
+	'New Jersey' : 'NJ',
+	'New Mexico' : 'NM',
+	'New York' : 'NY',
+	'North Carolina' : 'NC',
+	'North Dakota' : 'ND',
+	'Ohio' : 'OH',
+	'Oklahoma' : 'OK',
+	'Oregon': 'OR',
+	'Pennsylvania' : 'PA',
+	'Rhode Island' : 'RI',
+	'South Carolina' : 'SC',
+	'South Dakota': 'SD',
+	'Tennessee' : 'TN',
+	'Texas' : 'TX',
+	'Utah' : 'UT',
+	'Vermont' : 'TV',
+	'Virginia' : 'VA',
+	'Washington' : 'WA',
+	'West Virginia' : 'WV',
+	'Wisconsin' : 'WI',
+	'Wyoming' : 'WY'
+	}
 	
 	shippedDict = convert_states()
 	conditionDict = convert_excel()
@@ -277,12 +332,13 @@ def ranking(states):
 
 		stateStats = {"name": state, "Underlying conditions (number)": conditionData, "Population": populationData, "Rank": rank}
 
-		ranking_frame = ranking_frame.append({'State': state, 'Rank': rank}, ignore_index=True)
+		ranking_frame = ranking_frame.append({'State': abbreviations[state], 'Rank': rank}, ignore_index=True)
 		dataArr.append(stateStats)
 
-	
+	color_states = ranking_frame.loc[:,'State'].values
 
-	print(ranking_frame)
+	fig = px.choropleth(ranking_frame['Rank'], locations = color_states, color = 'Rank', locationmode="USA-states", scope="usa")
+	fig.show()
 
 	print(max)
 	print(max_state)
