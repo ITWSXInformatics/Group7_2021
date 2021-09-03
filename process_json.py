@@ -267,7 +267,7 @@ def ranking(states):
 	print(median_val)
 
 	for state in states:
-		total_morbidity_factor += conditionDict[state]*age_dict[state]*minority_dict[state]*populationDict[state]
+		total_morbidity_factor += conditionDict[state]+age_dict[state]+minority_dict[state]+education_dict[state]
 
 	dataArr = []
 
@@ -286,21 +286,15 @@ def ranking(states):
 		mobilityData = mobility_dict[state]
 
 		#state_morbidity_factor = conditionData*ageData*minorityData*incomeData*populationData
-
-		cond_factor = conditionData/populationData
-		age_factor = ageData/populationData
-		minority_factor = minorityData/populationData
-		education_factor = educationData/populationData
-
 		#higher percentage of minority will affect poorly
 		#low income affect poorly
 		#higher percentage of age affect porly
 		#higher percentage condition affect poorly
 		#higher percentage low education affect poorly
 
-		population_affected = cond_factor*populationData+minority_factor*populationData+education_factor*populationData
+		population_affected = conditionData+minorityData+educationData+ageData
 
-		mortalityIndex = population_affected/populationData
+		mortalityIndex = population_affected/total_morbidity_factor
 
 		mobility_factor = 0
 
