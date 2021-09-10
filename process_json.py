@@ -43,9 +43,6 @@ def convert_states():
 	#with open("Data/pfizer_distribution.json") as file:
 	#	pfizer_dict = json.loads(file.read())
 
-	#for key, value in moderna_dict.items():
-	#	print (key)
-
 	janssen_data = pandas.read_csv("Data/COVID-19_Vaccine_Distribution_Allocations_by_Jurisdiction_-_Janssen.csv")
 	moderna_data = pandas.read_csv("Data/COVID-19_Vaccine_Distribution_Allocations_by_Jurisdiction_-_Moderna.csv")
 	pfizer_data = pandas.read_csv("Data/COVID-19_Vaccine_Distribution_Allocations_by_Jurisdiction_-_Pfizer.csv")
@@ -127,7 +124,7 @@ def convert_csv():
 	income_dict = dict()
 
 	for index, row in mobility_data.iterrows():
-		if row['date'] == '2021-05-01' and isinstance(row['sub_region_2'],float) and isinstance(row['sub_region_1'],str):
+		if row['date'] == '2021-05-18' and isinstance(row['sub_region_2'],float) and isinstance(row['sub_region_1'],str):
 			total_mobility = row['retail_and_recreation_percent_change_from_baseline']+row['grocery_and_pharmacy_percent_change_from_baseline']+row['parks_percent_change_from_baseline']+row['transit_stations_percent_change_from_baseline']+row['workplaces_percent_change_from_baseline']+row['residential_percent_change_from_baseline']
 			mobility_dict[row['sub_region_1']] = total_mobility
 
@@ -173,7 +170,6 @@ def convert_csv():
 
 	count = 0
 	for index, row in vaccine_data.iterrows():
-		print(index[0])
 		if count > 0:
 			current_state = index[0]
 			current_data = float(index[24])+float(index[25])+float(index[26])
@@ -264,8 +260,6 @@ def ranking(states):
 
 	median_val = statistics.median(income_list)
 
-	print(median_val)
-
 	for state in states:
 		total_morbidity_factor += conditionDict[state]+age_dict[state]+minority_dict[state]+education_dict[state]
 
@@ -333,9 +327,6 @@ def ranking(states):
 
 	fig = px.choropleth(ranking_frame['Rank'], locations = color_states, color = 'Rank', locationmode="USA-states", scope="usa")
 	fig.show()
-
-	print(max)
-	print(max_state)
 
 	#state_df = pandas.DataFrame.from_dict(ranking_dict, orient = 'index')
 

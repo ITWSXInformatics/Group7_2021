@@ -93,8 +93,8 @@ def showMenu():
 	print("Menu:")
 	print("0. State level view")
 	print("1. County level view")
-	print("2. search state")
-	inp = input("Select Option 0-2: ")
+	#print("2. search state")
+	inp = input("Select Option:")
 
 
 	while(1):
@@ -104,17 +104,17 @@ def showMenu():
 		elif(inp == "1"):
 			dispMap(1)
 			break	
+		'''
 		elif(inp == "2"):
 			getState()
 			break
 		else:
 			inp = input("Select Option 0-2: ")
-		"""
 		elif(inp == "﷽"):
 		
 			getCounty()
 			break
-		"""
+		'''
 		
 
 
