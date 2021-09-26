@@ -252,7 +252,7 @@ def ranking(states):
 	conditionDict = convert_excel()
 	vaccineDict, age_dict, education_dict, minority_dict, income_dict, mobility_dict = convert_csv()
 	populationDict = convert_population()
-	ranking_frame = pandas.DataFrame(columns = ['State', 'Rank'])
+	ranking_frame = pandas.DataFrame(columns = ['State', 'Ranking Index'])
 
 	total_morbidity_factor = 0
 
@@ -318,14 +318,14 @@ def ranking(states):
 			max = rank
 			max_state = state
 
-		stateStats = {"name": state, "Underlying conditions (number)": conditionData, "Population": populationData, "Rank": rank}
+		stateStats = {"name": state, "Underlying conditions (number)": conditionData, "Population": populationData, "Ranking Index": rank}
 
-		ranking_frame = ranking_frame.append({'State': abbreviations[state], 'Rank': rank}, ignore_index=True)
+		ranking_frame = ranking_frame.append({'State': abbreviations[state], 'Ranking Index': rank}, ignore_index=True)
 		dataArr.append(stateStats)
 
 	color_states = ranking_frame.loc[:,'State'].values
 
-	fig = px.choropleth(ranking_frame['Rank'], locations = color_states, color = 'Rank', locationmode="USA-states", scope="usa")
+	fig = px.choropleth(ranking_frame['Ranking Index'], locations = color_states, color = 'Ranking Index', locationmode="USA-states", scope="usa", labels = "Ranking Index", title = "Vaccine Ranking Index Per State")
 	fig.show()
 
 	#state_df = pandas.DataFrame.from_dict(ranking_dict, orient = 'index')
