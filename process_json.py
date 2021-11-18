@@ -326,6 +326,7 @@ def ranking(states):
 	color_states = ranking_frame.loc[:,'State'].values
 
 	fig = px.choropleth(ranking_frame['Ranking Index'], locations = color_states, color = 'Ranking Index', locationmode="USA-states", scope="usa", labels = "Ranking Index", title = "Vaccine Ranking Index Per State")
+	fig.update_layout(font_size = 30)
 	fig.show()
 
 	#state_df = pandas.DataFrame.from_dict(ranking_dict, orient = 'index')

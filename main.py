@@ -56,6 +56,8 @@ def dispMap(mapType):
 	covidData = pd.DataFrame(dataArr)
 	#print(covidData)
 
+	'''
+
 	if mapType == 1:
 		usa = gpd.read_file('./map/counties/UScounties.shp')
 		covidData.rename(columns = {'name': 'state_name'}, inplace=True)
@@ -87,6 +89,7 @@ def dispMap(mapType):
 	ax_cbar = fig.colorbar(cbar, ax=ax, orientation='horizontal', shrink=.5, aspect=50)
 	ax_cbar.set_label('Lower to Higher')
 	plt.show()
+	'''
 	
 
 def showMenu():
